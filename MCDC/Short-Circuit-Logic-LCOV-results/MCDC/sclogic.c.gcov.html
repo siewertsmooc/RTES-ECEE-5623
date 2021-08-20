@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - sclogic.info - MCDC/sclogic.c</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">MCDC</a> - sclogic.c<span style="font-size: 80%;"> (source / <a href="sclogic.c.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">sclogic.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">25</td>
+            <td class="headerCovTableEntry">27</td>
+            <td class="headerCovTableEntryHi">92.6 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2014-10-08 16:37:41</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">5</td>
+            <td class="headerCovTableEntry">5</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : #include &lt;stdio.h&gt;</a>
+<a name="2"><span class="lineNum">       2 </span>            : </a>
+<span class="lineNum">       3 </span>            : 
+<span class="lineNum">       4 </span><span class="lineCov">          2 : int function_A(void)</span>
+<span class="lineNum">       5 </span>            : {
+<span class="lineNum">       6 </span>            :     static int toggle_A=0;
+<span class="lineNum">       7 </span>            : 
+<span class="lineNum">       8 </span><span class="lineCov">          2 :     printf(&quot;function_A\n&quot;);</span>
+<span class="lineNum">       9 </span><span class="lineCov">          2 :     if(toggle_A == 0)</span>
+<span class="lineNum">      10 </span><span class="lineCov">          1 :         toggle_A=1;</span>
+<span class="lineNum">      11 </span>            :     else
+<span class="lineNum">      12 </span><span class="lineCov">          1 :         toggle_A=0;</span>
+<span class="lineNum">      13 </span>            : 
+<span class="lineNum">      14 </span><span class="lineCov">          2 :     return toggle_A;</span>
+<a name="15"><span class="lineNum">      15 </span>            : }</a>
+<span class="lineNum">      16 </span>            : 
+<span class="lineNum">      17 </span><span class="lineCov">          1 : int function_B(void)</span>
+<span class="lineNum">      18 </span>            : {
+<span class="lineNum">      19 </span>            :     static int toggle_B=0;
+<span class="lineNum">      20 </span>            : 
+<span class="lineNum">      21 </span><span class="lineCov">          1 :     printf(&quot;function_B\n&quot;);</span>
+<span class="lineNum">      22 </span><span class="lineCov">          1 :     if(toggle_B == 0)</span>
+<span class="lineNum">      23 </span><span class="lineCov">          1 :         toggle_B=1;</span>
+<span class="lineNum">      24 </span>            :     else
+<span class="lineNum">      25 </span><span class="lineNoCov">          0 :         toggle_B=0;</span>
+<span class="lineNum">      26 </span>            : 
+<span class="lineNum">      27 </span><span class="lineCov">          1 :     return toggle_B;</span>
+<a name="28"><span class="lineNum">      28 </span>            : }</a>
+<span class="lineNum">      29 </span>            : 
+<span class="lineNum">      30 </span><span class="lineCov">          1 : void function_C(void)</span>
+<span class="lineNum">      31 </span>            : {
+<span class="lineNum">      32 </span><span class="lineCov">          1 :     printf(&quot;do function_C\n&quot;);</span>
+<a name="33"><span class="lineNum">      33 </span><span class="lineCov">          1 : }</span></a>
+<span class="lineNum">      34 </span>            : 
+<span class="lineNum">      35 </span><span class="lineCov">          2 : void function_D(void)</span>
+<span class="lineNum">      36 </span>            : {
+<span class="lineNum">      37 </span><span class="lineCov">          2 :     printf(&quot;do function_D\n&quot;);</span>
+<span class="lineNum">      38 </span><span class="lineCov">          2 : }</span>
+<a name="39"><span class="lineNum">      39 </span>            : </a>
+<span class="lineNum">      40 </span>            : 
+<span class="lineNum">      41 </span><span class="lineCov">          1 : int main(void)</span>
+<span class="lineNum">      42 </span>            : {
+<span class="lineNum">      43 </span>            :     int rc;
+<span class="lineNum">      44 </span>            : 
+<span class="lineNum">      45 </span>            :     // Test Case #1 - Call all functions
+<span class="lineNum">      46 </span><span class="lineCov">          1 :     rc=function_A();</span>
+<span class="lineNum">      47 </span><span class="lineCov">          1 :     rc=function_B();</span>
+<span class="lineNum">      48 </span><span class="lineCov">          1 :     function_C();</span>
+<span class="lineNum">      49 </span><span class="lineCov">          1 :     function_D();</span>
+<span class="lineNum">      50 </span>            : 
+<span class="lineNum">      51 </span>            :     // Test Case #2, Test use in logic
+<span class="lineNum">      52 </span><span class="lineCov">          1 :     if((rc=(function_A() &amp;&amp; function_B())))</span>
+<span class="lineNum">      53 </span><span class="lineNoCov">          0 :         function_C();</span>
+<span class="lineNum">      54 </span>            :     else
+<span class="lineNum">      55 </span><span class="lineCov">          1 :         function_D();</span>
+<span class="lineNum">      56 </span>            : 
+<span class="lineNum">      57 </span><span class="lineCov">          1 :     return(1);</span>
+<span class="lineNum">      58 </span>            : }
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.11</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>
