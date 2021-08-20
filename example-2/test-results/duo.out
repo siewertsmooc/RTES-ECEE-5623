@@ -1,0 +1,61 @@
+Threaded:   Fib(988)					0.000460 secs
+Sequential: Fib(988)					0.000004 secs
+Threaded:   Fib(9972)					0.000453 secs
+Sequential: Fib(9972)					0.000011 secs
+Threaded:   Fib(99975)					0.000551 secs
+Sequential: Fib(99975)					0.000106 secs
+Threaded:   Fib(999992)					0.000541 secs
+Sequential: Fib(999992)					0.001148 secs
+Threaded:   Fib(9999990)				0.003846 secs
+Sequential: Fib(9999990)				0.007137 secs
+Threaded:   Fib(99999981)				0.009034 secs
+Sequential: Fib(99999981)				0.118958 secs
+Threaded:   Fib(999999980)				0.106180 secs
+Sequential: Fib(999999980)				0.891281 secs
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 15
+model name	: Intel(R) Core(TM)2 CPU         T5600  @ 1.83GHz
+stepping	: 6
+cpu MHz		: 1000.000
+cache size	: 2048 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 10
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm syscall nx lm constant_tsc pni monitor ds_cpl vmx est tm2 cx16 xtpr lahf_lm
+bogomips	: 3662.40
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 15
+model name	: Intel(R) Core(TM)2 CPU         T5600  @ 1.83GHz
+stepping	: 6
+cpu MHz		: 1000.000
+cache size	: 2048 KB
+physical id	: 0
+siblings	: 2
+core id		: 1
+cpu cores	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 10
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm syscall nx lm constant_tsc pni monitor ds_cpl vmx est tm2 cx16 xtpr lahf_lm
+bogomips	: 3657.61
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+Linux batam 2.6.16.13-4-smp #1 SMP Wed May 3 04:53:23 UTC 2006 x86_64 x86_64 x86_64 GNU/Linux

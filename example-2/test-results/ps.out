@@ -1,0 +1,27 @@
+Threaded:   Fib(988)				0.000663 secs
+Sequential: Fib(988)				0.000013 secs
+Threaded:   Fib(9972)				0.000702 secs
+Sequential: Fib(9972)				0.000045 secs
+Threaded:   Fib(99975)				0.001125 secs
+Sequential: Fib(99975)				0.000487 secs
+Threaded:   Fib(999992)				0.003236 secs
+Sequential: Fib(999992)				0.005450 secs
+Threaded:   Fib(9999990)			0.003507 secs
+Sequential: Fib(9999990)			0.037074 secs
+Threaded:   Fib(99999981)			0.039789 secs
+Sequential: Fib(99999981)			0.617095 secs
+Threaded:   Fib(999999980)			0.303862 secs
+Sequential: Fib(999999980)			4.756539 secs
+processor	: 0
+cpu		: Cell Broadband Engine, altivec supported
+clock		: 3192.000000MHz
+revision	: 5.1 (pvr 0070 0501)
+
+processor	: 1
+cpu		: Cell Broadband Engine, altivec supported
+clock		: 3192.000000MHz
+revision	: 5.1 (pvr 0070 0501)
+
+timebase	: 79800000
+machine		: PS3PF
+Linux localhost.localdomain 2.6.16-20061110.ydl.2ps3 #1 SMP Tue Dec 5 12:35:42 EST 2006 ppc64 ppc64 ppc64 GNU/Linux

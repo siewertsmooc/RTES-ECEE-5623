@@ -1,0 +1,33 @@
+This system has 4 processors configured and 4 processors available.
+number of CPU cores=4
+Using sysconf number of CPUS=4, count in set=4
+Pthread Policy is SCHED_OTHER
+PTHREAD SCOPE SYSTEM
+rt_max_prio=99
+rt_min_prio=1
+Pthread Policy is SCHED_OTHER
+PTHREAD SCOPE SYSTEM
+rt_max_prio=99
+rt_min_prio=1
+Setting thread 0 to core 0
+ CPU-0 
+Launching thread 0
+Setting thread 1 to core 1
+ CPU-1 
+Launching thread 1
+Setting thread 2 to core 2
+ CPU-2 
+Launching thread 2
+Setting thread 3 to core 3
+ CPU-3 
+Launching thread 3
+
+Thread idx=3 ran 2 sec, 228 msec (228314 microsec) on core 2
+
+Thread idx=2 ran 2 sec, 228 msec (228455 microsec) on core 3
+
+Thread idx=0 ran 2 sec, 228 msec (228613 microsec) on core 0
+
+Thread idx=1 ran 2 sec, 228 msec (228550 microsec) on core 1
+
+TEST COMPLETE

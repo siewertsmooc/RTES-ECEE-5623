@@ -1,0 +1,13 @@
+Sam-Siewerts-Computer:~/Digest samsiewert$ machine
+ppc7450
+
+Sam-Siewerts-Computer:~/Digest samsiewert$ uname -a
+Darwin Sam-Siewerts-Computer.local 7.9.0 Darwin Kernel Version 7.9.0: Wed Mar 30 20:11:17 PST 2005; root:xnu/xnu-517.12.7.obj~1/RELEASE_PPC  Power Macintosh powerpc
+
+Sam-Siewerts-Computer:~/Digest samsiewert$ ./testcrc
+CRC Test
+Test Done in 636055 microsecs for 100000 iterations
+157219.108410 digests computer per second
+
+0xff 0x5a 0x13 0xb4 0x62 0x5d 0x3a 0xfa 0xbc 0x9d 0xda 0x77 0x52 0x8d 0x35 0x5c Sam-Siewerts-Computer:~/Digest samsiewert$ 
+

@@ -1,0 +1,34 @@
+Threaded:   Fib(988)				0.000839 secs
+Sequential: Fib(988)				0.000008 secs
+Threaded:   Fib(9972)				0.000871 secs
+Sequential: Fib(9972)				0.000024 secs
+Threaded:   Fib(99975)				0.001062 secs
+Sequential: Fib(99975)				0.000242 secs
+Threaded:   Fib(999992)				0.003533 secs
+Sequential: Fib(999992)				0.002665 secs
+Threaded:   Fib(9999990)			0.017668 secs
+Sequential: Fib(9999990)			0.016533 secs
+Threaded:   Fib(99999981)			0.280323 secs
+Sequential: Fib(99999981)			0.274976 secs
+Threaded:   Fib(999999980)			2.166202 secs
+Sequential: Fib(999999980)			2.121013 secs
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 15
+model		: 0
+model name	: Intel(R) Pentium(R) 4 CPU 1300MHz
+stepping	: 7
+cpu MHz		: 1296.195
+cache size	: 256 KB
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 2
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm up
+bogomips	: 2595.31
+
+Linux frodo 2.6.18.2-34-default #1 SMP Mon Nov 27 11:46:27 UTC 2006 i686 i686 i386 GNU/Linux

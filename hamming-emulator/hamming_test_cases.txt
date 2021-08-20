@@ -1,0 +1,15 @@
+How many single bit error scenarios must be tested? 13 - one for each bit position
+
+How many double bit error combination scenarios must be tested?
+
+As each bit position if flipped, there are n-1 that can be flipped in addition, but if we eliminate repeated cases, then this is the Sum of digits is 1 to 13 is (12 x 13) / 2 = 78
+
+[https://stattrek.com/online-calculator/combinations-permutations.aspx#combination]
+
+How many multi-bit error combinations beyond SBE and DBE are possible? 8100
+
+8192 values from 00000000000002 to 11111111111112, or 0 to 8191, of which 8191 are modified compared to original value, so 8191 – (13-78) = 8100
+
+[because 0 BE=1, 1 BE=13, 2 BE=78, 3BE=286, 4BE=715, 5BE=1287, 6BE=1716, 7BE=1716, 8BE=1287, 9BE=715, 10BE=286, 11BE=78, 12BE=13, 13BE=1, which is 8192 cases total, but we really only care about 0 BE, 1 BE, and 2BE - others are effectively non-detectable]
+
+C code function to test all SBE and DBE (Double Bit Error) cases for this candidate emulation code can be found here - http://mercury.pr.erau.edu/~siewerts/cec450/code/hamming3/

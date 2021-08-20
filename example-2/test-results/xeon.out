@@ -1,0 +1,53 @@
+Threaded:   Fib(988)					0.000524 secs
+Sequential: Fib(988)					0.000005 secs
+Threaded:   Fib(9972)					0.000521 secs
+Sequential: Fib(9972)					0.000013 secs
+Threaded:   Fib(99975)					0.000653 secs
+Sequential: Fib(99975)					0.000131 secs
+Threaded:   Fib(999992)					0.002414 secs
+Sequential: Fib(999992)					0.001442 secs
+Threaded:   Fib(9999990)				0.001555 secs
+Sequential: Fib(9999990)				0.008940 secs
+Threaded:   Fib(99999981)				0.012903 secs
+Sequential: Fib(99999981)				0.148949 secs
+Threaded:   Fib(999999980)				0.072958 secs
+Sequential: Fib(999999980)				1.148405 secs
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 15
+model		: 2
+model name	: Intel(R) Xeon(TM) CPU 2.40GHz
+stepping	: 7
+cpu MHz		: 2392.083
+cache size	: 512 KB
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 2
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe cid
+bogomips	: 4789.20
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 15
+model		: 2
+model name	: Intel(R) Xeon(TM) CPU 2.40GHz
+stepping	: 7
+cpu MHz		: 2392.083
+cache size	: 512 KB
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 2
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe cid
+bogomips	: 4784.48
+
+Linux dharma 2.6.18.2-34-default #1 SMP Mon Nov 27 11:46:27 UTC 2006 i686 i686 i386 GNU/Linux

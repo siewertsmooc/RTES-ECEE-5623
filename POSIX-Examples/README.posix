@@ -1,0 +1,28 @@
+RT POSIX 1003.1b features:
+
+X	queueing signals
+	priority scheduling (SCHED_FIFO) - in other demos
+X	interval timers
+	clocks (RT and MONOTONIC clock) - in other demos
+X	message queues
+X	semaphores - Linux is lacking priority inheritance by default (must use RT_PREEMPT patch)
+	asynchronous I/O
+	synchronous I/O
+	memory (protection, locking, mapping, shared)
+
+POSIX 1003.1 threads features:
+
+X	basic thread create/destroy
+	condition variable synchronization
+
+
+Examples and which POSIX 1003.1b feature(s) they use:
+
+posix_clock.c:		clock_gettime, clock_getres
+posix_linux_demo.c:	queueing signals, semaphores
+posix_mq.c:`		message queues
+
+
+Examples and which POSIX 1003.1 thread feature(s) they use:
+
+posix_linux_demo.c:	basic thread create/destroy

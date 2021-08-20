@@ -1,0 +1,93 @@
+#
+# Generic top-level makefile for simple commands
+# (c) NeXT, Inc.  1987
+#
+INCLUDE_DIRS = 
+LIB_DIRS = 
+
+CDEFS=
+CFLAGS= -O -g $(INCLUDE_DIRS) $(CDEFS) $(RC_CFLAGS) -F/System/Library/PrivateFrameworks
+LDFLAGS= $(LIB_DIRS)
+IFLAGS= -s -m 755
+LIBS= 
+
+#
+# The name of this program as installed
+#
+PRODUCT=testdigest
+
+#
+# Where it gets installed
+#
+BINDIR=/usr/local/bin
+
+#
+# The list of files that make-up this command.  Used both
+# for compilation and tags.
+#
+HFILES= md5.h
+YFILES=
+MFILES=
+CFILES= testdigest.c md5.c
+SFILES=
+
+#
+# SRCS is used by "tags" command
+# OBJS is used by ld
+#
+SRCS= ${HFILES} ${YFILES} ${CFILES} ${MFILES} ${SFILES}
+OBJS= ${CFILES:.c=.o} ${MFILES:.m=.o} ${YFILES:.y=.o} ${SFILES:.s=.o}
+
+#
+# DERIVED is the list of files that must be made before a make depend
+# is done.  Typically the C file corresponding to yacc source goes here.
+#
+DERIVED=
+GARBAGE= TAGS tags vers.c
+
+#
+# Standard targets
+#
+all:	${PRODUCT}
+
+clean:	ALWAYS
+	-rm -f *.o *.NEW *~
+	-rm -f ${PRODUCT} ${DERIVED} ${GARBAGE}
+	-rm -f Makedep
+
+install: DSTROOT ${BINDIR} all
+	install ${IFLAGS} ${PRODUCT}.NEW ${BINDIR}/${PRODUCT}
+
+#
+# Building PRODUCT
+#
+${PRODUCT}:	${OBJS}
+	$(CC) $(LDFLAGS) $(CFLAGS) -o $@ $(OBJS) $(LIBS)
+#	ld $(LDFLAGS) -o $@ $(OBJS) $(LIBS)
+
+DSTROOT:
+	@if [ -n "${$@}" ]; \
+	then \
+		exit 0; \
+	else \
+		echo Must define $@; \
+		exit 1; \
+	fi
+
+${BINDIR}:
+	mkdirs $@
+
+depend:
+
+tags:	ALWAYS
+	etags ${SRCS}
+	ctags ${SRCS}
+
+ALWAYS:
+
+.c.o:
+	$(CC) -MD $(CFLAGS) -c $<
+	md -u Makedep -d $*.d
+
+-include Makedep
+
