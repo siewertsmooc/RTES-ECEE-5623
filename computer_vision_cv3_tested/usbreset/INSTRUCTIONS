@@ -1,0 +1,20 @@
+Just compile with gcc, gcc usbreset.c -o usbreset
+
+Run as follows:
+
+1) Find device you want to reset with lsusb
+siewerts@siewerts-ThinkPad-T450:~/Downloads/computer-vision/usbreset$ lsusb
+Bus 001 Device 002: ID 8087:8000 Intel Corp. 
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 003 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 002 Device 004: ID 04f2:b449 Chicony Electronics Co., Ltd 
+Bus 002 Device 003: ID 8087:0a2a Intel Corp. 
+Bus 002 Device 002: ID 138a:0017 Validity Sensors, Inc. Fingerprint Reader
+Bus 002 Device 006: ID 046d:0825 Logitech, Inc. Webcam C270
+Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+
+2) Now, assuming it was Bus 2, Device 6, just do:
+sudo ./usbreset /dev/bus/usb/002/006
+
+That's it!
