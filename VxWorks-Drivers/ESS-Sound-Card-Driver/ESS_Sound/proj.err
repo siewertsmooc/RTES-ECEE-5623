@@ -1,0 +1,6 @@
+
+C:\VxProjects\ESS_Sound>cmd.exe /c "C:\Program Files\Starbase\CodeWright\ftee32" cc386 -g -mpentium -ansi -nostdinc -DRW_MULTI_THREAD -D_REENTRANT -fvolatile -nostdlib -fno-builtin -fno-defer-pop -I. -IC:\Tornado\target\h -IC:\VxProjects\ESS_Sound\ -DCPU=PENTIUM -c  C:\VxProjects\ESS_Sound\es1938.cpp  
+C:\\VxProjects\\ESS_Sound\\es1938.cpp: In function `void snd_es1938_interrupt(int)':
+C:\\VxProjects\\ESS_Sound\\es1938.cpp:115: warning: implicit declaration of function `int logMsg(...)'
+
+abnormal program termination

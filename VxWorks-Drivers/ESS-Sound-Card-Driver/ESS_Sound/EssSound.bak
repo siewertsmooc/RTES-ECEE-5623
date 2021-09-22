@@ -1,0 +1,140 @@
+;Codewright Project File (do not remove or modify this line)
+[State]
+SysSetCwd='C:\VxProjects\ESS_Sound'
+SrchSetFlags=0x0410680a
+SrchSetAgainFlags=0x04136806,0
+SrchSetAgainFlags=0x06100003,1
+FileSortMode=0x0
+_StateView='C:\VxProjects\ESS_Sound\VxPCI.h',0,0,648,303,-1,-1,645,7,631,1,6,'',0x00100008,0,80,0,0,''
+_StateView='C:\VxProjects\ESS_Sound\VxSound.cpp',184,88,648,303,-1,-1,1146,14,1123,1,5,'',0x00100008,0,80,0,0,''
+_StateView='C:\VxProjects\ESS_Sound\vx_tone_ap.cpp',88,88,648,303,-1,-1,167,18,145,1,3,'',0x00100008,0,80,0,0,''
+_StateView='C:\VxProjects\ESS_Sound\es1938.cpp',295,167,648,303,-1,-1,144,7,134,1,2,'',0x00100008,0,80,0,0,''
+_StateView='C:\VxProjects\ESS_Sound\VxTypes.h',132,132,648,303,-1,-1,94,2,82,1,1,'',0x00100018,0,80,0,0,''
+_StateView='C:\VxProjects\ESS_Sound\VxPCI.cpp',44,44,648,303,-1,-1,616,17,613,1,4,'',0x00100008,0,80,0,0,''
+_StateBuffer='C:\VxProjects\ESS_Sound\VxPCI.h',0x0400048e,645,7,25,'5 9','',0x0,'',1,72,0,0
+_StateBuffer='C:\VxProjects\ESS_Sound\VxSound.cpp',0x3400048e,1146,14,25,'5 9','',0x0,'',1,72,0,0
+_StateBuffer='C:\VxProjects\ESS_Sound\vx_tone_ap.cpp',0x3c00048e,167,18,25,'5 9','',0x0,'',1,72,0,0
+_StateBuffer='C:\VxProjects\ESS_Sound\es1938.cpp',0x0400048e,144,7,25,'5 9','',0x0,'',1,72,0,0
+_StateBuffer='C:\VxProjects\ESS_Sound\VxTypes.h',0x0400048e,94,2,25,'5 9','',0x0,'',1,72,1,0
+_StateBuffer='C:\VxProjects\ESS_Sound\VxPCI.cpp',0x0c00048e,616,17,25,'5 9','',0x0,'',1,72,0,0
+_StateHistory=FILELIST,'C:\VxProjects\ESS_Sound\vx_tone_ap.h','C:\VxProjects\ESS_Sound\es1938.h','C:\VxProjects\ESS_Sound\VxPCI.h','C:\VxProjects\ESS_Sound\es1938.cpp','C:\VxProjects\ESS_Sound\VxPCI.cpp','C:\VxProjects\ESS_Sound\VxSound.cpp','C:\VxProjects\ESS_Sound\vx_tone_ap.cpp','C:\VxProjects\ESS_Sound\VxSound.h','C:\VxProjects\ESS_Sound\VxTypes.h'
+_StateHistory=SEARCH,'_snd_mask_t','_snd_mask','snd_mask_t','pci_vx_probe_devices','valloc','pciInt','cs4281_interrupt','cs4281_irq','taskInit','task'
+_StateHistory=EDITFILE,'C:\Tornado\target\h\drv\pci\mpc105.h','C:\Tornado\target\h\drv\pci\pciAutoConfigLib.h','C:\Tornado\target\h\drv\pci\pciConfigLib.h','C:\Tornado\target\h\drv\pci\pciConfigShow.h','C:\Tornado\target\h\drv\pci\pciHeaderDefs.h','C:\Tornado\target\h\drv\pci\pciIntLib.h','C:\Tornado\target\h\drv\pci\pciIomapLib.h','C:\Tornado\target\h\drv\pci\pciLocalBus.h','C:\VxProjects\Audio\AudioInit_orig.c','C:\VxProjects\ESS_Sound\vx_tone_ap.h'
+_StateHistory=FGREP,'_snd_mask_t','snd_mask_t'
+_StateHistory=GREPSCOPE,'*.*'
+_StateHistory=FGREPDIR,'C:\VxProjects\Audio'
+_StateHistory=DOCUMENTVISIT,'615         17          C:\VxProjects\ESS_Sound\VxPCI.cpp','99          32          C:\VxProjects\ESS_Sound\vx_tone_ap.cpp','615         17          C:\VxProjects\ESS_Sound\VxPCI.cpp','1146        14          C:\VxProjects\ESS_Sound\VxSound.cpp','112         1           C:\VxProjects\ESS_Sound\vx_tone_ap.cpp','616         17          C:\VxProjects\ESS_Sound\VxPCI.cpp','167         18          C:\VxProjects\ESS_Sound\vx_tone_ap.cpp','879         5           C:\VxProjects\ESS_Sound\es1938.cpp','1           1           C:\VxProjects\ESS_Sound\VxTypes.h','144         7           C:\VxProjects\ESS_Sound\es1938.cpp'
+_StateDocumentVisit=10
+
+[ProjInit]
+ConfigSetExtMode=2
+ProjSetConfigFlags=0x04110940
+
+[Editor]
+_RestoreSysFlags=0x43097fca, 0xfffffffc, 0
+FilterProjDeleteList 
+FilterProjAdd='Source Files','*.c;*.cs;*.cpp;*.cxx;*.hxx;*.prg;*.pas;*.asm;*.bas;*.sc;*.jav*;*.htm*;*.shtm*',-1
+FilterProjAdd='Header Files','*.h;*.hpp;*.inc',-1
+FilterProjAdd='Resources','*.rc;*.bmp;*.ico;*.cur;*.dlg',-1
+FilterProjAdd='Other Files','*.*',-1
+ErrinfoAddRegex='gccTornado', '\1\2\3', (c:.*):(.*):(.*)
+ErrinfoAddRegex='Microsoft C#', '\1\2\3', ^(.*)\((.*),.*\): .*:(.*)$
+ErrinfoAddRegex='Microsoft', '\1\2\4', ^([^ \t\n(].+)[ \t(]([0-9]+)[ \t):]+(error|fatal error|warning|syntax error)(.*)$
+VCSProject=''
+VCSProjectPath=''
+VCSProjectLocalPath=''
+ScrapSetCount=1
+ClipboardSetCount=1
+ClipboardEnableSepStr=1
+ClipboardSetSepStr='\r\n',0
+ClipboardEnableTermStr=1
+ClipboardSetTermStr='\r\n',0
+
+[Tools]
+ToolDeleteList 
+ToolAddCmd='$_custom_tool_$_1','API Database Editor',1342177312,'cwtedit.exe'
+ToolAddCmd='$_custom_tool_$_2','Paint',1342177312,'pbrush.exe'
+
+[Compiler]
+TagSetCmd='"${HOME}${WTAGS}" -oc -d -t"${TAGFILE}.tag" -p"${TAGFILE}.ptg"',0x8000060
+BrowseSetFile='C:\Program Files\Starbase\CodeWright\tagfile.ptg'
+TagSetFile='C:\Program Files\Starbase\CodeWright\tagfile.tag'
+CompilerAddCmdEx='Default Compiler Settings','',1073741904,'',1073741904,'',144,'',144,'',144,'',144,'',0,'',0,'','','','',''
+CompilerAddResponse='Default Compiler Settings',
+CompilerAddCmdEx='$_cw_proj_hash_$','',1073741824,'',0,'${FTEE} nmake',176,'${FTEE} nmake',176,'${FTEE} nmake',176,'${FTEE} nmake',176,'',0,'',0,'_ErrorInfoParser gccTornado','','','proj.err','%x'
+CompilerAddResponse='$_cw_proj_hash_$',
+CompilerAddCmdEx='Microsoft C(NT-i386)','${FTEE} cc386 -g -mpentium -ansi -nostdinc -DRW_MULTI_THREAD -D_REENTRANT -fvolatile -nostdlib -fno-builtin -fno-defer-pop -I. -IC:\Tornado\target\h -I%v%p -DCPU=PENTIUM -c  %v%p%r%e',1073741904,'${FTEE} cc386 -g -mpentium -ansi -nostdinc -DRW_MULTI_THREAD -D_REENTRANT -fvolatile -nostdlib -fn  %r%e',1073741904,'',144,'',144,'',144,'',144,'',0,'',0,'_MicrosoftErrorInfo','','','',''
+CompilerAddResponse='Microsoft C(NT-i386)',
+CompilerNewExt=.htm
+CompilerNewExt=.v
+CompilerNewExt=.awk
+CompilerNewExt=.bas
+CompilerAssign='Microsoft C(NT-i386)','.c'
+CompilerNewExt=.adb
+CompilerNewExt=.cfml
+CompilerNewExt=.jsp
+CompilerNewExt=.pl
+CompilerNewExt=.vhd
+CompilerNewExt=.pas
+CompilerNewExt=.tk
+CompilerNewExt=.asp
+CompilerNewExt=.rul
+CompilerNewExt=.cob
+CompilerNewExt=.js
+CompilerNewExt=.php
+CompilerNewExt=.rc
+CompilerNewExt=.tcl
+CompilerNewExt=.ini
+CompilerNewExt=.cs
+CompilerNewExt=.bat
+CompilerNewExt=.html
+CompilerAssign='Default Compiler Settings','.*'
+CompilerAssign='Microsoft C(NT-i386)','.cpp'
+CompilerNewExt=.txt
+CompilerNewExt=.nrx
+CompilerNewExt=.java
+CompilerNewExt=.sqlj
+CompilerNewExt=.xml
+
+[VersionControl:PVCS]
+VCSSetCmd=VCS_CHECKIN_ID,'put -n -T@"%Q" -M@"%Q" "%b%e"',0x8000040
+VCSSetCmd=VCS_CHECKINLOCK_ID,'put -n -T@"%Q" -M@"%Q" -l "%b%e"',0x8000040
+VCSSetCmd=VCS_CHECKOUT_ID,'get -y "%b%e"',0x8000040
+VCSSetCmd=VCS_CHECKOUTLOCK_ID,'get -y -l "%b%e"',0x8000040
+VCSSetCmd=VCS_CHECKLOCK_ID,'vcs -y -l "%b%e"',0x8000040
+VCSSetCmd=VCS_CHECKUNLOCK_ID,'vcs -y -u "%b%e"',0x8000040
+VCSSetCmd=VCS_CHECKLABEL_ID,'vcs -y -v"${VCSLABEL}" "%b%e"',0x8000040
+VCSSetCmd=VCS_CHECKLOG_ID,'vlog "%b%e"',0x8000040
+VCSSetCmd=VCS_CHECKPROP_ID,'vlog -b "%b%e"',0x8000040
+VCSSetCmd=VCS_CHECKDIFF_ID,'vdiff -r "%b%e"',0x8000040
+VCSSetCmd=VCS_CHECKMENU_ID,'pvcsvmwn',0x8000000
+VCSSetCmd=VCS_ADD_ID,'vcs -i -t@"%Q" "%b%e"',0x8000040
+VCSSetCmd=VCS_REMOVE_ID,'del /f "%b%{??v|___}e"',0x8000040
+
+[Project]
+ConfigSetLinkDBFilename='C:\Program Files\Starbase\CodeWright\cwright.ldb'
+ConfigSetMarkDBFilename='C:\Program Files\Starbase\CodeWright\cwright.mrk'
+ConfigSetSymbolDBFilename='C:\VxProjects\ESS_Sound\EssSound.sbl'
+EditSetPath=''
+
+[Files]
+.\VxPCI.h
+.\VxSound.h
+.\VxTypes.h
+.\es1938.h
+.\es1938.cpp
+.\VxPCI.cpp
+.\VxSound.cpp
+..\..\Tornado\target\h\drv\pci\iPiix4Pci.h
+..\..\Tornado\target\h\drv\pci\mpc105.h
+..\..\Tornado\target\h\drv\pci\pciAutoConfigLib.h
+..\..\Tornado\target\h\drv\pci\pciConfigLib.h
+..\..\Tornado\target\h\drv\pci\pciConfigShow.h
+..\..\Tornado\target\h\drv\pci\pciHeaderDefs.h
+..\..\Tornado\target\h\drv\pci\pciIntLib.h
+..\..\Tornado\target\h\drv\pci\pciIomapLib.h
+..\..\Tornado\target\h\drv\pci\pciLocalBus.h
+.\vx_tone_ap.cpp
+.\vx_tone_ap.h
+.\vxLinSupport.cpp
+

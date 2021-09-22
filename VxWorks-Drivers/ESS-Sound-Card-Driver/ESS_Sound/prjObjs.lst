@@ -1,0 +1,5 @@
+es1938.o
+VxPCI.o
+VxSound.o
+vx_tone_ap.o
+vxLinSupport.o

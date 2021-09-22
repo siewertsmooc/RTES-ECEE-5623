@@ -1,0 +1,211 @@
+Document file - DO NOT EDIT
+
+<BEGIN> BUILD_PENTIUMgnu_MACRO_AR
+ar386
+<END>
+
+<BEGIN> BUILD_PENTIUMgnu_MACRO_ARCHIVE
+$(PRJ_DIR)/PENTIUMgnu/ESS_Sound.a
+<END>
+
+<BEGIN> BUILD_PENTIUMgnu_MACRO_AS
+cc386
+<END>
+
+<BEGIN> BUILD_PENTIUMgnu_MACRO_CC
+cc386
+<END>
+
+<BEGIN> BUILD_PENTIUMgnu_MACRO_CFLAGS
+-g \
+	-mpentium \
+	-ansi \
+	-nostdinc \
+	-DRW_MULTI_THREAD \
+	-D_REENTRANT \
+	-fvolatile \
+	-nostdlib \
+	-fno-builtin \
+	-fno-defer-pop \
+	-I. \
+	-I$(WIND_BASE)/target/h \
+	-DCPU=PENTIUM
+<END>
+
+<BEGIN> BUILD_PENTIUMgnu_MACRO_CFLAGS_AS
+-g \
+	-mpentium \
+	-ansi \
+	-nostdinc \
+	-fvolatile \
+	-nostdlib \
+	-fno-builtin \
+	-fno-defer-pop \
+	-P \
+	-x \
+	assembler-with-cpp \
+	-I. \
+	-I$(WIND_BASE)/target/h \
+	-DCPU=PENTIUM
+<END>
+
+<BEGIN> BUILD_PENTIUMgnu_MACRO_CPP
+cc386 -E -P -xc
+<END>
+
+<BEGIN> BUILD_PENTIUMgnu_MACRO_LD
+ld386
+<END>
+
+<BEGIN> BUILD_PENTIUMgnu_MACRO_LDFLAGS
+-X -N
+<END>
+
+<BEGIN> BUILD_PENTIUMgnu_MACRO_LD_PARTIAL_FLAGS
+-X -r
+<END>
+
+<BEGIN> BUILD_PENTIUMgnu_MACRO_NM
+nm386 -g
+<END>
+
+<BEGIN> BUILD_PENTIUMgnu_MACRO_OPTION_DEFINE_MACRO
+-D
+<END>
+
+<BEGIN> BUILD_PENTIUMgnu_MACRO_OPTION_INCLUDE_DIR
+-I
+<END>
+
+<BEGIN> BUILD_PENTIUMgnu_MACRO_SIZE
+size386
+<END>
+
+<BEGIN> BUILD_PENTIUMgnu_RO_DEPEND_PATH
+{$(WIND_BASE)/target/h/} {$(WIND_BASE)/target/src/} {$(WIND_BASE)/target/config/}
+<END>
+
+<BEGIN> BUILD_PENTIUMgnu_TC
+::tc_PENTIUMgnu
+<END>
+
+<BEGIN> BUILD__CURRENT
+PENTIUMgnu
+<END>
+
+<BEGIN> BUILD__LIST
+PENTIUMgnu
+<END>
+
+<BEGIN> CORE_INFO_TYPE
+::prj_vxApp
+<END>
+
+<BEGIN> CORE_INFO_VERSION
+2.0
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/VxPCI.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/VxPCI.cpp_dependencies
+$(PRJ_DIR)/VxTypes.h \
+	$(PRJ_DIR)/VxPCI.h \
+	$(PRJ_DIR)/VxSound.h \
+	$(PRJ_DIR)/es1938.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/VxPCI.cpp_objects
+VxPCI.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/VxPCI.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/VxSound.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/VxSound.cpp_dependencies
+$(PRJ_DIR)/VxTypes.h \
+	$(PRJ_DIR)/VxPCI.h \
+	$(PRJ_DIR)/VxSound.h \
+	$(PRJ_DIR)/es1938.h \
+	$(PRJ_DIR)/vx_tone_ap.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/VxSound.cpp_objects
+VxSound.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/VxSound.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/es1938.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/es1938.cpp_dependencies
+$(PRJ_DIR)/VxTypes.h \
+	$(PRJ_DIR)/VxSound.h \
+	$(PRJ_DIR)/VxPCI.h \
+	$(PRJ_DIR)/es1938.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/es1938.cpp_objects
+es1938.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/es1938.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/vxLinSupport.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/vxLinSupport.cpp_dependencies
+$(PRJ_DIR)/VxTypes.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/vxLinSupport.cpp_objects
+vxLinSupport.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/vxLinSupport.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/vx_tone_ap.cpp_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/vx_tone_ap.cpp_dependencies
+$(PRJ_DIR)/VxTypes.h \
+	$(PRJ_DIR)/VxPCI.h \
+	$(PRJ_DIR)/VxSound.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/vx_tone_ap.cpp_objects
+vx_tone_ap.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/vx_tone_ap.cpp_tool
+C/C++ compiler
+<END>
+
+<BEGIN> PROJECT_FILES
+$(PRJ_DIR)/es1938.cpp \
+	$(PRJ_DIR)/VxPCI.cpp \
+	$(PRJ_DIR)/VxSound.cpp \
+	$(PRJ_DIR)/vx_tone_ap.cpp \
+	$(PRJ_DIR)/vxLinSupport.cpp
+<END>
+
+<BEGIN> userComments
+<Enter description here>
+<END>
+
