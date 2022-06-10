@@ -17,7 +17,7 @@
 #define NSEC_PER_USEC (1000)
 #define ERROR (-1)
 #define OK (0)
-#define TEST_SECONDS (0)
+#define TEST_SECONDS (3)
 #define TEST_NANOSECONDS (NSEC_PER_MSEC * 10)
 
 void end_delay_test(void);
@@ -134,13 +134,18 @@ static struct timespec rtclk_start_time = {0, 0};
 static struct timespec rtclk_stop_time = {0, 0};
 static struct timespec delay_error = {0, 0};
 
+
+/*
+ * Here we use the CLOCK_MONOTONIC to reduce the possibility
+ * of timing errors from Network Time Protocol syncs.
+ */
 //#define MY_CLOCK CLOCK_REALTIME
-//#define MY_CLOCK CLOCK_MONOTONIC
-#define MY_CLOCK CLOCK_MONOTONIC_RAW
+#define MY_CLOCK CLOCK_MONOTONIC
+//#define MY_CLOCK CLOCK_MONOTONIC_RAW
 //#define MY_CLOCK CLOCK_REALTIME_COARSE
 //#define MY_CLOCK CLOCK_MONOTONIC_COARSE
 
-#define TEST_ITERATIONS (100)
+#define TEST_ITERATIONS (5)
 
 void *delay_test(void *threadID)
 {
@@ -211,7 +216,7 @@ void end_delay_test(void)
   printf("MY_CLOCK clock DT seconds = %ld, msec=%ld, usec=%ld, nsec=%ld, sec=%6.9lf\n", 
          rtclk_dt.tv_sec, rtclk_dt.tv_nsec/1000000, rtclk_dt.tv_nsec/1000, rtclk_dt.tv_nsec, real_dt);
 
-#if 0
+#if 1
   printf("Requested sleep seconds = %ld, nanoseconds = %ld\n", 
          sleep_requested.tv_sec, sleep_requested.tv_nsec);
 
@@ -232,6 +237,13 @@ void main(void)
    print_scheduler();
 
 #ifdef RUN_RT_THREAD
+
+   /* Here we set the scheduling attributes on the main_sched_attr variable.
+    * This allows us to create threads with the same scheduling attributes
+    * as the main thread. We choose SCHED_FIFO so that we can get as close
+    * to RT scheduling performance as possible, rather than needing to yield
+    * based on traditional scheduling policies that are concerned with fairness.
+    * */
    pthread_attr_init(&main_sched_attr);
    pthread_attr_setinheritsched(&main_sched_attr, PTHREAD_EXPLICIT_SCHED);
    pthread_attr_setschedpolicy(&main_sched_attr, SCHED_FIFO);
