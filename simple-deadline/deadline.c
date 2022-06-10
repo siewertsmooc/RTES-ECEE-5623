@@ -12,6 +12,10 @@
 #include <unistd.h>
 #include <sys/syscall.h>
 
+#define SCHED_POLICY SCHED_DEADLINE
+#define MY_CLOCK CLOCK_MONOTONIC
+#define TEST_ITERATIONS (100)
+
 struct sched_attr 
 {
     uint32_t size;
@@ -24,6 +28,8 @@ struct sched_attr
     uint64_t sched_period;
 };
 
+static struct timespec rtclk_time = {0, 0};
+
 int sched_setattr(pid_t pid, const struct sched_attr *attr, unsigned int flags) 
 {
     return syscall(__NR_sched_setattr, pid, attr, flags);
@@ -34,7 +40,7 @@ void * threadA(void *p)
     struct sched_attr attr = 
     {
         .size = sizeof (attr),
-        .sched_policy = SCHED_DEADLINE,
+        .sched_policy = SCHED_POLICY,
         .sched_runtime = 10 * 1000 * 1000,
         .sched_period = 2 * 1000 * 1000 * 1000,
         .sched_deadline = 11 * 1000 * 1000
@@ -42,9 +48,10 @@ void * threadA(void *p)
 
     sched_setattr(0, &attr, 0);
 
-    for (;;) 
+    for (int i = 0; i < TEST_ITERATIONS; i++) 
     {
-        printf("Time is - please fill this in using POSIX clock_gettime\n");
+        clock_gettime(MY_CLOCK, &rtclk_time);
+        printf("\n\nPOSIX Clock demo using system RT clock with resolution:\n\t%ld secs, %ld microsecs, %ld nanosecs\n", rtclk_time.tv_sec, (rtclk_time.tv_nsec/1000), rtclk_time.tv_nsec);
         fflush(0);
         sched_yield();
     };
