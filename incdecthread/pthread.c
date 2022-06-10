@@ -7,7 +7,7 @@
 #include <signal.h>
 #include <semaphore.h>
 
-#define COUNT  1000
+#define COUNT  100
 #define SCHED_POLICY SCHED_FIFO
 
 typedef struct
@@ -41,8 +41,6 @@ void *incThread(void *threadp)
         gsum=gsum+i;
         printf("Increment thread idx=%d, gsum=%d\n", threadParams->threadIdx, gsum);
     }
-
-    sem_post (&(startIOWorker[i]));
 }
 
 
@@ -58,8 +56,6 @@ void *decThread(void *threadp)
         gsum=gsum-i;
         printf("Decrement thread idx=%d, gsum=%d\n", threadParams->threadIdx, gsum);
     }
-
-    sem_post (&(startIOWorker[i]));
 }
 
 void print_scheduler(void)
@@ -88,9 +84,6 @@ void setSchedPolicy(void)
 {
    int rc, scope;
 
-   // Set up scheduling
-   print_scheduler();
-
    pthread_attr_init(&rt_sched_attr);
    pthread_attr_setinheritsched(&rt_sched_attr, PTHREAD_EXPLICIT_SCHED);
    pthread_attr_setschedpolicy(&rt_sched_attr, SCHED_POLICY);
@@ -118,32 +111,34 @@ void setSchedPolicy(void)
 
 int main (int argc, char *argv[])
 {
-   int rc;
-   int i=0;
+    int rc;
+    int i=0;
 
-   setSchedPolicy();
+    setSchedPolicy();
 
-   threadParams[i].threadIdx=i;
+    threadParams[i].threadIdx=i;
 
-   sem_init (&(startIOWorker[i]), 0, 0);
-   pthread_create(&threads[i],   // pointer to thread descriptor
-                  &rt_sched_attr,     // use default attributes
-                  incThread, // thread function entry point
-                  (void *)&(threadParams[i]) // parameters to pass in
-                 );
+    sem_init (&(startIOWorker[i]), 0, 0);
+    pthread_create(&threads[i],   // pointer to thread descriptor
+                    &rt_sched_attr,     // use default attributes
+                    incThread, // thread function entry point
+                    (void *)&(threadParams[i]) // parameters to pass in
+                    );
+    sem_post (&(startIOWorker[i]));
     sem_destroy (&(startIOWorker[i]));
 
 
-   i++;
-   threadParams[i].threadIdx=i;
-   sem_init (&(startIOWorker[i]), 0, 0);
-   pthread_create(&threads[i], &rt_sched_attr, decThread, (void *)&(threadParams[i]));
+    i++;
+    threadParams[i].threadIdx=i;
+    sem_init (&(startIOWorker[i]), 0, 0);
+    pthread_create(&threads[i], &rt_sched_attr, decThread, (void *)&(threadParams[i]));
 
+    sem_post (&(startIOWorker[i]));
     sem_destroy (&(startIOWorker[i]));
 
 
-   for(i=0; i<2; i++)
-     pthread_join(threads[i], NULL);
+    for(i=0; i<2; i++)
+        pthread_join(threads[i], NULL);
 
-   printf("TEST COMPLETE\n");
+    printf("TEST COMPLETE\n");
 }
