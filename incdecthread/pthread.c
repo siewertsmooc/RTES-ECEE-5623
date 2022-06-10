@@ -89,7 +89,6 @@ void setSchedPolicy(void)
    int rc, scope;
 
    // Set up scheduling
-   //
    print_scheduler();
 
    pthread_attr_init(&rt_sched_attr);
@@ -100,6 +99,20 @@ void setSchedPolicy(void)
    rt_min_prio = sched_get_priority_min(SCHED_POLICY);
 
    rt_param.sched_priority = rt_max_prio;
+
+   rc=sched_setscheduler(getpid(), SCHED_POLICY, &rt_param);
+
+   if (rc)
+   {
+       printf("ERROR: sched_setscheduler rc is %d\n", rc);
+       perror("sched_setscheduler");
+   }
+   else
+   {
+       printf("SCHED_POLICY SET: sched_setscheduler rc is %d\n", rc);
+   }
+
+   print_scheduler();
 }
 
 
