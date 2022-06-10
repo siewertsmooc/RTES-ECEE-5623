@@ -1,3 +1,8 @@
+/*
+This code has been adapated from Dr. Sam Siewart's example code, which is accessibly
+via the following github link: https://github.com/siewertsmooc/RTES-ECEE-5623
+*/
+
 #include <sys/time.h>
 #include <sys/types.h>
 #include <stdio.h>
