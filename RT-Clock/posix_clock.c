@@ -1,7 +1,11 @@
 /****************************************************************************/
 /* Function: nanosleep and POSIX 1003.1b RT clock demonstration             */
 /*                                                                          */
-/* Sam Siewert - 02/05/2011                                                 */
+/* Sam Siewert - 02/05/2011
+/*
+This code has been adapated from Dr. Sam Siewart's example code, which is accessibly
+via the following github link: https://github.com/siewertsmooc/RTES-ECEE-5623
+*/                                               */
 /*                                                                          */
 /****************************************************************************/
 

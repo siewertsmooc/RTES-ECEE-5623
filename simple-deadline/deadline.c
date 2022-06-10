@@ -1,6 +1,11 @@
 // https://www.i-programmer.info/programming/cc/13002-applying-c-deadline-scheduling.html?start=1
 //
 
+/*
+This code has been adapated from Dr. Sam Siewart's example code, which is accessibly
+via the following github link: https://github.com/siewertsmooc/RTES-ECEE-5623
+*/
+
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
