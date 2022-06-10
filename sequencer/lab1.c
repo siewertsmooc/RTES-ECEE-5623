@@ -18,6 +18,9 @@
 // timing.  They should be replaced with an in-memory event logger or at least
 // calls to syslog.
 
+// This code has been adapted from the original version. The original author and source
+// code can be found at: https://github.com/siewertsmooc/RTES-ECEE-5623
+
 // This is necessary for CPU affinity macros in Linux
 #define _GNU_SOURCE
 
@@ -30,6 +33,7 @@
 #include <time.h>
 #include <semaphore.h>
 
+#include <syslog.h>
 #include <sys/sysinfo.h>
 
 #define USEC_PER_MSEC (1000)
@@ -107,6 +111,7 @@ void *fib10(void *threadp)
 
        cpucore=sched_getcpu();
        printf("F10 start %d @ %lf on core %d\n", release, (event_time=getTimeMsec() - start_time), cpucore);
+       syslog(LOG_CRIT, "SYSLOG_RT_TRC: Fib10 start time in milliseconds: %ld\n", getTimeMsec());
 
        do
        {
@@ -115,6 +120,7 @@ void *fib10(void *threadp)
        }
        while(limit < required_test_cycles);
 
+      syslog(LOG_CRIT, "SYSLOG_RT_TRC: Fib10 end time in milliseconds: %ld\n", getTimeMsec());
        printf("F10 complete %d @ %lf, %d loops\n", release, (event_time=getTimeMsec() - start_time), limit);
        limit=0;
    }
@@ -150,6 +156,7 @@ void *fib20(void *threadp)
 
         cpucore=sched_getcpu();
         printf("F20 start %d @ %lf on core %d\n", release, (event_time=getTimeMsec() - start_time), cpucore);
+        syslog(LOG_CRIT, "SYSLOG_RT_TRC: Fib20 start time in milliseconds: %ld\n", getTimeMsec());
 
         do
         {
@@ -158,6 +165,7 @@ void *fib20(void *threadp)
         }
         while(limit < required_test_cycles);
 
+        syslog(LOG_CRIT, "SYSLOG_RT_TRC: Fib20 end time in milliseconds: %ld\n", getTimeMsec());
         printf("F20 complete %d @ %lf, %d loops\n", release, (event_time=getTimeMsec() - start_time), limit);
         limit=0;
    }
@@ -209,6 +217,7 @@ void *Sequencer(void *threadp)
   printf("Starting Sequencer: [S1, T1=20, C1=10], [S2, T2=50, C2=20], U=0.9, LCM=100\n");
   start_time=getTimeMsec();
 
+  syslog(LOG_CRIT, "SYSLOG_RT_TRC: Sequencer start time in milliseconds: %ld\n", start_time);
 
   // Sequencing loop for LCM phasing of S1, S2
   do
@@ -241,21 +250,27 @@ void *Sequencer(void *threadp)
 
       // Simulate the C.I. for S1 and S2 and timestamp in log
       printf("\n**** CI t=%lf\n", event_time=getTimeMsec() - start_time);
-      sem_post(&semF10); sem_post(&semF20);
+      sem_post(&semF10);
+      sem_post(&semF20);
 
-      usleep(20*USEC_PER_MSEC); sem_post(&semF10);
+      usleep(20*USEC_PER_MSEC);
+      sem_post(&semF10);
       printf("t=%lf\n", event_time=getTimeMsec() - start_time);
 
-      usleep(20*USEC_PER_MSEC); sem_post(&semF10);
+      usleep(20*USEC_PER_MSEC);
+      sem_post(&semF10);
       printf("t=%lf\n", event_time=getTimeMsec() - start_time);
 
-      usleep(10*USEC_PER_MSEC); sem_post(&semF20);
+      usleep(10*USEC_PER_MSEC);
+      sem_post(&semF20);
       printf("t=%lf\n", event_time=getTimeMsec() - start_time);
 
-      usleep(10*USEC_PER_MSEC); sem_post(&semF10);
+      usleep(10*USEC_PER_MSEC);
+      sem_post(&semF10);
       printf("t=%lf\n", event_time=getTimeMsec() - start_time);
 
-      usleep(20*USEC_PER_MSEC); sem_post(&semF10);
+      usleep(20*USEC_PER_MSEC);
+      sem_post(&semF10);
       printf("t=%lf\n", event_time=getTimeMsec() - start_time);
 
       usleep(20*USEC_PER_MSEC);
