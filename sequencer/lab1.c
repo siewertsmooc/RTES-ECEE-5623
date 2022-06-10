@@ -111,7 +111,7 @@ void *fib10(void *threadp)
 
        cpucore=sched_getcpu();
        printf("F10 start %d @ %lf on core %d\n", release, (event_time=getTimeMsec() - start_time), cpucore);
-       syslog(LOG_CRIT, "SYSLOG_RT_TRC: Fib10 start time in milliseconds: %ld\n", (event_time=getTimeMsec() - start_time));
+       syslog(LOG_CRIT, "SYSLOG_RT_TRC: Fib10 start time in milliseconds: %lf\n", (event_time=getTimeMsec() - start_time));
 
        do
        {
@@ -120,7 +120,7 @@ void *fib10(void *threadp)
        }
        while(limit < required_test_cycles);
 
-      syslog(LOG_CRIT, "SYSLOG_RT_TRC: Fib10 end time in milliseconds: %ld\n", (event_time=getTimeMsec() - start_time));
+      syslog(LOG_CRIT, "SYSLOG_RT_TRC: Fib10 end time in milliseconds: %lf\n", (event_time=getTimeMsec() - start_time));
        printf("F10 complete %d @ %lf, %d loops\n", release, (event_time=getTimeMsec() - start_time), limit);
        limit=0;
    }
@@ -156,7 +156,7 @@ void *fib20(void *threadp)
 
         cpucore=sched_getcpu();
         printf("F20 start %d @ %lf on core %d\n", release, (event_time=getTimeMsec() - start_time), cpucore);
-        syslog(LOG_CRIT, "SYSLOG_RT_TRC: Fib20 start time in milliseconds: %ld\n", (event_time=getTimeMsec() - start_time));
+        syslog(LOG_CRIT, "SYSLOG_RT_TRC: Fib20 start time in milliseconds: %lf\n", (event_time=getTimeMsec() - start_time));
 
         do
         {
@@ -165,7 +165,7 @@ void *fib20(void *threadp)
         }
         while(limit < required_test_cycles);
 
-        syslog(LOG_CRIT, "SYSLOG_RT_TRC: Fib20 end time in milliseconds: %ld\n", (event_time=getTimeMsec() - start_time));
+        syslog(LOG_CRIT, "SYSLOG_RT_TRC: Fib20 end time in milliseconds: %lf\n", (event_time=getTimeMsec() - start_time));
         printf("F20 complete %d @ %lf, %d loops\n", release, (event_time=getTimeMsec() - start_time), limit);
         limit=0;
    }
@@ -217,7 +217,7 @@ void *Sequencer(void *threadp)
   printf("Starting Sequencer: [S1, T1=20, C1=10], [S2, T2=50, C2=20], U=0.9, LCM=100\n");
   start_time=getTimeMsec();
 
-  syslog(LOG_CRIT, "SYSLOG_RT_TRC: Sequencer start time in milliseconds: %ld\n", start_time);
+  syslog(LOG_CRIT, "SYSLOG_RT_TRC: Sequencer start time in milliseconds: %lf\n", start_time);
 
   // Sequencing loop for LCM phasing of S1, S2
   do
