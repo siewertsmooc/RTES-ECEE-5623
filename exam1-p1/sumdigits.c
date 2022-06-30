@@ -68,10 +68,34 @@ void *sumThread(void *threadp)
 
 int main (int argc, char *argv[])
 {
-   int rc, idx;
+   int rc, idx, cpuidx;
    int testsum = 0;
+   cpu_set_t cpuset;
 
    mainpid=getpid();
+
+   CPU_ZERO(&cpuset);
+   cpuidx=(3);
+    CPU_SET(cpuidx, &cpuset);
+    pthread_attr_setaffinity_np(&fifo_sched_attr, sizeof(cpu_set_t), &cpuset);
+
+   // get affinity set for main thread
+   mainthread = pthread_self();
+
+   // Check the affinity mask assigned to the thread 
+   rc = pthread_getaffinity_np(mainthread, sizeof(cpu_set_t), &cpuset);
+   if (rc != 0)
+       perror("pthread_getaffinity_np");
+   else
+   {
+       printf("main thread running on CPU=%d, CPUs =", sched_getcpu());
+
+       for (j = 0; j < CPU_SETSIZE; j++)
+           if (CPU_ISSET(j, &cpuset))
+               printf(" %d", j);
+
+       printf("\n");
+   }
 
    rt_max_prio = sched_get_priority_max(SCHED_FIFO);
    rt_min_prio = sched_get_priority_min(SCHED_FIFO);
