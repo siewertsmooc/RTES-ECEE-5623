@@ -69,7 +69,7 @@ void *sumThread(void *threadp)
 int main (int argc, char *argv[])
 {
    int rc, idx;
-   int testSum = 0;
+   int testsum = 0;
 
    mainpid=getpid();
 
@@ -125,7 +125,7 @@ int main (int argc, char *argv[])
           gsum[0], gsum[1], gsum[2], (gsum[0]+gsum[1]+gsum[2]));
 
    // Verfiy with single thread version and (n*(n+1))/2
-   for(i=1; i<(3*COUNT); i++)
+   for(int i=1; i<(3*COUNT); i++)
        testsum = testsum + i;
 
    printf("TEST COMPLETE: testsum=%d, [n[n+1]]/2=%d\n", testsum, ((3*COUNT-1)*(3*COUNT))/2);
