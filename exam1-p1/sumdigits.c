@@ -74,29 +74,6 @@ int main (int argc, char *argv[])
 
    mainpid=getpid();
 
-   CPU_ZERO(&cpuset);
-   cpuidx=(3);
-    CPU_SET(cpuidx, &cpuset);
-    pthread_attr_setaffinity_np(&fifo_sched_attr, sizeof(cpu_set_t), &cpuset);
-
-   // get affinity set for main thread
-   mainthread = pthread_self();
-
-   // Check the affinity mask assigned to the thread 
-   rc = pthread_getaffinity_np(mainthread, sizeof(cpu_set_t), &cpuset);
-   if (rc != 0)
-       perror("pthread_getaffinity_np");
-   else
-   {
-       printf("main thread running on CPU=%d, CPUs =", sched_getcpu());
-
-       for (j = 0; j < CPU_SETSIZE; j++)
-           if (CPU_ISSET(j, &cpuset))
-               printf(" %d", j);
-
-       printf("\n");
-   }
-
    rt_max_prio = sched_get_priority_max(SCHED_FIFO);
    rt_min_prio = sched_get_priority_min(SCHED_FIFO);
 
@@ -116,6 +93,11 @@ int main (int argc, char *argv[])
        rc=pthread_attr_init(&rt_sched_attr[idx]);
        rc=pthread_attr_setinheritsched(&rt_sched_attr[idx], PTHREAD_EXPLICIT_SCHED);
        rc=pthread_attr_setschedpolicy(&rt_sched_attr[idx], SCHED_FIFO);
+
+        CPU_ZERO(&cpuset);
+        cpuidx=(3);
+        CPU_SET(cpuidx, &cpuset);
+        pthread_attr_setaffinity_np(&rt_sched_attr[idx], sizeof(cpu_set_t), &cpuset);
 
        // Adjust the priority based on which thread is running
        rt_param[idx].sched_priority=rt_max_prio-idx-1;
