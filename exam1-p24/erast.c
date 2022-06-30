@@ -39,10 +39,7 @@ struct sched_param fifo_param;
 
 
 #define THREAD_GRID_INVALIDATE
-//#define SEQUENTIAL_INVALIDATE
-//#define SEQUENTIAL_GRID_INVALIDATE
 
-//unsigned char isprime[(MAX/(CODE_LENGTH))+1];
 unsigned char *isprime;
 sem_t updateIsPrime[NUM_LOCKS];
 
@@ -65,29 +62,6 @@ void print_scheduler(void)
             printf("Pthread policy is UNKNOWN\n");
     }
 }
-
-
-void set_scheduler(void)
-{
-    int max_prio, scope, rc;
-
-    print_scheduler();
-
-    pthread_attr_init(&fifo_sched_attr);
-    pthread_attr_setinheritsched(&fifo_sched_attr, PTHREAD_EXPLICIT_SCHED);
-    pthread_attr_setschedpolicy(&fifo_sched_attr, SCHED_POLICY);
-
-    max_prio=sched_get_priority_min(SCHED_POLICY);
-    fifo_param.sched_priority=max_prio;    
-
-    if((rc=sched_setscheduler(getpid(), SCHED_POLICY, &fifo_param)) < 0)
-        perror("sched_setscheduler");
-
-    pthread_attr_setschedparam(&fifo_sched_attr, &fifo_param);
-
-    print_scheduler();
-}
-
 
 int chk_isprime(unsigned long long int i)
 {
@@ -170,7 +144,6 @@ int main(void)
         printf("max uint = %u\n", (0xFFFFFFFF));
         printf("max long long = %llu\n", (0xFFFFFFFFFFFFFFFFULL));
 
-        set_scheduler();
         if(!((isprime=malloc((size_t)(MAX/(CODE_LENGTH))+1)) > 0))
         {
             perror("malloc");
