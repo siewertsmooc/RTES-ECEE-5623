@@ -2,10 +2,11 @@
 Code adapted from Dr. Sam Siewarts Example Code
 https://github.com/siewertsmooc/RTES-ECEE-5623
 */
-
+#define _GNU_SOURCE
 #include <pthread.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <sched.h>
 
 #define COUNT  100
 #define NUM_THREADS 3
