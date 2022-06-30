@@ -110,17 +110,6 @@ int main (int argc, char *argv[])
    for(idx=0;idx<NUM_THREADS;idx++)
        pthread_join(threads[idx], NULL);
 
-/* Original Source Code
-   for(i=0; i<3; i++)
-   {
-      threadParams[i].threadIdx=i;
-      pthread_create(&threads[i], (void *)0, sumThread, (void *)&(threadParams[i]));
-   }
-
-   for(i=0; i<3; i++)
-     pthread_join(threads[i], NULL);
-*/
-
    printf("TEST COMPLETE: gsum[0]=%d, gsum[1]=%d, gsum[2]=%d, gsumall=%d\n", 
           gsum[0], gsum[1], gsum[2], (gsum[0]+gsum[1]+gsum[2]));
 
