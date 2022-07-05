@@ -43,7 +43,7 @@ struct sched_param param_send;
 
 static char canned_msg[] = "this is a test, and only a test, in the event of a real emergency, you would be instructed ...";
 
-void *receiver(void)
+void *receiver(void *arg)
 {
   mqd_t mymq;
   char buffer[MAX_MSG_SIZE];
@@ -73,7 +73,7 @@ void *receiver(void)
 }
 
 
-void *sender(void)
+void *sender(void *arg)
 {
   mqd_t mymq;
   int prio;
