@@ -13,8 +13,8 @@
 #include <unistd.h>
 
 #define NUM_THREADS 2
-#define THREAD_1 1
-#define THREAD_2 2
+#define THREAD_1 0
+#define THREAD_2 1
 
 typedef struct
 {
