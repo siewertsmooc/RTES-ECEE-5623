@@ -192,10 +192,10 @@ void *startService(void *threadid)
    threadParams[LOW_PRIO_SERVICE].threadIdx=LOW_PRIO_SERVICE;
 
    // Real-time option
-   rc = pthread_create(&threads[LOW_PRIO_SERVICE], &rt_sched_attr, criticalSectionTask, (void *)&threadParams[LOW_PRIO_SERVICE]);
+   // rc = pthread_create(&threads[LOW_PRIO_SERVICE], &rt_sched_attr, criticalSectionTask, (void *)&threadParams[LOW_PRIO_SERVICE]);
 
    // Non-real-time option
-   // rc = pthread_create(&threads[LOW_PRIO_SERVICE], &nrt_sched_attr, criticalSectionTask, (void *)&threadParams[LOW_PRIO_SERVICE]);
+   rc = pthread_create(&threads[LOW_PRIO_SERVICE], &nrt_sched_attr, criticalSectionTask, (void *)&threadParams[LOW_PRIO_SERVICE]);
 
    if (rc)
    {
