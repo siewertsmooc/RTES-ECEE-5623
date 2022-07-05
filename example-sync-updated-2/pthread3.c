@@ -44,7 +44,7 @@ typedef struct
 
 threadParams_t threadParams[NUM_THREADS];
 
-pthread_mutex_t sharedMemSem;
+pthread_mutex_t sharedMemSem = PTHREAD_MUTEX_INITIALIZER;
 pthread_mutexattr_t rt_safe;
 
 int rt_protocol;
@@ -136,8 +136,6 @@ int main (int argc, char *argv[])
      printf("PTHREAD SCOPE PROCESS\n");
    else
      printf("PTHREAD SCOPE UNKNOWN\n");
-
-   pthread_mutex_init(&sharedMemSem, NULL);
 
    // Set priority lower than H and M, but just a bit higher than L
    rt_param.sched_priority = rt_min_prio+1;
