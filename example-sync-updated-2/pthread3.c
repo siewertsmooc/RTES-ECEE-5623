@@ -115,8 +115,8 @@ int main (int argc, char *argv[])
    pthread_attr_setaffinity_np(&rt_sched_attr, sizeof(cpu_set_t), &threadcpu);
 
    pthread_attr_init(&nrt_sched_attr);
-   pthread_attr_setinheritsched(&rt_sched_attr, PTHREAD_EXPLICIT_SCHED);
-   pthread_attr_setschedpolicy(&rt_sched_attr, SCHED_RR);
+   pthread_attr_setinheritsched(&nrt_sched_attr, PTHREAD_EXPLICIT_SCHED);
+   pthread_attr_setschedpolicy(&nrt_sched_attr, SCHED_RR);
    //pthread_attr_setschedpolicy(&rt_sched_attr, SCHED_OTHER);
 
 
