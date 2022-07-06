@@ -8,6 +8,7 @@
 #include <sys/time.h>
 #include <sys/types.h>
 #include <time.h>
+#include <unistd.h>
 
 #define NSEC_CONVERSION 1000000000
 
