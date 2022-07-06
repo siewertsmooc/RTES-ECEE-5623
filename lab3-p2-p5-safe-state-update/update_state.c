@@ -81,8 +81,12 @@ void *updateState(void *arg)
         state->longitude = x * 0.2;
         state->altitude_m = x * 0.25;
 
+        // Make sure the other thread hits the timeout condition
+        sleep(11);
+
         clock_gettime(CLOCK_REALTIME, &(state->timestamp));
         pthread_mutex_unlock(&state_mutex);
+        printf("State update completed\n");
         x += 1;
         sleep(1);
 
@@ -95,12 +99,25 @@ void *updateState(void *arg)
 }
 
 void *readState(void *arg)
-{
+{   
+    int rc;
+    struct timespec timeout = {0, 0};
     while ( stopProgram == 0 )
     {
-        pthread_mutex_lock(&state_mutex);
-        printState();
-        pthread_mutex_unlock(&state_mutex);
+        clock_gettime(CLOCK_REALTIME, &timeout);
+        timeout.tv_sec += 10;
+        rc = pthread_mutex_timedlock(&state_mutex, &timeout);
+        if (rc != 0)
+        {
+            clock_gettime(CLOCK_REALTIME, &timeout);
+            double timestamp = (double)state->timestamp.tv_sec + (double)(state->timestamp.tv_nsec / (double)NSEC_CONVERSION);
+            printf("No new data at this time: %lf s\n", timestamp);
+        }
+        else
+        {
+            printState();
+            pthread_mutex_unlock(&state_mutex);
+        }
         sleep(1);
     }
 }
