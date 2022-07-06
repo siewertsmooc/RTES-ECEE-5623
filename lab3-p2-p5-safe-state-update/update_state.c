@@ -37,9 +37,9 @@ pthread_mutex_t state_mutex = PTHREAD_MUTEX_INITIALIZER;
 
 void printState()
 {
-    printf("******************************\n");
+    printf("*************************************************\n");
     double timestamp = (double)state->timestamp.tv_sec + (double)(state->timestamp.tv_nsec / (double)NSEC_CONVERSION);
-    printf("Timestamp: [%lf] s\n", timestamp);
+    printf("Timestamp: %lf s\n", timestamp);
     printf("roll = %2.3f\tpitch = %2.3f\tyaw = %2.3f\n", state->roll, state->pitch, state->yaw);
     printf("Longitude = %2.3f\tLatitude = %2.3f\tAltitude in meters = %2.3f\n", state->longitude, state->latitude, state->altitude_m);
 }
