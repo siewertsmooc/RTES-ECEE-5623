@@ -1,5 +1,6 @@
 #define _GNU_SOURCE
 #include <errno.h>
+#include <math.h>
 #include <pthread.h>
 #include <sched.h>
 #include <signal.h>
@@ -11,6 +12,7 @@
 #include <unistd.h>
 
 #define NSEC_CONVERSION 1000000000
+#define MAX_ITERATIONS 180
 
 int stopProgram;
 
@@ -54,33 +56,41 @@ void initializeState()
     }
 
     // Initialize state variable with values
-    state->roll = ((double)rand());
-    state->pitch = ((double)rand());
-    state->yaw = ((double)rand());
-    state->latitude = ((double)rand());
-    state->longitude = ((double)rand());
-    state->altitude_m = ((double)rand());
+    state->roll = 0;
+    state->pitch = 0;
+    state->yaw = 0;
+    state->latitude = 0;
+    state->longitude = 0;
+    state->altitude_m = 0;
 
     clock_gettime(CLOCK_REALTIME, &(state->timestamp));
 }
 
 void *updateState(void *arg)
 {
+    double x = 0;
     while ( stopProgram == 0 )
     {
-    pthread_mutex_lock(&state_mutex);
+        pthread_mutex_lock(&state_mutex);
 
-    // Update the state values and timestamp
-    state->roll = ((double)rand());
-    state->pitch = ((double)rand());
-    state->yaw = ((double)rand());
-    state->latitude = ((double)rand());
-    state->longitude = ((double)rand());
-    state->altitude_m = ((double)rand());
+        // Update the state values and timestamp
+        state->roll = sin(x);
+        state->pitch = tan(x);
+        state->yaw = cos(x);
+        state->latitude = x * 0.01;
+        state->longitude = x * 0.2;
+        state->altitude_m = x * 0.25;
 
-    clock_gettime(CLOCK_REALTIME, &(state->timestamp));
-    pthread_mutex_unlock(&state_mutex);
-    sleep(1);
+        clock_gettime(CLOCK_REALTIME, &(state->timestamp));
+        pthread_mutex_unlock(&state_mutex);
+        x += 1;
+        sleep(1);
+
+        if (x > MAX_ITERATIONS)
+        {
+            printf("Max iterations exceeded.\n");
+            stopProgram = 1;
+        }
     }
 }
 
@@ -100,7 +110,6 @@ static void sigintHandler(int sig)
     if (sig == SIGINT)
     {
         stopProgram = 1;
-        printf("\nProgram Stopping!\n");
     }
 }
 
@@ -131,8 +140,9 @@ int main(int argc, char *argv[])
 
     if (state != NULL)
     {
-        printf("\nFreeing allocated memory.");
+        printf("Freeing allocated memory\n");
         free(state);
     }
+    printf("Program Stopping...\n");
     exit(EXIT_SUCCESS);
 }
