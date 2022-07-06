@@ -100,7 +100,7 @@ static void sigintHandler(int sig)
     if (sig == SIGINT)
     {
         stopProgram = 1;
-        printf('\nProgram Stopping!\n');
+        printf("\nProgram Stopping!\n");
     }
 }
 
