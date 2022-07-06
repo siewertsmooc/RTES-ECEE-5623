@@ -66,6 +66,8 @@ void initializeState()
 
 void *updateState(void *arg)
 {
+    while ( stopProgram == 0 )
+    {
     pthread_mutex_lock(&state_mutex);
 
     // Update the state values and timestamp
@@ -78,13 +80,19 @@ void *updateState(void *arg)
 
     clock_gettime(CLOCK_REALTIME, &(state->timestamp));
     pthread_mutex_unlock(&state_mutex);
+    sleep(1);
+    }
 }
 
 void *readState(void *arg)
 {
-    pthread_mutex_lock(&state_mutex);
-    printState();
-    pthread_mutex_unlock(&state_mutex);
+    while ( stopProgram == 0 )
+    {
+        pthread_mutex_lock(&state_mutex);
+        printState();
+        pthread_mutex_unlock(&state_mutex);
+        sleep(1);
+    }
 }
 
 static void sigintHandler(int sig)
