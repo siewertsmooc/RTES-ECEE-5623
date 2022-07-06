@@ -20,7 +20,7 @@ clean:
 	-rm -f ${PRODUCT} ${GARBAGE}
 
 update_state:	update_state.o
-	$(CC) $(LDFLAGS) $(CFLAGS) -o $@ update_state.o $(LIBS)
+	$(CC) $(LDFLAGS) $(CFLAGS) -o $@ update_state.o -lm $(LIBS)
 
 .c.o:
 	$(CC) $(CFLAGS) -c $<
