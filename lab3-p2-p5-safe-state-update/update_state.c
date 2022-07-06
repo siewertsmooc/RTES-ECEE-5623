@@ -75,7 +75,7 @@ void *updateState(void *arg)
 
         // Update the state values and timestamp
         state->roll = sin(x);
-        state->pitch = tan(x);
+        state->pitch = sin(x)/cos(x);
         state->yaw = cos(x);
         state->latitude = x * 0.01;
         state->longitude = x * 0.2;
