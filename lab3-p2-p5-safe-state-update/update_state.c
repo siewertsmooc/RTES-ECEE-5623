@@ -107,6 +107,10 @@ static void sigintHandler(int sig)
 int main(int argc, char *argv[])
 {
     stopProgram = 0;
+
+    // Set up the handler for cleanup when the user hits ctrl+C
+    signal(SIGINT, sigintHandler);
+
     srand(time(NULL));
     initializeState();
     printState();
