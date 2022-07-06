@@ -99,6 +99,11 @@ static void sigintHandler(int sig)
 {
     if (sig == SIGINT)
     {
+        if (state != NULL)
+        {
+            printf("\nFreeing allocated memory.");
+            free(state);
+        }
         stopProgram = 1;
         printf("\nProgram Stopping!\n");
     }
