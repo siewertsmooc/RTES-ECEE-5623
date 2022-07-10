@@ -125,7 +125,7 @@ static void dump_ppm(const void *p, int size, unsigned int tag, struct timespec 
     MOVING_AVERAGE_FRAMERATE = ((MOVING_AVERAGE_FRAMERATE + diff) / 2);
 
     syslog(LOG_CRIT,"Simple-capture-1800: wrote %d bytes\n", total);
-    syslog(LOG_CRIT,"Simple-capture-1800: time diff: %6.9lf with average: %6.9lf\n", diff, MOVING_AVERAGE_FRAMERATE);
+    syslog(LOG_CRIT,"Simple-capture-1800: time diff: %ld [s] with average: %ld [s]\n", diff, MOVING_AVERAGE_FRAMERATE);
 
     close(dumpfd);
     
@@ -165,7 +165,7 @@ static void dump_pgm(const void *p, int size, unsigned int tag, struct timespec 
     MOVING_AVERAGE_FRAMERATE = ((MOVING_AVERAGE_FRAMERATE + diff) / 2);
 
     syslog(LOG_CRIT,"Simple-capture-1800: wrote %d bytes\n", total);
-    syslog(LOG_CRIT,"Simple-capture-1800: time diff: %6.9lf with average: %6.9lf\n", diff, MOVING_AVERAGE_FRAMERATE);
+    syslog(LOG_CRIT,"Simple-capture-1800: time diff: %ld [s] with average: %ld [s]\n", diff, MOVING_AVERAGE_FRAMERATE);
 
     close(dumpfd);
     
