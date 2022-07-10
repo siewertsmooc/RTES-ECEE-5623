@@ -97,13 +97,13 @@ static void dump_ppm(const void *p, int size, unsigned int tag, struct timespec 
 {
     int written, i, total, dumpfd;
    
-    snprintf(&ppm_dumpname[11], 9, "%04d", tag);
+    snsyslog(LOG_CRIT,&ppm_dumpname[11], 9, "%04d", tag);
     strncat(&ppm_dumpname[15], ".ppm", 5);
     dumpfd = open(ppm_dumpname, O_WRONLY | O_NONBLOCK | O_CREAT, 00666);
 
-    snprintf(&ppm_header[4], 11, "%010d", (int)time->tv_sec);
+    snsyslog(LOG_CRIT,&ppm_header[4], 11, "%010d", (int)time->tv_sec);
     strncat(&ppm_header[14], " sec ", 5);
-    snprintf(&ppm_header[19], 11, "%010d", (int)((time->tv_nsec)/1000000));
+    snsyslog(LOG_CRIT,&ppm_header[19], 11, "%010d", (int)((time->tv_nsec)/1000000));
     strncat(&ppm_header[29], " msec \n"HRES_STR" "VRES_STR"\n255\n", 19);
     written=write(dumpfd, ppm_header, sizeof(ppm_header));
 
@@ -115,7 +115,7 @@ static void dump_ppm(const void *p, int size, unsigned int tag, struct timespec 
         total+=written;
     } while(total < size);
 
-    printf("wrote %d bytes\n", total);
+    syslog(LOG_CRIT,"Simple-capture-1800: wrote %d bytes\n", total);
 
     close(dumpfd);
     
@@ -129,13 +129,13 @@ static void dump_pgm(const void *p, int size, unsigned int tag, struct timespec 
 {
     int written, i, total, dumpfd;
    
-    snprintf(&pgm_dumpname[11], 9, "%04d", tag);
+    snsyslog(LOG_CRIT,&pgm_dumpname[11], 9, "%04d", tag);
     strncat(&pgm_dumpname[15], ".pgm", 5);
     dumpfd = open(pgm_dumpname, O_WRONLY | O_NONBLOCK | O_CREAT, 00666);
 
-    snprintf(&pgm_header[4], 11, "%010d", (int)time->tv_sec);
+    snsyslog(LOG_CRIT,&pgm_header[4], 11, "%010d", (int)time->tv_sec);
     strncat(&pgm_header[14], " sec ", 5);
-    snprintf(&pgm_header[19], 11, "%010d", (int)((time->tv_nsec)/1000000));
+    snsyslog(LOG_CRIT,&pgm_header[19], 11, "%010d", (int)((time->tv_nsec)/1000000));
     strncat(&pgm_header[29], " msec \n"HRES_STR" "VRES_STR"\n255\n", 19);
     written=write(dumpfd, pgm_header, sizeof(pgm_header));
 
@@ -147,7 +147,7 @@ static void dump_pgm(const void *p, int size, unsigned int tag, struct timespec 
         total+=written;
     } while(total < size);
 
-    printf("wrote %d bytes\n", total);
+    syslog(LOG_CRIT,"Simple-capture-1800: wrote %d bytes\n", total);
 
     close(dumpfd);
     
@@ -231,7 +231,7 @@ static void process_image(const void *p, int size)
     clock_gettime(CLOCK_REALTIME, &frame_time);    
 
     framecnt++;
-    printf("frame %d: ", framecnt);
+    syslog(LOG_CRIT,"Simple-capture-1800: frame %d: ", framecnt);
 
     // This just dumps the frame to a file now, but you could replace with whatever image
     // processing you wish.
@@ -239,7 +239,7 @@ static void process_image(const void *p, int size)
 
     if(fmt.fmt.pix.pixelformat == V4L2_PIX_FMT_GREY)
     {
-        printf("Dump graymap as-is size %d\n", size);
+        syslog(LOG_CRIT,"Simple-capture-1800: Dump graymap as-is size %d\n", size);
         dump_pgm(p, size, framecnt, &frame_time);
     }
 
@@ -261,7 +261,7 @@ static void process_image(const void *p, int size)
         if(framecnt > -1) 
         {
             dump_ppm(bigbuffer, ((size*6)/4), framecnt, &frame_time);
-            printf("Dump YUYV converted to RGB size %d\n", size);
+            syslog(LOG_CRIT,"Simple-capture-1800: Dump YUYV converted to RGB size %d\n", size);
         }
 #else
        
@@ -273,12 +273,16 @@ static void process_image(const void *p, int size)
             // Y1=first byte and Y2=third byte
             bigbuffer[newi]=pptr[i];
             bigbuffer[newi+1]=pptr[i+2];
+
+            // Uncomment when you want to try negative transformation
+            // bigbuffer[newi]=pptr[i];
+            // bigbuffer[newi+1]=pptr[i+2];
         }
 
         if(framecnt > -1)
         {
             dump_pgm(bigbuffer, (size/2), framecnt, &frame_time);
-            printf("Dump YUYV converted to YY size %d\n", size);
+            syslog(LOG_CRIT,"Simple-capture-1800: Dump YUYV converted to YY size %d\n", size);
         }
 #endif
 
@@ -286,12 +290,12 @@ static void process_image(const void *p, int size)
 
     else if(fmt.fmt.pix.pixelformat == V4L2_PIX_FMT_RGB24)
     {
-        printf("Dump RGB as-is size %d\n", size);
+        syslog(LOG_CRIT,"Simple-capture-1800: Dump RGB as-is size %d\n", size);
         dump_ppm(p, size, framecnt, &frame_time);
     }
     else
     {
-        printf("ERROR - unknown dump format\n");
+        syslog(LOG_CRIT,"Simple-capture-1800: ERROR - unknown dump format\n");
     }
 
     fflush(stderr);
@@ -351,7 +355,7 @@ static int read_frame(void)
 
 
                     default:
-                        printf("mmap failure\n");
+                        syslog(LOG_CRIT,"Simple-capture-1800: mmap failure\n");
                         errno_exit("VIDIOC_DQBUF");
                 }
             }
@@ -401,7 +405,7 @@ static int read_frame(void)
             break;
     }
 
-    //printf("R");
+    //syslog(LOG_CRIT,"Simple-capture-1800: R");
     return 1;
 }
 
@@ -457,7 +461,7 @@ static void mainloop(void)
                 if(nanosleep(&read_delay, &time_error) != 0)
                     perror("nanosleep");
                 else
-                    printf("time_error.tv_sec=%ld, time_error.tv_nsec=%ld\n", time_error.tv_sec, time_error.tv_nsec);
+                    syslog(LOG_CRIT,"Simple-capture-1800: time_error.tv_sec=%ld, time_error.tv_nsec=%ld\n", time_error.tv_sec, time_error.tv_nsec);
 
                 count--;
                 break;
@@ -504,7 +508,7 @@ static void start_capturing(void)
         case IO_METHOD_MMAP:
                 for (i = 0; i < n_buffers; ++i) 
                 {
-                        printf("allocated buffer %d\n", i);
+                        syslog(LOG_CRIT,"Simple-capture-1800: allocated buffer %d\n", i);
                         struct v4l2_buffer buf;
 
                         CLEAR(buf);
@@ -773,7 +777,7 @@ static void init_device(void)
 
     if (force_format)
     {
-        printf("FORCING FORMAT\n");
+        syslog(LOG_CRIT,"Simple-capture-1800: FORCING FORMAT\n");
         fmt.fmt.pix.width       = HRES;
         fmt.fmt.pix.height      = VRES;
 
@@ -799,7 +803,7 @@ static void init_device(void)
     }
     else
     {
-        printf("ASSUMING FORMAT\n");
+        syslog(LOG_CRIT,"Simple-capture-1800: ASSUMING FORMAT\n");
         /* Preserve original settings as set by v4l2-ctl for example */
         if (-1 == xioctl(fd, VIDIOC_G_FMT, &fmt))
                     errno_exit("VIDIOC_G_FMT");
