@@ -121,7 +121,7 @@ static void dump_ppm(const void *p, int size, unsigned int tag, struct timespec 
     clock_gettime(CLOCK_MONOTONIC_RAW, &current_time);
     double frame_start_time = (double)time->tv_sec + ((double)time->tv_nsec / 1000000000.0);
     double current_ftime = (double)current_time.tv_sec + ((double)current_time.tv_nsec / 1000000000.0);
-    double diff = current_ftime - frame_start_time;
+    double diff = frame_start_time - current_ftime;
     MOVING_AVERAGE_FRAMERATE = ((MOVING_AVERAGE_FRAMERATE + diff) / 2);
 
     syslog(LOG_CRIT,"Simple-capture-1800: wrote %d bytes\n", total);
@@ -161,7 +161,7 @@ static void dump_pgm(const void *p, int size, unsigned int tag, struct timespec 
     clock_gettime(CLOCK_MONOTONIC_RAW, &current_time);
     double frame_start_time = (double)time->tv_sec + ((double)time->tv_nsec / 1000000000.0);
     double current_ftime = (double)current_time.tv_sec + ((double)current_time.tv_nsec / 1000000000.0);
-    double diff = current_ftime - frame_start_time;
+    double diff = frame_start_time - current_ftime;
     MOVING_AVERAGE_FRAMERATE = ((MOVING_AVERAGE_FRAMERATE + diff) / 2);
 
     syslog(LOG_CRIT,"Simple-capture-1800: wrote %d bytes\n", total);
