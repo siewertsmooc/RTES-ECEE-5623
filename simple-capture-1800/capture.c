@@ -44,6 +44,8 @@
 //#define HRES_STR "320"
 //#define VRES_STR "240"
 
+double MOVING_AVERAGE_FRAMERATE = 0;
+
 // Format is used by a number of functions, so made as a file global
 static struct v4l2_format fmt;
 
@@ -90,6 +92,14 @@ static int xioctl(int fh, int request, void *arg)
         return r;
 }
 
+static void log_real_time()
+{
+    clock_gettime(CLOCK_MONOTONIC_RAW, &current_time);
+    double current_ftime = (double)current_time.tv_sec + ((double)current_time.tv_nsec / 1000000000.0);
+    syslog(LOG_CRIT, "SYSLOG_NRT_TRC: My log message test @ tv.tv_sec %ld, tv.tv_nsec %ld, realtime %6.9lf\n", 
+            current_time.tv_sec, current_time.tv_nsec, (current_ftime - start_ftime));
+}
+
 char ppm_header[]="P6\n#9999999999 sec 9999999999 msec \n"HRES_STR" "VRES_STR"\n255\n";
 char ppm_dumpname[]="frames/test0000.ppm";
 
@@ -115,7 +125,15 @@ static void dump_ppm(const void *p, int size, unsigned int tag, struct timespec 
         total+=written;
     } while(total < size);
 
+    struct timespec current_time;
+    clock_gettime(CLOCK_MONOTONIC_RAW, &current_time);
+    double frame_start_time = (double)time.tv_sec + ((double)time.tv_nsec / 1000000000.0);
+    double current_ftime = (double)current_time.tv_sec + ((double)current_time.tv_nsec / 1000000000.0);
+    double diff = current_ftime - frame_start_time;
+    MOVING_AVERAGE_FRAMERATE = ((MOVING_AVERAGE_FRAMERATE + diff) / 2);
+
     syslog(LOG_CRIT,"Simple-capture-1800: wrote %d bytes\n", total);
+    syslog(LOG_CRIT,"Simple-capture-1800: time diff: %6.9lf with average: %6.9lf\n", diff, MOVING_AVERAGE_FRAMERATE);
 
     close(dumpfd);
     
@@ -147,7 +165,15 @@ static void dump_pgm(const void *p, int size, unsigned int tag, struct timespec 
         total+=written;
     } while(total < size);
 
+    struct timespec current_time;
+    clock_gettime(CLOCK_MONOTONIC_RAW, &current_time);
+    double frame_start_time = (double)time.tv_sec + ((double)time.tv_nsec / 1000000000.0);
+    double current_ftime = (double)current_time.tv_sec + ((double)current_time.tv_nsec / 1000000000.0);
+    double diff = current_ftime - frame_start_time;
+    MOVING_AVERAGE_FRAMERATE = ((MOVING_AVERAGE_FRAMERATE + diff) / 2);
+
     syslog(LOG_CRIT,"Simple-capture-1800: wrote %d bytes\n", total);
+    syslog(LOG_CRIT,"Simple-capture-1800: time diff: %6.9lf with average: %6.9lf\n", diff, MOVING_AVERAGE_FRAMERATE);
 
     close(dumpfd);
     
@@ -281,6 +307,7 @@ static void process_image(const void *p, int size)
 
         if(framecnt > -1)
         {
+            syslog()
             dump_pgm(bigbuffer, (size/2), framecnt, &frame_time);
             syslog(LOG_CRIT,"Simple-capture-1800: Dump YUYV converted to YY size %d\n", size);
         }
