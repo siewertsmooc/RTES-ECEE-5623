@@ -299,7 +299,6 @@ static void process_image(const void *p, int size)
 
         if(framecnt > -1)
         {
-            syslog()
             dump_pgm(bigbuffer, (size/2), framecnt, &frame_time);
             syslog(LOG_CRIT,"Simple-capture-1800: Dump YUYV converted to YY size %d\n", size);
         }
