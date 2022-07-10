@@ -12,7 +12,7 @@
  *      This program is provided with the V4L2 API
  * see http://linuxtv.org/docs.php for more information
  */
-
+#include <syslog.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -97,13 +97,13 @@ static void dump_ppm(const void *p, int size, unsigned int tag, struct timespec 
 {
     int written, i, total, dumpfd;
    
-    snsyslog(LOG_CRIT,&ppm_dumpname[11], 9, "%04d", tag);
+    snprintf(&ppm_dumpname[11], 9, "%04d", tag);
     strncat(&ppm_dumpname[15], ".ppm", 5);
     dumpfd = open(ppm_dumpname, O_WRONLY | O_NONBLOCK | O_CREAT, 00666);
 
-    snsyslog(LOG_CRIT,&ppm_header[4], 11, "%010d", (int)time->tv_sec);
+    snprintf(&ppm_header[4], 11, "%010d", (int)time->tv_sec);
     strncat(&ppm_header[14], " sec ", 5);
-    snsyslog(LOG_CRIT,&ppm_header[19], 11, "%010d", (int)((time->tv_nsec)/1000000));
+    snprintf(&ppm_header[19], 11, "%010d", (int)((time->tv_nsec)/1000000));
     strncat(&ppm_header[29], " msec \n"HRES_STR" "VRES_STR"\n255\n", 19);
     written=write(dumpfd, ppm_header, sizeof(ppm_header));
 
@@ -129,13 +129,13 @@ static void dump_pgm(const void *p, int size, unsigned int tag, struct timespec 
 {
     int written, i, total, dumpfd;
    
-    snsyslog(LOG_CRIT,&pgm_dumpname[11], 9, "%04d", tag);
+    snprintf(&pgm_dumpname[11], 9, "%04d", tag);
     strncat(&pgm_dumpname[15], ".pgm", 5);
     dumpfd = open(pgm_dumpname, O_WRONLY | O_NONBLOCK | O_CREAT, 00666);
 
-    snsyslog(LOG_CRIT,&pgm_header[4], 11, "%010d", (int)time->tv_sec);
+    snprintf(&pgm_header[4], 11, "%010d", (int)time->tv_sec);
     strncat(&pgm_header[14], " sec ", 5);
-    snsyslog(LOG_CRIT,&pgm_header[19], 11, "%010d", (int)((time->tv_nsec)/1000000));
+    snprintf(&pgm_header[19], 11, "%010d", (int)((time->tv_nsec)/1000000));
     strncat(&pgm_header[29], " msec \n"HRES_STR" "VRES_STR"\n255\n", 19);
     written=write(dumpfd, pgm_header, sizeof(pgm_header));
 
