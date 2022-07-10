@@ -278,8 +278,20 @@ static void process_image(const void *p, int size)
 
         if(framecnt > -1) 
         {
+            struct timespec start_time;
+            struct timespec current_time;
+
+            clock_gettime(CLOCK_MONOTONIC_RAW, &start_time);
             dump_ppm(bigbuffer, ((size*6)/4), framecnt, &frame_time);
+            clock_gettime(CLOCK_MONOTONIC_RAW, &current_time);
+
+            double frame_start_time = (double)start_time.tv_sec + ((double)start_time.tv_nsec / 1000000000.0);
+            double current_ftime = (double)current_time.tv_sec + ((double)current_time.tv_nsec / 1000000000.0);
+            double diff = current_ftime - frame_start_time;
+            MOVING_AVERAGE_FRAMERATE = ((MOVING_AVERAGE_FRAMERATE + diff) / 2);
+
             syslog(LOG_CRIT,"Simple-capture-1800: Dump YUYV converted to RGB size %d\n", size);
+            syslog(LOG_CRIT,"Simple-capture-1800: time diff: %6.9lf [s] with average: %6.9lf [s]\n", diff, MOVING_AVERAGE_FRAMERATE);
         }
 #else
        
@@ -299,8 +311,20 @@ static void process_image(const void *p, int size)
 
         if(framecnt > -1)
         {
+            struct timespec start_time;
+            struct timespec current_time;
+
+            clock_gettime(CLOCK_MONOTONIC_RAW, &start_time);
             dump_pgm(bigbuffer, (size/2), framecnt, &frame_time);
+            clock_gettime(CLOCK_MONOTONIC_RAW, &current_time);
+
+            double frame_start_time = (double)start_time.tv_sec + ((double)start_time.tv_nsec / 1000000000.0);
+            double current_ftime = (double)current_time.tv_sec + ((double)current_time.tv_nsec / 1000000000.0);
+            double diff = current_ftime - frame_start_time;
+            MOVING_AVERAGE_FRAMERATE = ((MOVING_AVERAGE_FRAMERATE + diff) / 2);
+
             syslog(LOG_CRIT,"Simple-capture-1800: Dump YUYV converted to YY size %d\n", size);
+            syslog(LOG_CRIT,"Simple-capture-1800: time diff: %6.9lf [s] with average: %6.9lf [s]\n", diff, MOVING_AVERAGE_FRAMERATE);
         }
 #endif
 
