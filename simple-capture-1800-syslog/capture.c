@@ -146,7 +146,7 @@ static void dump_ppm(const void *p, int size, unsigned int tag, struct timespec 
 
     clock_gettime(CLOCK_MONOTONIC, &time_now);
     fnow = (double)time_now.tv_sec + (double)time_now.tv_nsec / 1000000000.0;
-    //printf("Frame written to flash at %lf, %d, bytes\n", (fnow-fstart), total);
+    printf("Frame written to flash at %lf, %d, bytes\n", (fnow-fstart), total);
 
     close(dumpfd);
     
@@ -182,7 +182,7 @@ static void dump_pgm(const void *p, int size, unsigned int tag, struct timespec 
 
     clock_gettime(CLOCK_MONOTONIC, &time_now);
     fnow = (double)time_now.tv_sec + (double)time_now.tv_nsec / 1000000000.0;
-    //printf("Frame written to flash at %lf, %d, bytes\n", (fnow-fstart), total);
+    printf("Frame written to flash at %lf, %d, bytes\n", (fnow-fstart), total);
 
     close(dumpfd);
     
@@ -266,7 +266,7 @@ static void process_image(const void *p, int size)
     clock_gettime(CLOCK_REALTIME, &frame_time);    
 
     framecnt++;
-    //printf("frame %d: ", framecnt);
+    printf("frame %d: ", framecnt);
     
     if(framecnt == 0) 
     {
@@ -308,7 +308,7 @@ static void process_image(const void *p, int size)
         if(framecnt > -1) 
         {
             dump_ppm(bigbuffer, ((size*6)/4), framecnt, &frame_time);
-            //printf("Dump YUYV converted to RGB size %d\n", size);
+            printf("Dump YUYV converted to RGB size %d\n", size);
         }
 #else
       
@@ -325,7 +325,7 @@ static void process_image(const void *p, int size)
         if(framecnt > -1)
         {
             dump_pgm(bigbuffer, (size/2), framecnt, &frame_time);
-            //printf("Dump YUYV converted to YY size %d\n", size);
+            printf("Dump YUYV converted to YY size %d\n", size);
         }
 #endif
 
@@ -448,7 +448,7 @@ static int read_frame(void)
             break;
     }
 
-    //printf("R");
+    printf("R");
     return 1;
 }
 
@@ -531,7 +531,7 @@ static void mainloop(void)
 	            {	
 		        clock_gettime(CLOCK_MONOTONIC, &time_now);
 		        fnow = (double)time_now.tv_sec + (double)time_now.tv_nsec / 1000000000.0;
-                        //printf("REPLACE read at %lf, @ %lf FPS\n", (fnow-fstart), (double)(framecnt+1) / (fnow-fstart));
+                        printf("REPLACE read at %lf, @ %lf FPS\n", (fnow-fstart), (double)(framecnt+1) / (fnow-fstart));
                         syslog(LOG_CRIT, "SIMPCAP: read at %lf, @ %lf FPS\n", (fnow-fstart), (double)(framecnt+1) / (fnow-fstart));
 		    }
 		    else 
