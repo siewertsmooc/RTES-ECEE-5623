@@ -285,12 +285,12 @@ static void process_image(const void *p, int size)
         for(i=0, newi=0; i<size; i=i+4, newi=newi+2)
         {
             // Y1=first byte and Y2=third byte
-            bigbuffer[newi]=pptr[i];
-            bigbuffer[newi+1]=pptr[i+2];
-
-            // Uncomment when you want to try negative transformation
             // bigbuffer[newi]=pptr[i];
             // bigbuffer[newi+1]=pptr[i+2];
+
+            // Uncomment when you want to try NEGATIVE TRANSFORMATION
+            bigbuffer[newi]=(255 - pptr[i]);
+            bigbuffer[newi+1]=(255 - pptr[i+2]);
         }
 
         if(framecnt > -1)
