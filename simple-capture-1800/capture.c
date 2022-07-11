@@ -503,8 +503,7 @@ static void mainloop(void)
                 {
                     clock_gettime(CLOCK_MONOTONIC, &time_now);
                     fnow = (double)time_now.tv_sec + (double)time_now.tv_nsec / 1000000000.0;
-                    printf("REPLACE read at %lf, @ %lf FPS\n", (fnow - fstart), (double)(framecnt + 1) / (fnow - fstart));
-                    syslog(LOG_CRIT, "SIMPCAP: read at %lf, @ %lf FPS\n", (fnow - fstart), (double)(framecnt + 1) / (fnow - fstart));
+                    syslog(LOG_CRIT, "Simple-capture-1800: read at %lf, @ %lf FPS\n", (fnow - fstart), (double)(framecnt + 1) / (fnow - fstart));
                 }
                 count--;
                 break;
