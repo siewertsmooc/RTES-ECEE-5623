@@ -34,7 +34,7 @@
 #include <time.h>
 
 #define CLEAR(x) memset(&(x), 0, sizeof(x))
-//#define COLOR_CONVERT_RGB
+#define COLOR_CONVERT_RGB
 #define HRES 640
 #define VRES 480
 #define HRES_STR "640"
