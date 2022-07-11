@@ -34,7 +34,7 @@
 #include <time.h>
 
 #define CLEAR(x) memset(&(x), 0, sizeof(x))
-#define COLOR_CONVERT_RGB
+// #define COLOR_CONVERT_RGB
 #define HRES 640
 #define VRES 480
 #define HRES_STR "640"
@@ -281,17 +281,17 @@ static void process_image(const void *p, int size)
             struct timespec start_time;
             struct timespec current_time;
 
-            clock_gettime(CLOCK_MONOTONIC_RAW, &start_time);
+            // clock_gettime(CLOCK_MONOTONIC_RAW, &start_time);
             dump_ppm(bigbuffer, ((size * 6) / 4), framecnt, &frame_time);
-            clock_gettime(CLOCK_MONOTONIC_RAW, &current_time);
+            // clock_gettime(CLOCK_MONOTONIC_RAW, &current_time);
 
-            double frame_start_time = (double)start_time.tv_sec + ((double)start_time.tv_nsec / 1000000000.0);
-            double current_ftime = (double)current_time.tv_sec + ((double)current_time.tv_nsec / 1000000000.0);
-            double diff = current_ftime - frame_start_time;
-            MOVING_AVERAGE_FRAMERATE = ((MOVING_AVERAGE_FRAMERATE + diff) / 2);
+            // double frame_start_time = (double)start_time.tv_sec + ((double)start_time.tv_nsec / 1000000000.0);
+            // double current_ftime = (double)current_time.tv_sec + ((double)current_time.tv_nsec / 1000000000.0);
+            // double diff = current_ftime - frame_start_time;
+            // MOVING_AVERAGE_FRAMERATE = ((MOVING_AVERAGE_FRAMERATE + diff) / 2);
 
             syslog(LOG_CRIT, "Simple-capture-1800: Dump YUYV converted to RGB size %d\n", size);
-            syslog(LOG_CRIT, "Simple-capture-1800: time diff: %6.9lf [s] with average: %6.9lf [s]\n", diff, MOVING_AVERAGE_FRAMERATE);
+            // syslog(LOG_CRIT, "Simple-capture-1800: time diff: %6.9lf [s] with average: %6.9lf [s]\n", diff, MOVING_AVERAGE_FRAMERATE);
         }
 #else
 
@@ -314,17 +314,17 @@ static void process_image(const void *p, int size)
             struct timespec start_time;
             struct timespec current_time;
 
-            clock_gettime(CLOCK_MONOTONIC_RAW, &start_time);
+            // clock_gettime(CLOCK_MONOTONIC_RAW, &start_time);
             dump_pgm(bigbuffer, (size / 2), framecnt, &frame_time);
-            clock_gettime(CLOCK_MONOTONIC_RAW, &current_time);
+            // clock_gettime(CLOCK_MONOTONIC_RAW, &current_time);
 
-            double frame_start_time = (double)start_time.tv_sec + ((double)start_time.tv_nsec / 1000000000.0);
-            double current_ftime = (double)current_time.tv_sec + ((double)current_time.tv_nsec / 1000000000.0);
-            double diff = current_ftime - frame_start_time;
-            MOVING_AVERAGE_FRAMERATE = ((MOVING_AVERAGE_FRAMERATE + diff) / 2);
+            // double frame_start_time = (double)start_time.tv_sec + ((double)start_time.tv_nsec / 1000000000.0);
+            // double current_ftime = (double)current_time.tv_sec + ((double)current_time.tv_nsec / 1000000000.0);
+            // double diff = current_ftime - frame_start_time;
+            // MOVING_AVERAGE_FRAMERATE = ((MOVING_AVERAGE_FRAMERATE + diff) / 2);
 
             syslog(LOG_CRIT, "Simple-capture-1800: Dump YUYV converted to YY size %d\n", size);
-            syslog(LOG_CRIT, "Simple-capture-1800: time diff: %6.9lf [s] with average: %6.9lf [s]\n", diff, MOVING_AVERAGE_FRAMERATE);
+            // syslog(LOG_CRIT, "Simple-capture-1800: time diff: %6.9lf [s] with average: %6.9lf [s]\n", diff, MOVING_AVERAGE_FRAMERATE);
         }
 #endif
     }
@@ -443,7 +443,6 @@ static int read_frame(void)
         break;
     }
 
-    // syslog(LOG_CRIT,"Simple-capture-1800: R");
     return 1;
 }
 
