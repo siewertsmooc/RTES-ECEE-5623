@@ -518,6 +518,9 @@ static void mainloop(void)
         if (count <= 0)
             break;
     }
+
+    clock_gettime(CLOCK_MONOTONIC, &time_stop);
+    fstop = (double)time_stop.tv_sec + (double)time_stop.tv_nsec / 1000000000.0;
 }
 
 static void stop_capturing(void)
