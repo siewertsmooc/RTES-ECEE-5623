@@ -458,8 +458,8 @@ static void mainloop(void)
     // 250 million nsec is a 250 msec delay, for 4 fps
     // 1 sec for 1 fps
     //
-    read_delay.tv_sec = 1;
-    read_delay.tv_nsec = 0;
+    read_delay.tv_sec = 0;
+    read_delay.tv_nsec = 30000;
 
     count = frame_count;
 
