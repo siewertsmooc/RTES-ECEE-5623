@@ -497,12 +497,14 @@ static void mainloop(void)
                 if (nanosleep(&read_delay, &time_error) != 0)
                     perror("nanosleep");
                 else
-                    syslog(LOG_CRIT, "Simple-capture-1800: time_error.tv_sec=%ld, time_error.tv_nsec=%ld\n", time_error.tv_sec, time_error.tv_nsec);
-                if (framecnt > 1)
                 {
-                    clock_gettime(CLOCK_MONOTONIC, &time_now);
-                    fnow = (double)time_now.tv_sec + (double)time_now.tv_nsec / 1000000000.0;
-                    syslog(LOG_CRIT, "Simple-capture-1800: read at %lf, @ %lf FPS\n", (fnow - fstart), (double)(framecnt + 1) / (fnow - fstart));
+                    syslog(LOG_CRIT, "Simple-capture-1800: time_error.tv_sec=%ld, time_error.tv_nsec=%ld\n", time_error.tv_sec, time_error.tv_nsec);
+                    if (framecnt > 1)
+                    {
+                        clock_gettime(CLOCK_MONOTONIC, &time_now);
+                        fnow = (double)time_now.tv_sec + (double)time_now.tv_nsec / 1000000000.0;
+                        syslog(LOG_CRIT, "Simple-capture-1800: read at %lf, @ %lf FPS\n", (fnow - fstart), (double)(framecnt + 1) / (fnow - fstart));
+                    }
                 }
                 count--;
                 break;
