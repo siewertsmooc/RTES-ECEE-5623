@@ -465,7 +465,7 @@ static int read_frame(void)
     return 1;
 }
 
-static void mainloop(void)
+static void mainloop(void *arg)
 {
     unsigned int count;
     struct timespec read_delay;
@@ -1063,7 +1063,7 @@ int main(int argc, char **argv)
 
     cpu_set_t cpuset;
     CPU_ZERO(&cpuset);
-    cpuidx=(3);
+    int cpuidx=(3);
     CPU_SET(cpuidx, &cpuset);
     pthread_attr_setaffinity_np(&rt_thread_attr, sizeof(cpu_set_t), &cpuset);
 
