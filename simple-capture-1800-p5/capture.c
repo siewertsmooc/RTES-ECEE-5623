@@ -401,7 +401,16 @@ static int read_frame(void)
 
         assert(buf.index < n_buffers);
 
+        struct timespec starting;
+        struct timespec ending;
+        clock_gettime(CLOCK_MONOTONIC, &starting);
+        double fstart_now = (double)starting.tv_sec + (double)starting.tv_nsec / 1000000000.0;
+
         process_image(buffers[buf.index].start, buf.bytesused);
+
+        clock_gettime(CLOCK_MONOTONIC, &ending);
+        double fend_now = (double)ending.tv_sec + (double)ending.tv_nsec / 1000000000.0;
+        syslog(LOG_CRIT, "Simple-capture-1800: processing image took %lf [s]\n", (fend_now - fstart_now));
 
         if (-1 == xioctl(fd, VIDIOC_QBUF, &buf))
             errno_exit("VIDIOC_QBUF");
@@ -457,8 +466,9 @@ static void mainloop(void)
     // 250 million nsec is a 250 msec delay, for 4 fps
     // 1 sec for 1 fps
     //
-    read_delay.tv_sec = 1;
-    read_delay.tv_nsec = 0;
+    // Use a 10Hz delay via 100000000 ns delay
+    read_delay.tv_sec = 0;
+    read_delay.tv_nsec = 100000000;
 
     count = frame_count;
 
