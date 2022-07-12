@@ -22,7 +22,7 @@ distclean:
 	-rm -f *.o *.d
 
 capture: ${OBJS}
-	$(CC) $(LDFLAGS) $(CFLAGS) -o $@ $@.o $(LIBS)
+	$(CC) $(LDFLAGS) $(CFLAGS) -o $@ $@.o $(LIBS) -lpthread
 
 depend:
 

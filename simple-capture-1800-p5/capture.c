@@ -465,7 +465,7 @@ static int read_frame(void)
     return 1;
 }
 
-static void mainloop(void *arg)
+static void *mainloop(void *arg)
 {
     unsigned int count;
     struct timespec read_delay;
