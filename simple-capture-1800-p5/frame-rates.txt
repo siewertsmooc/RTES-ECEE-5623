@@ -1,0 +1,700 @@
+Jul 12 11:44:02 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:02 raspberrypi capture: Simple-capture-1800: processing image took 0.011218 [s]
+Jul 12 11:44:02 raspberrypi capture: Simple-capture-1800: read frame took 0.011333 [s]
+Jul 12 11:44:02 raspberrypi capture: Simple-capture-1800: read at 8.202345, @ 8.046479 FPS
+Jul 12 11:44:02 raspberrypi capture: Simple-capture-1800: frame 66: 
+Jul 12 11:44:02 raspberrypi capture: Simple-capture-1800: Frame written to flash at 8.233163, 307200, bytes
+Jul 12 11:44:02 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:02 raspberrypi capture: Simple-capture-1800: processing image took 0.010395 [s]
+Jul 12 11:44:02 raspberrypi capture: Simple-capture-1800: read frame took 0.010505 [s]
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: read at 8.333546, @ 8.039795 FPS
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: frame 67: 
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: Frame written to flash at 8.369048, 307200, bytes
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: processing image took 0.010340 [s]
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: read frame took 0.010447 [s]
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: read at 8.469425, @ 8.028881 FPS
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: frame 68: 
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: Frame written to flash at 8.501071, 307200, bytes
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: processing image took 0.010337 [s]
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: read frame took 0.010446 [s]
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: read at 8.601452, @ 8.021901 FPS
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: frame 69: 
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: Frame written to flash at 8.634816, 307200, bytes
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: processing image took 0.012031 [s]
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: read frame took 0.012151 [s]
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: read at 8.735229, @ 8.013528 FPS
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: frame 70: 
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: Frame written to flash at 8.769058, 307200, bytes
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: processing image took 0.010364 [s]
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: read frame took 0.010472 [s]
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: read at 8.869442, @ 8.005013 FPS
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: frame 71: 
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: Frame written to flash at 8.901088, 307200, bytes
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: processing image took 0.010359 [s]
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: read frame took 0.010467 [s]
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: read at 9.001468, @ 7.998696 FPS
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: frame 72: 
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: Frame written to flash at 9.033131, 307200, bytes
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: processing image took 0.010385 [s]
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: read frame took 0.010492 [s]
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: read at 9.133517, @ 7.992540 FPS
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: frame 73: 
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: Frame written to flash at 9.167113, 307200, bytes
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: processing image took 0.012293 [s]
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: read frame took 0.012412 [s]
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: read at 9.267546, @ 7.984854 FPS
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: frame 74: 
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: Frame written to flash at 9.301257, 307200, bytes
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: processing image took 0.010540 [s]
+Jul 12 11:44:03 raspberrypi capture: Simple-capture-1800: read frame took 0.010654 [s]
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: read at 9.401655, @ 7.977318 FPS
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: frame 75: 
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: Frame written to flash at 9.435011, 307200, bytes
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: processing image took 0.012252 [s]
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: read frame took 0.012371 [s]
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: read at 9.535438, @ 7.970268 FPS
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: frame 76: 
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: Frame written to flash at 9.565360, 307200, bytes
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: processing image took 0.010579 [s]
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: read frame took 0.010690 [s]
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: read at 9.665750, @ 7.966273 FPS
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: frame 77: 
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: Frame written to flash at 9.701305, 307200, bytes
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: processing image took 0.010598 [s]
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: read frame took 0.010710 [s]
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: read at 9.801696, @ 7.957807 FPS
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: frame 78: 
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: Frame written to flash at 9.834990, 307200, bytes
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: processing image took 0.012224 [s]
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: read frame took 0.012348 [s]
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: read at 9.935422, @ 7.951348 FPS
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: frame 79: 
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: Frame written to flash at 9.965819, 307200, bytes
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: processing image took 0.011098 [s]
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: read frame took 0.011208 [s]
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: read at 10.066269, @ 7.947334 FPS
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: frame 80: 
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: Frame written to flash at 10.101535, 307200, bytes
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: processing image took 0.010827 [s]
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: read frame took 0.010942 [s]
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: read at 10.201935, @ 7.939670 FPS
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: frame 81: 
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: Frame written to flash at 10.234794, 307200, bytes
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: processing image took 0.012086 [s]
+Jul 12 11:44:04 raspberrypi capture: Simple-capture-1800: read frame took 0.012204 [s]
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: read at 10.335235, @ 7.934024 FPS
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: frame 82: 
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: Frame written to flash at 10.365683, 307200, bytes
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: processing image took 0.010925 [s]
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: read frame took 0.011096 [s]
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: read at 10.466157, @ 7.930322 FPS
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: frame 83: 
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: Frame written to flash at 10.501384, 307200, bytes
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: processing image took 0.010690 [s]
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: read frame took 0.010802 [s]
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: read at 10.601787, @ 7.923192 FPS
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: frame 84: 
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: Frame written to flash at 10.633382, 307200, bytes
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: processing image took 0.010684 [s]
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: read frame took 0.010787 [s]
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: read at 10.733786, @ 7.918921 FPS
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: frame 85: 
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: Frame written to flash at 10.765438, 307200, bytes
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: processing image took 0.010679 [s]
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: read frame took 0.010792 [s]
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: read at 10.865835, @ 7.914716 FPS
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: frame 86: 
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: Frame written to flash at 10.903357, 307200, bytes
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: processing image took 0.012649 [s]
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: read frame took 0.012773 [s]
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: read at 11.003803, @ 7.906357 FPS
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: frame 87: 
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: Frame written to flash at 11.033890, 307200, bytes
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: processing image took 0.011176 [s]
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: read frame took 0.011291 [s]
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: read at 11.134307, @ 7.903500 FPS
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: frame 88: 
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: Frame written to flash at 11.165886, 307200, bytes
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: processing image took 0.011267 [s]
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: read frame took 0.011387 [s]
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: read at 11.266427, @ 7.899576 FPS
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: frame 89: 
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: Frame written to flash at 11.303344, 307200, bytes
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: processing image took 0.012653 [s]
+Jul 12 11:44:05 raspberrypi capture: Simple-capture-1800: read frame took 0.012775 [s]
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: read at 11.403798, @ 7.892108 FPS
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: frame 90: 
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: Frame written to flash at 11.434139, 307200, bytes
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: processing image took 0.011429 [s]
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: read frame took 0.011537 [s]
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: read at 11.534683, @ 7.889250 FPS
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: frame 91: 
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: Frame written to flash at 11.566264, 307200, bytes
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: processing image took 0.011517 [s]
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: read frame took 0.011632 [s]
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: read at 11.667073, @ 7.885439 FPS
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: frame 92: 
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: Frame written to flash at 11.701741, 307200, bytes
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: processing image took 0.011061 [s]
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: read frame took 0.011169 [s]
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: read at 11.802181, @ 7.879900 FPS
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: frame 93: 
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: Frame written to flash at 11.833636, 307200, bytes
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: processing image took 0.010974 [s]
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: read frame took 0.011098 [s]
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: read at 11.934309, @ 7.876451 FPS
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: frame 94: 
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: Frame written to flash at 11.966237, 307200, bytes
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: processing image took 0.011495 [s]
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: read frame took 0.011602 [s]
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: read at 12.066679, @ 7.872920 FPS
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: frame 95: 
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: Frame written to flash at 12.102048, 307200, bytes
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: processing image took 0.011372 [s]
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: read frame took 0.011483 [s]
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: read at 12.202669, @ 7.867131 FPS
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: frame 96: 
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: Frame written to flash at 12.236097, 307200, bytes
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: processing image took 0.013386 [s]
+Jul 12 11:44:06 raspberrypi capture: Simple-capture-1800: read frame took 0.013511 [s]
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: read at 12.336687, @ 7.862727 FPS
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: frame 97: 
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: Frame written to flash at 12.366318, 307200, bytes
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: processing image took 0.011585 [s]
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: read frame took 0.011693 [s]
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: read at 12.467049, @ 7.860721 FPS
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: frame 98: 
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: Frame written to flash at 12.502119, 307200, bytes
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: processing image took 0.011449 [s]
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: read frame took 0.011558 [s]
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: read at 12.602564, @ 7.855544 FPS
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: frame 99: 
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: Frame written to flash at 12.634108, 307200, bytes
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: processing image took 0.011416 [s]
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: read frame took 0.011525 [s]
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: read at 12.734549, @ 7.852653 FPS
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: frame 100: 
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: Frame written to flash at 12.767598, 307200, bytes
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: processing image took 0.012864 [s]
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: read frame took 0.012985 [s]
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: read at 12.868083, @ 7.848877 FPS
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: frame 101: 
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: Frame written to flash at 12.898221, 307200, bytes
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: processing image took 0.011439 [s]
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: read frame took 0.011554 [s]
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: read at 12.999070, @ 7.846715 FPS
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: frame 102: 
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: Frame written to flash at 13.034207, 307200, bytes
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: processing image took 0.011480 [s]
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: read frame took 0.011588 [s]
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: read at 13.134600, @ 7.841883 FPS
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: frame 103: 
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: Frame written to flash at 13.168119, 307200, bytes
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: processing image took 0.013387 [s]
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: read frame took 0.013506 [s]
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: read at 13.268549, @ 7.838084 FPS
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: frame 104: 
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: Frame written to flash at 13.298232, 307200, bytes
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: processing image took 0.011456 [s]
+Jul 12 11:44:07 raspberrypi capture: Simple-capture-1800: read frame took 0.011564 [s]
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: read at 13.398624, @ 7.836626 FPS
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: frame 105: 
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: Frame written to flash at 13.433730, 307200, bytes
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: processing image took 0.011098 [s]
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: read frame took 0.011209 [s]
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: read at 13.534162, @ 7.832033 FPS
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: frame 106: 
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: Frame written to flash at 13.565754, 307200, bytes
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: processing image took 0.011176 [s]
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: read frame took 0.011292 [s]
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: read at 13.666376, @ 7.829435 FPS
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: frame 107: 
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: Frame written to flash at 13.699690, 307200, bytes
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: processing image took 0.012919 [s]
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: read frame took 0.013060 [s]
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: read at 13.800150, @ 7.826002 FPS
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: frame 108: 
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: Frame written to flash at 13.833713, 307200, bytes
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: processing image took 0.011080 [s]
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: read frame took 0.011191 [s]
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: read at 13.934144, @ 7.822511 FPS
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: frame 109: 
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: Frame written to flash at 13.965821, 307200, bytes
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: processing image took 0.011170 [s]
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: read frame took 0.011278 [s]
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: read at 14.066264, @ 7.820129 FPS
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: frame 110: 
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: Frame written to flash at 14.099733, 307200, bytes
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: processing image took 0.012992 [s]
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: read frame took 0.013111 [s]
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: read at 14.200187, @ 7.816798 FPS
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: frame 111: 
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: Frame written to flash at 14.233916, 307200, bytes
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: processing image took 0.011262 [s]
+Jul 12 11:44:08 raspberrypi capture: Simple-capture-1800: read frame took 0.011375 [s]
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: read at 14.334328, @ 7.813411 FPS
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: frame 112: 
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: Frame written to flash at 14.365691, 307200, bytes
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: processing image took 0.010988 [s]
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: read frame took 0.011150 [s]
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: read at 14.466147, @ 7.811340 FPS
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: frame 113: 
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: Frame written to flash at 14.499820, 307200, bytes
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: processing image took 0.013106 [s]
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: read frame took 0.013224 [s]
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: read at 14.600270, @ 7.808075 FPS
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: frame 114: 
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: Frame written to flash at 14.633705, 307200, bytes
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: processing image took 0.011086 [s]
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: read frame took 0.011195 [s]
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: read at 14.734137, @ 7.805004 FPS
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: frame 115: 
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: Frame written to flash at 14.765493, 307200, bytes
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: processing image took 0.010809 [s]
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: read frame took 0.010916 [s]
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: read at 14.865891, @ 7.803098 FPS
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: frame 116: 
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: Frame written to flash at 14.897872, 307200, bytes
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: processing image took 0.011158 [s]
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: read frame took 0.011268 [s]
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: read at 14.998288, @ 7.800890 FPS
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: frame 117: 
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: Frame written to flash at 15.035681, 307200, bytes
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: processing image took 0.013055 [s]
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: read frame took 0.013238 [s]
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: read at 15.136209, @ 7.795875 FPS
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: frame 118: 
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: Frame written to flash at 15.165739, 307200, bytes
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: processing image took 0.011056 [s]
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: read frame took 0.011223 [s]
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: read at 15.266198, @ 7.794999 FPS
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: frame 119: 
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: Frame written to flash at 15.297804, 307200, bytes
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: processing image took 0.011095 [s]
+Jul 12 11:44:09 raspberrypi capture: Simple-capture-1800: read frame took 0.011205 [s]
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: read at 15.398216, @ 7.793111 FPS
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: frame 120: 
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: Frame written to flash at 15.435097, 307200, bytes
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: processing image took 0.012482 [s]
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: read frame took 0.012601 [s]
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: read at 15.535538, @ 7.788594 FPS
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: frame 121: 
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: Frame written to flash at 15.565717, 307200, bytes
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: processing image took 0.011047 [s]
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: read frame took 0.011212 [s]
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: read at 15.666178, @ 7.787477 FPS
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: frame 122: 
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: Frame written to flash at 15.697806, 307200, bytes
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: processing image took 0.011105 [s]
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: read frame took 0.011216 [s]
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: read at 15.798216, @ 7.785689 FPS
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: frame 123: 
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: Frame written to flash at 15.835079, 307200, bytes
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: processing image took 0.012468 [s]
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: read frame took 0.012586 [s]
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: read at 15.935518, @ 7.781360 FPS
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: frame 124: 
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: Frame written to flash at 15.965785, 307200, bytes
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: processing image took 0.011181 [s]
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: read frame took 0.011291 [s]
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: read at 16.066236, @ 7.780292 FPS
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: frame 125: 
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: Frame written to flash at 16.097735, 307200, bytes
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: processing image took 0.011062 [s]
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: read frame took 0.011173 [s]
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: read at 16.198297, @ 7.778595 FPS
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: frame 126: 
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: Frame written to flash at 16.229869, 307200, bytes
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: processing image took 0.011120 [s]
+Jul 12 11:44:10 raspberrypi capture: Simple-capture-1800: read frame took 0.011233 [s]
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: read at 16.330270, @ 7.776969 FPS
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: frame 127: 
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: Frame written to flash at 16.367199, 307200, bytes
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: processing image took 0.012530 [s]
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: read frame took 0.012651 [s]
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: read at 16.467629, @ 7.772825 FPS
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: frame 128: 
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: Frame written to flash at 16.497658, 307200, bytes
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: processing image took 0.010959 [s]
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: read frame took 0.011071 [s]
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: read at 16.598066, @ 7.771990 FPS
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: frame 129: 
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: Frame written to flash at 16.629677, 307200, bytes
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: processing image took 0.010938 [s]
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: read frame took 0.011045 [s]
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: read at 16.730069, @ 7.770440 FPS
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: frame 130: 
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: Frame written to flash at 16.766344, 307200, bytes
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: processing image took 0.011708 [s]
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: read frame took 0.011834 [s]
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: read at 16.866783, @ 7.766745 FPS
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: frame 131: 
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: Frame written to flash at 16.897044, 307200, bytes
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: processing image took 0.010353 [s]
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: read frame took 0.010460 [s]
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: read at 16.997434, @ 7.765878 FPS
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: frame 132: 
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: Frame written to flash at 17.029095, 307200, bytes
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: processing image took 0.010360 [s]
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: read frame took 0.010468 [s]
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: read at 17.129476, @ 7.764394 FPS
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: frame 133: 
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: Frame written to flash at 17.165017, 307200, bytes
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: processing image took 0.010375 [s]
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: read frame took 0.010483 [s]
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: read at 17.265408, @ 7.761184 FPS
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: frame 134: 
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: Frame written to flash at 17.298746, 307200, bytes
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: processing image took 0.012041 [s]
+Jul 12 11:44:11 raspberrypi capture: Simple-capture-1800: read frame took 0.012164 [s]
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: read at 17.399169, @ 7.758991 FPS
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: frame 135: 
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: Frame written to flash at 17.429093, 307200, bytes
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: processing image took 0.010367 [s]
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: read frame took 0.010472 [s]
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: read at 17.529473, @ 7.758362 FPS
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: frame 136: 
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: Frame written to flash at 17.565012, 307200, bytes
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: processing image took 0.010372 [s]
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: read frame took 0.010482 [s]
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: read at 17.665397, @ 7.755275 FPS
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: frame 137: 
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: Frame written to flash at 17.697190, 307200, bytes
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: processing image took 0.010511 [s]
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: read frame took 0.010620 [s]
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: read at 17.797623, @ 7.753844 FPS
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: frame 138: 
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: Frame written to flash at 17.829085, 307200, bytes
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: processing image took 0.010376 [s]
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: read frame took 0.010487 [s]
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: read at 17.929476, @ 7.752597 FPS
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: frame 139: 
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: Frame written to flash at 17.964985, 307200, bytes
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: processing image took 0.010350 [s]
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: read frame took 0.010457 [s]
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: read at 18.065368, @ 7.749634 FPS
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: frame 140: 
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: Frame written to flash at 18.097073, 307200, bytes
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: processing image took 0.010399 [s]
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: read frame took 0.010508 [s]
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: read at 18.197458, @ 7.748335 FPS
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: frame 141: 
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: Frame written to flash at 18.229061, 307200, bytes
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: processing image took 0.010356 [s]
+Jul 12 11:44:12 raspberrypi capture: Simple-capture-1800: read frame took 0.010461 [s]
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: read at 18.329440, @ 7.747100 FPS
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: frame 142: 
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: Frame written to flash at 18.366738, 307200, bytes
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: processing image took 0.012110 [s]
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: read frame took 0.012231 [s]
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: read at 18.467167, @ 7.743472 FPS
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: frame 143: 
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: Frame written to flash at 18.497023, 307200, bytes
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: processing image took 0.010354 [s]
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: read frame took 0.010461 [s]
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: read at 18.597412, @ 7.743013 FPS
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: frame 144: 
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: Frame written to flash at 18.629050, 307200, bytes
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: processing image took 0.010345 [s]
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: read frame took 0.010454 [s]
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: read at 18.729430, @ 7.741827 FPS
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: frame 145: 
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: Frame written to flash at 18.766573, 307200, bytes
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: processing image took 0.011990 [s]
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: read frame took 0.012112 [s]
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: read at 18.867014, @ 7.738373 FPS
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: frame 146: 
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: Frame written to flash at 18.897013, 307200, bytes
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: processing image took 0.010362 [s]
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: read frame took 0.010471 [s]
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: read at 18.997400, @ 7.737901 FPS
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: frame 147: 
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: Frame written to flash at 19.029050, 307200, bytes
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: processing image took 0.010354 [s]
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: read frame took 0.010463 [s]
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: read at 19.129434, @ 7.736768 FPS
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: frame 148: 
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: Frame written to flash at 19.165000, 307200, bytes
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: processing image took 0.010386 [s]
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: read frame took 0.010495 [s]
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: read at 19.265384, @ 7.734079 FPS
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: frame 149: 
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: Frame written to flash at 19.297050, 307200, bytes
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: processing image took 0.010398 [s]
+Jul 12 11:44:13 raspberrypi capture: Simple-capture-1800: read frame took 0.010502 [s]
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: read at 19.397435, @ 7.732981 FPS
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: frame 150: 
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: Frame written to flash at 19.429303, 307200, bytes
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: processing image took 0.010649 [s]
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: read frame took 0.010765 [s]
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: read at 19.529728, @ 7.731803 FPS
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: frame 151: 
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: Frame written to flash at 19.564956, 307200, bytes
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: processing image took 0.010350 [s]
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: read frame took 0.010452 [s]
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: read at 19.665337, @ 7.729336 FPS
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: frame 152: 
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: Frame written to flash at 19.696994, 307200, bytes
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: processing image took 0.010356 [s]
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: read frame took 0.010467 [s]
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: read at 19.797382, @ 7.728294 FPS
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: frame 153: 
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: Frame written to flash at 19.829056, 307200, bytes
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: processing image took 0.010382 [s]
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: read frame took 0.010489 [s]
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: read at 19.929443, @ 7.727261 FPS
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: frame 154: 
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: Frame written to flash at 19.961896, 307200, bytes
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: processing image took 0.011221 [s]
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: read frame took 0.011338 [s]
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: read at 20.062319, @ 7.725927 FPS
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: frame 155: 
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: Frame written to flash at 20.097011, 307200, bytes
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: processing image took 0.010380 [s]
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: read frame took 0.010486 [s]
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: read at 20.197397, @ 7.723767 FPS
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: frame 156: 
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: Frame written to flash at 20.229037, 307200, bytes
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: processing image took 0.010375 [s]
+Jul 12 11:44:14 raspberrypi capture: Simple-capture-1800: read frame took 0.010483 [s]
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: read at 20.329424, @ 7.722796 FPS
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: frame 157: 
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: Frame written to flash at 20.361062, 307200, bytes
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: processing image took 0.010357 [s]
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: read frame took 0.010467 [s]
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: read at 20.461543, @ 7.721803 FPS
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: frame 158: 
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: Frame written to flash at 20.498715, 307200, bytes
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: processing image took 0.012059 [s]
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: read frame took 0.012184 [s]
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: read at 20.599140, @ 7.718769 FPS
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: frame 159: 
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: Frame written to flash at 20.629066, 307200, bytes
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: processing image took 0.010400 [s]
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: read frame took 0.010504 [s]
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: read at 20.729444, @ 7.718490 FPS
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: frame 160: 
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: Frame written to flash at 20.761073, 307200, bytes
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: processing image took 0.010376 [s]
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: read frame took 0.010482 [s]
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: read at 20.861455, @ 7.717582 FPS
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: frame 161: 
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: Frame written to flash at 20.898675, 307200, bytes
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: processing image took 0.012039 [s]
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: read frame took 0.012157 [s]
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: read at 20.999099, @ 7.714617 FPS
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: frame 162: 
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: Frame written to flash at 21.029025, 307200, bytes
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: processing image took 0.010368 [s]
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: read frame took 0.010477 [s]
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: read at 21.129408, @ 7.714366 FPS
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: frame 163: 
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: Frame written to flash at 21.161053, 307200, bytes
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: processing image took 0.010376 [s]
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: read frame took 0.010480 [s]
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: read at 21.261439, @ 7.713495 FPS
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: frame 164: 
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: Frame written to flash at 21.298555, 307200, bytes
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: processing image took 0.011960 [s]
+Jul 12 11:44:15 raspberrypi capture: Simple-capture-1800: read frame took 0.012084 [s]
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: read at 21.398991, @ 7.710644 FPS
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: frame 165: 
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: Frame written to flash at 21.429002, 307200, bytes
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: processing image took 0.010355 [s]
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: read frame took 0.010457 [s]
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: read at 21.529382, @ 7.710393 FPS
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: frame 166: 
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: Frame written to flash at 21.561042, 307200, bytes
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: processing image took 0.010362 [s]
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: read frame took 0.010471 [s]
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: read at 21.661428, @ 7.709556 FPS
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: frame 167: 
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: Frame written to flash at 21.697012, 307200, bytes
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: processing image took 0.010412 [s]
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: read frame took 0.010517 [s]
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: read at 21.797402, @ 7.707340 FPS
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: frame 168: 
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: Frame written to flash at 21.829523, 307200, bytes
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: processing image took 0.010912 [s]
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: read frame took 0.011031 [s]
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: read at 21.929948, @ 7.706357 FPS
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: frame 169: 
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: Frame written to flash at 21.961008, 307200, bytes
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: processing image took 0.010349 [s]
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: read frame took 0.010457 [s]
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: read at 22.061385, @ 7.705772 FPS
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: frame 170: 
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: Frame written to flash at 22.097000, 307200, bytes
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: processing image took 0.010388 [s]
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: read frame took 0.010498 [s]
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: read at 22.197390, @ 7.703609 FPS
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: frame 171: 
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: Frame written to flash at 22.229007, 307200, bytes
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: processing image took 0.010381 [s]
+Jul 12 11:44:16 raspberrypi capture: Simple-capture-1800: read frame took 0.010487 [s]
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: read at 22.329389, @ 7.702853 FPS
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: frame 172: 
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: Frame written to flash at 22.362743, 307200, bytes
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: processing image took 0.012069 [s]
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: read frame took 0.012188 [s]
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: read at 22.463164, @ 7.701497 FPS
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: frame 173: 
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: Frame written to flash at 22.496951, 307200, bytes
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: processing image took 0.010358 [s]
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: read frame took 0.010462 [s]
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: read at 22.597336, @ 7.700023 FPS
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: frame 174: 
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: Frame written to flash at 22.628998, 307200, bytes
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: processing image took 0.010373 [s]
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: read frame took 0.010482 [s]
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: read at 22.729385, @ 7.699284 FPS
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: frame 175: 
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: Frame written to flash at 22.761858, 307200, bytes
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: processing image took 0.011224 [s]
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: read frame took 0.011348 [s]
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: read at 22.862285, @ 7.698268 FPS
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: frame 176: 
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: Frame written to flash at 22.896964, 307200, bytes
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: processing image took 0.010378 [s]
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: read frame took 0.010488 [s]
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: read at 22.997362, @ 7.696535 FPS
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: frame 177: 
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: Frame written to flash at 23.029025, 307200, bytes
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: processing image took 0.010407 [s]
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: read frame took 0.010513 [s]
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: read at 23.129412, @ 7.695829 FPS
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: frame 178: 
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: Frame written to flash at 23.161000, 307200, bytes
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: processing image took 0.010354 [s]
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: read frame took 0.010464 [s]
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: read at 23.261386, @ 7.695156 FPS
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: frame 179: 
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: Frame written to flash at 23.293067, 307200, bytes
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: processing image took 0.010368 [s]
+Jul 12 11:44:17 raspberrypi capture: Simple-capture-1800: read frame took 0.010475 [s]
+Jul 12 11:44:18 raspberrypi capture: Simple-capture-1800: read at 23.393455, @ 7.694460 FPS
+Jul 12 11:44:18 raspberrypi capture: Simple-capture-1800: frame 180: 
+Jul 12 11:44:18 raspberrypi capture: Simple-capture-1800: Frame written to flash at 23.430636, 307200, bytes
+Jul 12 11:44:18 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:18 raspberrypi capture: Simple-capture-1800: processing image took 0.012017 [s]
+Jul 12 11:44:18 raspberrypi capture: Simple-capture-1800: read frame took 0.012139 [s]
+Jul 12 11:44:18 raspberrypi capture: Simple-capture-1800: read at 23.531059, @ 7.691961 FPS
+Jul 12 11:44:18 raspberrypi capture: Simple-capture-1800: frame 181: 
+Jul 12 11:44:18 raspberrypi capture: Simple-capture-1800: Frame written to flash at 23.560997, 307200, bytes
+Jul 12 11:44:18 raspberrypi capture: Simple-capture-1800: Dump YUYV converted to YY size 614400
+Jul 12 11:44:18 raspberrypi capture: Simple-capture-1800: processing image took 0.010351 [s]
+Jul 12 11:44:18 raspberrypi capture: Simple-capture-1800: read frame took 0.010456 [s]
+Jul 12 11:44:18 raspberrypi capture: Simple-capture-1800: read at 23.661370, @ 7.691862 FPS
