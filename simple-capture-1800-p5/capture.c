@@ -62,6 +62,12 @@ struct buffer
     size_t length;
 };
 
+// Set up RT scheduling attributes
+pthread_t mainloopThread;
+pthread_attr_t rt_thread_attr;
+struct sched_param rt_sched_param;
+pthread_mutex_t state_mutex = PTHREAD_MUTEX_INITIALIZER;
+
 static char *dev_name;
 // static enum io_method   io = IO_METHOD_USERPTR;
 // static enum io_method   io = IO_METHOD_READ;
@@ -1049,7 +1055,13 @@ int main(int argc, char **argv)
     start_capturing();
 
     // service loop frame read
-    mainloop();
+    pthread_attr_init( &rt_thread_attr );
+    pthread_attr_setinheritsched( &rt_thread_attr, PTHREAD_EXPLICIT_SCHED );
+    pthread_attr_setschedpolicy( &rt_thread_attr, SCHED_FIFO );
+    rt_sched_param.sched_priority = sched_get_priority_max(SCHED_FIFO) - 1;
+    pthread_attr_setschedparam( &rt_thread_attr, &rt_sched_param );
+
+    pthread_create( &mainloopThread, &rt_thread_attr, mainloop, NULL);
 
     // shutdown of frame acquisition service
     stop_capturing();
