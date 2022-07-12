@@ -1061,11 +1061,12 @@ int main(int argc, char **argv)
     // service loop frame read
     pthread_attr_init( &rt_thread_attr );
 
-    cpu_set_t cpuset;
-    CPU_ZERO(&cpuset);
-    int cpuidx=(3);
-    CPU_SET(cpuidx, &cpuset);
-    pthread_attr_setaffinity_np(&rt_thread_attr, sizeof(cpu_set_t), &cpuset);
+    // Causes mmap failure?
+    // cpu_set_t cpuset;
+    // CPU_ZERO(&cpuset);
+    // int cpuidx=(3);
+    // CPU_SET(cpuidx, &cpuset);
+    // pthread_attr_setaffinity_np(&rt_thread_attr, sizeof(cpu_set_t), &cpuset);
 
     pthread_attr_setinheritsched( &rt_thread_attr, PTHREAD_EXPLICIT_SCHED );
     pthread_attr_setschedpolicy( &rt_thread_attr, SCHED_FIFO );
