@@ -12,6 +12,10 @@
  *      This program is provided with the V4L2 API
  * see http://linuxtv.org/docs.php for more information
  */
+#define _GNU_SOURCE
+#include <pthread.h>
+#include <sched.h>
+
 #include <syslog.h>
 #include <stdio.h>
 #include <stdlib.h>
