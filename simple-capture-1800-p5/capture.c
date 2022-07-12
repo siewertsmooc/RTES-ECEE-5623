@@ -502,13 +502,18 @@ static void mainloop(void)
                 exit(EXIT_FAILURE);
             }
 
+            struct timespec starting;
+            struct timespec ending;
+            clock_gettime(CLOCK_MONOTONIC, &starting);
+            double starting_now = (double)starting.tv_sec + (double)starting.tv_nsec / 1000000000.0;
+
             if (read_frame())
             {
                 if (nanosleep(&read_delay, &time_error) != 0)
                     perror("nanosleep");
                 else
                 {
-                    syslog(LOG_CRIT, "Simple-capture-1800: time_error.tv_sec=%ld, time_error.tv_nsec=%ld\n", time_error.tv_sec, time_error.tv_nsec);
+                    // syslog(LOG_CRIT, "Simple-capture-1800: time_error.tv_sec=%ld, time_error.tv_nsec=%ld\n", time_error.tv_sec, time_error.tv_nsec);
                     if (framecnt > 1)
                     {
                         clock_gettime(CLOCK_MONOTONIC, &time_now);
@@ -519,6 +524,10 @@ static void mainloop(void)
                 count--;
                 break;
             }
+
+            clock_gettime(CLOCK_MONOTONIC, &ending);
+            double ending_now = (double)ending.tv_sec + (double)ending.tv_nsec / 1000000000.0;
+            syslog(LOG_CRIT, "Simple-capture-1800: read frame took %lf [s]\n", (ending_now - starting_now));
 
             /* EAGAIN - continue select loop unless count done. */
             if (count <= 0)
