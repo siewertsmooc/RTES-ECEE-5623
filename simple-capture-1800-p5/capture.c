@@ -517,7 +517,7 @@ static void mainloop(void)
             {
                 clock_gettime(CLOCK_MONOTONIC, &ending);
                 double ending_now = (double)ending.tv_sec + (double)ending.tv_nsec / 1000000000.0;
-                syslog(LOG_CRIT, "Simple-capture-1800: read frame took %lf [s]\n", (ending_now - starting_now));
+                // syslog(LOG_CRIT, "Simple-capture-1800: read frame took %lf [s]\n", (ending_now - starting_now));
 
                 if (nanosleep(&read_delay, &time_error) != 0)
                     perror("nanosleep");
@@ -1056,6 +1056,13 @@ int main(int argc, char **argv)
 
     // service loop frame read
     pthread_attr_init( &rt_thread_attr );
+
+    cpu_set_t cpuset;
+    CPU_ZERO(&cpuset);
+    cpuidx=(3);
+    CPU_SET(cpuidx, &cpuset);
+    pthread_attr_setaffinity_np(&rt_thread_attr, sizeof(cpu_set_t), &cpuset);
+
     pthread_attr_setinheritsched( &rt_thread_attr, PTHREAD_EXPLICIT_SCHED );
     pthread_attr_setschedpolicy( &rt_thread_attr, SCHED_FIFO );
     rt_sched_param.sched_priority = sched_get_priority_max(SCHED_FIFO) - 1;
