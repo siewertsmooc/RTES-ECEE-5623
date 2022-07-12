@@ -66,12 +66,6 @@ struct buffer
     size_t length;
 };
 
-// Set up RT scheduling attributes
-pthread_t mainloopThread;
-pthread_attr_t rt_thread_attr;
-struct sched_param rt_sched_param;
-pthread_mutex_t state_mutex = PTHREAD_MUTEX_INITIALIZER;
-
 static char *dev_name;
 // static enum io_method   io = IO_METHOD_USERPTR;
 // static enum io_method   io = IO_METHOD_READ;
@@ -465,7 +459,7 @@ static int read_frame(void)
     return 1;
 }
 
-static void *mainloop(void *arg)
+static void mainloop()
 {
     unsigned int count;
     struct timespec read_delay;
@@ -1053,27 +1047,27 @@ int main(int argc, char **argv)
         }
     }
 
+    struct sched_param main_param;
+    pthread_attr_t main_attr;
+    pid_t mainpid;
+
+    int rt_max_prio = sched_get_priority_max(SCHED_FIFO);
+    int rt_min_prio = sched_get_priority_min(SCHED_FIFO);
+
+    int rc=sched_getparam(mainpid, &main_param);
+    main_param.sched_priority=rt_max_prio;  
+ 
+    int rc=sched_setscheduler(getpid(), SCHED_FIFO, &main_param);
+    printf("Setting main thread priority to max.");
+    if(rc < 0) perror("main_param");
+
     // initialization of V4L2
     open_device();
     init_device();
     start_capturing();
 
     // service loop frame read
-    pthread_attr_init( &rt_thread_attr );
-
-    // Causes mmap failure?
-    // cpu_set_t cpuset;
-    // CPU_ZERO(&cpuset);
-    // int cpuidx=(3);
-    // CPU_SET(cpuidx, &cpuset);
-    // pthread_attr_setaffinity_np(&rt_thread_attr, sizeof(cpu_set_t), &cpuset);
-
-    pthread_attr_setinheritsched( &rt_thread_attr, PTHREAD_EXPLICIT_SCHED );
-    pthread_attr_setschedpolicy( &rt_thread_attr, SCHED_FIFO );
-    rt_sched_param.sched_priority = sched_get_priority_max(SCHED_FIFO) - 1;
-    pthread_attr_setschedparam( &rt_thread_attr, &rt_sched_param );
-
-    pthread_create( &mainloopThread, &rt_thread_attr, mainloop, NULL);
+    mainloop();
 
     // shutdown of frame acquisition service
     stop_capturing();
