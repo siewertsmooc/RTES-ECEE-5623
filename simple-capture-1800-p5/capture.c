@@ -509,6 +509,10 @@ static void mainloop(void)
 
             if (read_frame())
             {
+                clock_gettime(CLOCK_MONOTONIC, &ending);
+                double ending_now = (double)ending.tv_sec + (double)ending.tv_nsec / 1000000000.0;
+                syslog(LOG_CRIT, "Simple-capture-1800: read frame took %lf [s]\n", (ending_now - starting_now));
+
                 if (nanosleep(&read_delay, &time_error) != 0)
                     perror("nanosleep");
                 else
@@ -525,9 +529,6 @@ static void mainloop(void)
                 break;
             }
 
-            clock_gettime(CLOCK_MONOTONIC, &ending);
-            double ending_now = (double)ending.tv_sec + (double)ending.tv_nsec / 1000000000.0;
-            syslog(LOG_CRIT, "Simple-capture-1800: read frame took %lf [s]\n", (ending_now - starting_now));
 
             /* EAGAIN - continue select loop unless count done. */
             if (count <= 0)
