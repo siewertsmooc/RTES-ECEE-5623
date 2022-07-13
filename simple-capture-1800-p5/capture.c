@@ -1057,7 +1057,7 @@ int main(int argc, char **argv)
     int rc=sched_getparam(mainpid, &main_param);
     main_param.sched_priority=rt_max_prio;  
  
-    int rc=sched_setscheduler(getpid(), SCHED_FIFO, &main_param);
+    rc=sched_setscheduler(getpid(), SCHED_FIFO, &main_param);
     printf("Setting main thread priority to max.");
     if(rc < 0) perror("main_param");
 
