@@ -1050,11 +1050,12 @@ int main(int argc, char **argv)
     struct sched_param main_param;
     pthread_attr_t main_attr;
     pid_t mainpid;
+    int rc;
 
     int rt_max_prio = sched_get_priority_max(SCHED_FIFO);
     int rt_min_prio = sched_get_priority_min(SCHED_FIFO);
 
-    int rc=sched_getparam(mainpid, &main_param);
+    rc=sched_getparam(mainpid, &main_param);
     main_param.sched_priority=rt_max_prio;  
  
     rc=sched_setscheduler(getpid(), SCHED_FIFO, &main_param);
