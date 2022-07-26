@@ -12,7 +12,7 @@ CFILES= capturelib.c sequencer.c
 SRCS= ${HFILES} ${CFILES}
 OBJS= ${CFILES:.c=.o}
 
-all: capture
+all: capture sequencer
 
 clean:
 	-rm -f *.o *.d frames/*.pgm frames/*.ppm
