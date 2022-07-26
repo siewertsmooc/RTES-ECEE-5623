@@ -13,7 +13,6 @@ SRCS= ${HFILES} ${CFILES}
 OBJS= ${CFILES:.c=.o}
 
 all: capture
-     mkdir frames
 
 clean:
 	-rm -f *.o *.d frames/*.pgm frames/*.ppm
