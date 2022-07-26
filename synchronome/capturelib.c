@@ -11,6 +11,9 @@
  *
  *      This program is provided with the V4L2 API
  * see http://linuxtv.org/docs.php for more information
+ * 
+ * This code has been modified from it's original version by Lorin Achey.
+ * July 2022
  */
 
 #include <stdio.h>
@@ -64,8 +67,8 @@
 //#define FRAMES_PER_SEC (25) 
 //#define FRAMES_PER_SEC (30) 
 
-#define COLOR_CONVERT_RGB
-//#define COLOR_CONVERT_GRAY
+//#define COLOR_CONVERT_RGB
+#define COLOR_CONVERT_GRAY
 #define DUMP_FRAMES
 
 #define DRIVER_MMAP_BUFFERS (6)  // request buffers for delay
@@ -955,6 +958,7 @@ int v4l2_frame_acquisition_loop(char *dev_name)
 }
 
 
+// TODO: DELETE THESE?!
 int v4l2_frame_acquisition_initialization(char *dev_name)
 {
     // initialization of V4L2

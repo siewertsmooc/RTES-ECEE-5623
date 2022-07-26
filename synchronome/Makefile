@@ -3,11 +3,11 @@ LIB_DIRS =
 CC=gcc
 
 CDEFS=
-CFLAGS= -O0 -g $(INCLUDE_DIRS) $(CDEFS)
+CFLAGS= -O0 -Wall -g $(INCLUDE_DIRS) $(CDEFS)
 LIBS= 
 
 HFILES= 
-CFILES= capturelib.c
+CFILES= capturelib.c sequencer.c
 
 SRCS= ${HFILES} ${CFILES}
 OBJS= ${CFILES:.c=.o}
@@ -20,6 +20,9 @@ clean:
 
 capture: capture.o capturelib.o
 	$(CC) $(LDFLAGS) $(CFLAGS) -o $@ $@.o capturelib.o -lrt
+
+sequencer: sequencer.o
+	$(CC) $(LDFLAGS) $(CFLAGS) -o $@ $@.o -lpthread
 
 .c.o:
 	$(CC) $(CFLAGS) -c $<

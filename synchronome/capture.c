@@ -25,5 +25,4 @@ int main(int argc, char **argv)
         dev_name = "/dev/video0";
 
     v4l2_frame_acquisition_loop(dev_name);
-
 }
