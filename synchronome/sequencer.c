@@ -70,7 +70,7 @@ typedef struct
 
 void *fib10(void *threadp)
 {
-    printf("RUNNING FIB10");
+    printf("RUNNING FIB10\n");
     double event_time, run_time = 0.0;
     int limit = 0, release = 0, cpucore, i;
     threadParams_t *threadParams = (threadParams_t *)threadp;
@@ -106,7 +106,7 @@ void *fib10(void *threadp)
 
 void *frameSelectionService(void *threadp)
 {
-    printf("RUNNING frameSELECTIONSERVICE");
+    printf("RUNNING frameSELECTIONSERVICE\n");
 
     double event_time, run_time = 0.0;
     int limit = 0, release = 0, cpucore, i;
@@ -142,7 +142,7 @@ void *frameSelectionService(void *threadp)
 void *frameWriteBackService(void *threadp)
 {
 
-    printf("RUNNING frameWRITEBACKSERVICE");
+    printf("RUNNING frameWRITEBACKSERVICE\n");
 
     double event_time, run_time = 0.0;
     int limit = 0, release = 0, cpucore, i;
@@ -246,12 +246,20 @@ void *Sequencer(void *threadp)
         sem_post(&semF10);
         printf("t=%lf\n", event_time = getTimeMsec() - start_time);
 
-        usleep(500 * USEC_PER_MSEC);
+        usleep(20 * USEC_PER_MSEC);
+        sem_post(&semF10);
+        printf("t=%lf\n", event_time = getTimeMsec() - start_time);
+
+        usleep(50 * USEC_PER_MSEC);
         sem_post(&semFrameSelectionService);
         printf("t=%lf\n", event_time = getTimeMsec() - start_time);
 
-        usleep(500 * USEC_PER_MSEC);
+        usleep(50 * USEC_PER_MSEC);
         sem_post(&semFrameWriteBackService);
+        printf("t=%lf\n", event_time = getTimeMsec() - start_time);
+
+        usleep(20 * USEC_PER_MSEC);
+        sem_post(&semF10);
         printf("t=%lf\n", event_time = getTimeMsec() - start_time);
 
         usleep(20 * USEC_PER_MSEC);
