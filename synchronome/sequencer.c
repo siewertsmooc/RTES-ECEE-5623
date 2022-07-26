@@ -70,6 +70,7 @@ typedef struct
 
 void *fib10(void *threadp)
 {
+    printf("RUNNING FIB10");
     double event_time, run_time = 0.0;
     int limit = 0, release = 0, cpucore, i;
     threadParams_t *threadParams = (threadParams_t *)threadp;
@@ -105,6 +106,8 @@ void *fib10(void *threadp)
 
 void *frameSelectionService(void *threadp)
 {
+    printf("RUNNING frameSELECTIONSERVICE");
+
     double event_time, run_time = 0.0;
     int limit = 0, release = 0, cpucore, i;
     threadParams_t *threadParams = (threadParams_t *)threadp;
@@ -138,6 +141,9 @@ void *frameSelectionService(void *threadp)
 
 void *frameWriteBackService(void *threadp)
 {
+
+    printf("RUNNING frameWRITEBACKSERVICE");
+
     double event_time, run_time = 0.0;
     int limit = 0, release = 0, cpucore, i;
     threadParams_t *threadParams = (threadParams_t *)threadp;
@@ -248,6 +254,7 @@ void *Sequencer(void *threadp)
         sem_post(&semFrameWriteBackService);
         printf("t=%lf\n", event_time = getTimeMsec() - start_time);
 
+        usleep(20 * USEC_PER_MSEC);
         MajorPeriodCnt++;
     } while (MajorPeriodCnt < threadParams->MajorPeriods);
 
