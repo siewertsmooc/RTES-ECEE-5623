@@ -1,0 +1,1123 @@
+Dec  5 21:55:01 sam-ubuntu-VirtualBox CRON[4554]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Dec  5 22:09:29 sam-ubuntu-VirtualBox seqgen: Sequencer @ sec=0, msec=638
+Dec  5 22:09:29 sam-ubuntu-VirtualBox seqgen: Frame Sampler thread @ sec=0, msec=639
+Dec  5 22:09:29 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis thread @ sec=0, msec=639
+Dec  5 22:09:29 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote thread @ sec=0, msec=639
+Dec  5 22:09:29 sam-ubuntu-VirtualBox seqgen: Difference Image Proc thread @ sec=0, msec=639
+Dec  5 22:09:29 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File thread @ sec=0, msec=639
+Dec  5 22:09:29 sam-ubuntu-VirtualBox seqgen: Processed Image Save to File thread @ sec=0, msec=639
+Dec  5 22:09:29 sam-ubuntu-VirtualBox seqgen: 10 sec Tick Debug thread @ sec=0, msec=639
+Dec  5 22:09:30 sam-ubuntu-VirtualBox seqgen: Sequencer thread @ sec=1, msec=641
+Dec  5 22:09:30 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 1 @ sec=1, msec=675
+Dec  5 22:09:30 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 2 @ sec=1, msec=709
+Dec  5 22:09:30 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 3 @ sec=1, msec=743
+Dec  5 22:09:30 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 4 @ sec=1, msec=777
+Dec  5 22:09:30 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 5 @ sec=1, msec=810
+Dec  5 22:09:30 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 6 @ sec=1, msec=844
+Dec  5 22:09:30 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 7 @ sec=1, msec=877
+Dec  5 22:09:30 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 8 @ sec=1, msec=911
+Dec  5 22:09:30 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 9 @ sec=1, msec=945
+Dec  5 22:09:30 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 10 @ sec=1, msec=979
+Dec  5 22:09:30 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 1 @ sec=1, msec=979
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 11 @ sec=2, msec=12
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 12 @ sec=2, msec=46
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 13 @ sec=2, msec=79
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 14 @ sec=2, msec=113
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 15 @ sec=2, msec=147
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 16 @ sec=2, msec=180
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 17 @ sec=2, msec=214
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 18 @ sec=2, msec=248
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 19 @ sec=2, msec=282
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 20 @ sec=2, msec=317
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 2 @ sec=2, msec=317
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 21 @ sec=2, msec=350
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 22 @ sec=2, msec=384
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 23 @ sec=2, msec=417
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 24 @ sec=2, msec=451
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 25 @ sec=2, msec=484
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 26 @ sec=2, msec=518
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 27 @ sec=2, msec=551
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 28 @ sec=2, msec=585
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 29 @ sec=2, msec=618
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 30 @ sec=2, msec=652
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 3 @ sec=2, msec=652
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 1 @ sec=2, msec=652
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 1 @ sec=2, msec=652
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 1 @ sec=2, msec=652
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 31 @ sec=2, msec=685
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 32 @ sec=2, msec=719
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 33 @ sec=2, msec=752
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 34 @ sec=2, msec=786
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 35 @ sec=2, msec=819
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 36 @ sec=2, msec=853
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 37 @ sec=2, msec=886
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 38 @ sec=2, msec=920
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 39 @ sec=2, msec=954
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 40 @ sec=2, msec=988
+Dec  5 22:09:31 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 4 @ sec=2, msec=988
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 41 @ sec=3, msec=22
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 42 @ sec=3, msec=55
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 43 @ sec=3, msec=90
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 44 @ sec=3, msec=123
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 45 @ sec=3, msec=157
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 46 @ sec=3, msec=190
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 47 @ sec=3, msec=224
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 48 @ sec=3, msec=258
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 49 @ sec=3, msec=291
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 50 @ sec=3, msec=325
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 5 @ sec=3, msec=325
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 51 @ sec=3, msec=358
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 52 @ sec=3, msec=392
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 53 @ sec=3, msec=427
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 54 @ sec=3, msec=460
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 55 @ sec=3, msec=494
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 56 @ sec=3, msec=528
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 57 @ sec=3, msec=561
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 58 @ sec=3, msec=595
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 59 @ sec=3, msec=628
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 60 @ sec=3, msec=662
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 6 @ sec=3, msec=662
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 2 @ sec=3, msec=662
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 2 @ sec=3, msec=662
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Difference Image Proc release 1 @ sec=3, msec=662
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 2 @ sec=3, msec=662
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Processed Image Save to File release 1 @ sec=3, msec=662
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 61 @ sec=3, msec=695
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 62 @ sec=3, msec=729
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 63 @ sec=3, msec=763
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 64 @ sec=3, msec=796
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 65 @ sec=3, msec=830
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 66 @ sec=3, msec=864
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 67 @ sec=3, msec=898
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 68 @ sec=3, msec=931
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 69 @ sec=3, msec=964
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 70 @ sec=3, msec=998
+Dec  5 22:09:32 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 7 @ sec=3, msec=998
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 71 @ sec=4, msec=32
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 72 @ sec=4, msec=65
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 73 @ sec=4, msec=99
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 74 @ sec=4, msec=134
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 75 @ sec=4, msec=167
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 76 @ sec=4, msec=201
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 77 @ sec=4, msec=234
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 78 @ sec=4, msec=267
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 79 @ sec=4, msec=301
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 80 @ sec=4, msec=334
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 8 @ sec=4, msec=334
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 81 @ sec=4, msec=368
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 82 @ sec=4, msec=402
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 83 @ sec=4, msec=436
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 84 @ sec=4, msec=469
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 85 @ sec=4, msec=504
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 86 @ sec=4, msec=537
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 87 @ sec=4, msec=570
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 88 @ sec=4, msec=604
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 89 @ sec=4, msec=637
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 90 @ sec=4, msec=671
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 9 @ sec=4, msec=671
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 3 @ sec=4, msec=671
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 3 @ sec=4, msec=671
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 3 @ sec=4, msec=671
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 91 @ sec=4, msec=704
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 92 @ sec=4, msec=739
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 93 @ sec=4, msec=772
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 94 @ sec=4, msec=806
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 95 @ sec=4, msec=839
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 96 @ sec=4, msec=873
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 97 @ sec=4, msec=907
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 98 @ sec=4, msec=941
+Dec  5 22:09:33 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 99 @ sec=4, msec=975
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 100 @ sec=5, msec=9
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 10 @ sec=5, msec=9
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 101 @ sec=5, msec=43
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 102 @ sec=5, msec=76
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 103 @ sec=5, msec=110
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 104 @ sec=5, msec=143
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 105 @ sec=5, msec=178
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 106 @ sec=5, msec=211
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 107 @ sec=5, msec=245
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 108 @ sec=5, msec=278
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 109 @ sec=5, msec=313
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 110 @ sec=5, msec=346
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 11 @ sec=5, msec=346
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 111 @ sec=5, msec=380
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 112 @ sec=5, msec=413
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 113 @ sec=5, msec=448
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 114 @ sec=5, msec=481
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 115 @ sec=5, msec=515
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 116 @ sec=5, msec=548
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 117 @ sec=5, msec=582
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 118 @ sec=5, msec=615
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 119 @ sec=5, msec=649
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 120 @ sec=5, msec=682
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 12 @ sec=5, msec=682
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 4 @ sec=5, msec=682
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 4 @ sec=5, msec=682
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Difference Image Proc release 2 @ sec=5, msec=682
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 4 @ sec=5, msec=682
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Processed Image Save to File release 2 @ sec=5, msec=682
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 121 @ sec=5, msec=716
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 122 @ sec=5, msec=749
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 123 @ sec=5, msec=783
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 124 @ sec=5, msec=816
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 125 @ sec=5, msec=850
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 126 @ sec=5, msec=883
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 127 @ sec=5, msec=916
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 128 @ sec=5, msec=950
+Dec  5 22:09:34 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 129 @ sec=5, msec=984
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 130 @ sec=6, msec=17
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 13 @ sec=6, msec=17
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 131 @ sec=6, msec=51
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 132 @ sec=6, msec=85
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 133 @ sec=6, msec=118
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 134 @ sec=6, msec=153
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 135 @ sec=6, msec=187
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 136 @ sec=6, msec=221
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 137 @ sec=6, msec=254
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 138 @ sec=6, msec=288
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 139 @ sec=6, msec=321
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 140 @ sec=6, msec=354
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 14 @ sec=6, msec=354
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 141 @ sec=6, msec=389
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 142 @ sec=6, msec=423
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 143 @ sec=6, msec=457
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 144 @ sec=6, msec=491
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 145 @ sec=6, msec=526
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 146 @ sec=6, msec=559
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 147 @ sec=6, msec=594
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 148 @ sec=6, msec=627
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 149 @ sec=6, msec=661
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 150 @ sec=6, msec=694
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 15 @ sec=6, msec=694
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 5 @ sec=6, msec=694
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 5 @ sec=6, msec=694
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 5 @ sec=6, msec=694
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 151 @ sec=6, msec=729
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 152 @ sec=6, msec=762
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 153 @ sec=6, msec=796
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 154 @ sec=6, msec=830
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 155 @ sec=6, msec=864
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 156 @ sec=6, msec=898
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 157 @ sec=6, msec=931
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 158 @ sec=6, msec=965
+Dec  5 22:09:35 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 159 @ sec=6, msec=998
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 160 @ sec=7, msec=32
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 16 @ sec=7, msec=32
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 161 @ sec=7, msec=65
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 162 @ sec=7, msec=99
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 163 @ sec=7, msec=132
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 164 @ sec=7, msec=167
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 165 @ sec=7, msec=201
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 166 @ sec=7, msec=235
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 167 @ sec=7, msec=269
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 168 @ sec=7, msec=302
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 169 @ sec=7, msec=335
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 170 @ sec=7, msec=369
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 17 @ sec=7, msec=369
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 171 @ sec=7, msec=402
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 172 @ sec=7, msec=436
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 173 @ sec=7, msec=470
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 174 @ sec=7, msec=503
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 175 @ sec=7, msec=537
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 176 @ sec=7, msec=570
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 177 @ sec=7, msec=604
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 178 @ sec=7, msec=637
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 179 @ sec=7, msec=671
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 180 @ sec=7, msec=704
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 18 @ sec=7, msec=704
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 6 @ sec=7, msec=704
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 6 @ sec=7, msec=704
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Difference Image Proc release 3 @ sec=7, msec=704
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 6 @ sec=7, msec=704
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Processed Image Save to File release 3 @ sec=7, msec=704
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 181 @ sec=7, msec=738
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 182 @ sec=7, msec=771
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 183 @ sec=7, msec=806
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 184 @ sec=7, msec=839
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 185 @ sec=7, msec=873
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 186 @ sec=7, msec=906
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 187 @ sec=7, msec=940
+Dec  5 22:09:36 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 188 @ sec=7, msec=973
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 189 @ sec=8, msec=8
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 190 @ sec=8, msec=41
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 19 @ sec=8, msec=41
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 191 @ sec=8, msec=75
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 192 @ sec=8, msec=108
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 193 @ sec=8, msec=143
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 194 @ sec=8, msec=176
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 195 @ sec=8, msec=209
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 196 @ sec=8, msec=243
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 197 @ sec=8, msec=276
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 198 @ sec=8, msec=310
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 199 @ sec=8, msec=343
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 200 @ sec=8, msec=377
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 20 @ sec=8, msec=377
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 201 @ sec=8, msec=410
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 202 @ sec=8, msec=444
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 203 @ sec=8, msec=477
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 204 @ sec=8, msec=512
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 205 @ sec=8, msec=546
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 206 @ sec=8, msec=579
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 207 @ sec=8, msec=613
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 208 @ sec=8, msec=646
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 209 @ sec=8, msec=680
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 210 @ sec=8, msec=713
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 21 @ sec=8, msec=713
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 7 @ sec=8, msec=713
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 7 @ sec=8, msec=713
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 7 @ sec=8, msec=713
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 211 @ sec=8, msec=747
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 212 @ sec=8, msec=780
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 213 @ sec=8, msec=813
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 214 @ sec=8, msec=847
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 215 @ sec=8, msec=881
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 216 @ sec=8, msec=915
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 217 @ sec=8, msec=949
+Dec  5 22:09:37 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 218 @ sec=8, msec=984
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 219 @ sec=9, msec=17
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 220 @ sec=9, msec=51
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 22 @ sec=9, msec=51
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 221 @ sec=9, msec=84
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 222 @ sec=9, msec=118
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 223 @ sec=9, msec=151
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 224 @ sec=9, msec=185
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 225 @ sec=9, msec=218
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 226 @ sec=9, msec=252
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 227 @ sec=9, msec=287
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 228 @ sec=9, msec=321
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 229 @ sec=9, msec=356
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 230 @ sec=9, msec=389
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 23 @ sec=9, msec=389
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 231 @ sec=9, msec=423
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 232 @ sec=9, msec=456
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 233 @ sec=9, msec=490
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 234 @ sec=9, msec=523
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 235 @ sec=9, msec=557
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 236 @ sec=9, msec=590
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 237 @ sec=9, msec=624
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 238 @ sec=9, msec=657
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 239 @ sec=9, msec=692
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 240 @ sec=9, msec=726
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 24 @ sec=9, msec=726
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 8 @ sec=9, msec=726
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 8 @ sec=9, msec=726
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Difference Image Proc release 4 @ sec=9, msec=726
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 8 @ sec=9, msec=726
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Processed Image Save to File release 4 @ sec=9, msec=726
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 241 @ sec=9, msec=760
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 242 @ sec=9, msec=793
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 243 @ sec=9, msec=827
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 244 @ sec=9, msec=860
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 245 @ sec=9, msec=894
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 246 @ sec=9, msec=928
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 247 @ sec=9, msec=961
+Dec  5 22:09:38 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 248 @ sec=9, msec=996
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 249 @ sec=10, msec=30
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 250 @ sec=10, msec=64
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 25 @ sec=10, msec=64
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 251 @ sec=10, msec=97
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 252 @ sec=10, msec=132
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 253 @ sec=10, msec=165
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 254 @ sec=10, msec=199
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 255 @ sec=10, msec=232
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 256 @ sec=10, msec=267
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 257 @ sec=10, msec=301
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 258 @ sec=10, msec=335
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 259 @ sec=10, msec=369
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 260 @ sec=10, msec=403
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 26 @ sec=10, msec=403
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 261 @ sec=10, msec=436
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 262 @ sec=10, msec=470
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 263 @ sec=10, msec=503
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 264 @ sec=10, msec=537
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 265 @ sec=10, msec=570
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 266 @ sec=10, msec=604
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 267 @ sec=10, msec=637
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 268 @ sec=10, msec=672
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 269 @ sec=10, msec=705
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 270 @ sec=10, msec=739
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 27 @ sec=10, msec=739
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 9 @ sec=10, msec=739
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 9 @ sec=10, msec=739
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 9 @ sec=10, msec=739
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 271 @ sec=10, msec=773
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 272 @ sec=10, msec=807
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 273 @ sec=10, msec=841
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 274 @ sec=10, msec=874
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 275 @ sec=10, msec=908
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 276 @ sec=10, msec=941
+Dec  5 22:09:39 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 277 @ sec=10, msec=975
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 278 @ sec=11, msec=9
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 279 @ sec=11, msec=43
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 280 @ sec=11, msec=77
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 28 @ sec=11, msec=77
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 281 @ sec=11, msec=111
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 282 @ sec=11, msec=144
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 283 @ sec=11, msec=178
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 284 @ sec=11, msec=211
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 285 @ sec=11, msec=246
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 286 @ sec=11, msec=280
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 287 @ sec=11, msec=314
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 288 @ sec=11, msec=348
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 289 @ sec=11, msec=381
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 290 @ sec=11, msec=415
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 29 @ sec=11, msec=415
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 291 @ sec=11, msec=448
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 292 @ sec=11, msec=482
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 293 @ sec=11, msec=516
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 294 @ sec=11, msec=549
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 295 @ sec=11, msec=583
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 296 @ sec=11, msec=617
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 297 @ sec=11, msec=651
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 298 @ sec=11, msec=685
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 299 @ sec=11, msec=718
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 300 @ sec=11, msec=752
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 30 @ sec=11, msec=753
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 10 @ sec=11, msec=753
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 10 @ sec=11, msec=753
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Difference Image Proc release 5 @ sec=11, msec=753
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 10 @ sec=11, msec=753
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Processed Image Save to File release 5 @ sec=11, msec=753
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: 10 Sec Tick Debug release 1 @ sec=11, msec=753
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 301 @ sec=11, msec=787
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 302 @ sec=11, msec=820
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 303 @ sec=11, msec=854
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 304 @ sec=11, msec=887
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 305 @ sec=11, msec=921
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 306 @ sec=11, msec=954
+Dec  5 22:09:40 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 307 @ sec=11, msec=988
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 308 @ sec=12, msec=21
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 309 @ sec=12, msec=54
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 310 @ sec=12, msec=88
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 31 @ sec=12, msec=88
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 311 @ sec=12, msec=121
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 312 @ sec=12, msec=155
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 313 @ sec=12, msec=188
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 314 @ sec=12, msec=223
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 315 @ sec=12, msec=256
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 316 @ sec=12, msec=289
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 317 @ sec=12, msec=323
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 318 @ sec=12, msec=356
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 319 @ sec=12, msec=390
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 320 @ sec=12, msec=423
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 32 @ sec=12, msec=424
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 321 @ sec=12, msec=458
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 322 @ sec=12, msec=492
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 323 @ sec=12, msec=526
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 324 @ sec=12, msec=559
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 325 @ sec=12, msec=592
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 326 @ sec=12, msec=626
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 327 @ sec=12, msec=660
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 328 @ sec=12, msec=694
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 329 @ sec=12, msec=727
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 330 @ sec=12, msec=762
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 33 @ sec=12, msec=762
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 11 @ sec=12, msec=762
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 11 @ sec=12, msec=762
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 11 @ sec=12, msec=762
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 331 @ sec=12, msec=795
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 332 @ sec=12, msec=829
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 333 @ sec=12, msec=862
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 334 @ sec=12, msec=897
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 335 @ sec=12, msec=930
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 336 @ sec=12, msec=963
+Dec  5 22:09:41 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 337 @ sec=12, msec=997
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 338 @ sec=13, msec=30
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 339 @ sec=13, msec=65
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 340 @ sec=13, msec=98
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 34 @ sec=13, msec=98
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 341 @ sec=13, msec=132
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 342 @ sec=13, msec=165
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 343 @ sec=13, msec=199
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 344 @ sec=13, msec=234
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 345 @ sec=13, msec=268
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 346 @ sec=13, msec=301
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 347 @ sec=13, msec=335
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 348 @ sec=13, msec=368
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 349 @ sec=13, msec=403
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 350 @ sec=13, msec=436
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 35 @ sec=13, msec=436
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 351 @ sec=13, msec=471
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 352 @ sec=13, msec=505
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 353 @ sec=13, msec=540
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 354 @ sec=13, msec=574
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 355 @ sec=13, msec=609
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 356 @ sec=13, msec=643
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 357 @ sec=13, msec=676
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 358 @ sec=13, msec=709
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 359 @ sec=13, msec=743
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 360 @ sec=13, msec=777
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 36 @ sec=13, msec=777
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 12 @ sec=13, msec=777
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 12 @ sec=13, msec=777
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Difference Image Proc release 6 @ sec=13, msec=777
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 12 @ sec=13, msec=777
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Processed Image Save to File release 6 @ sec=13, msec=777
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 361 @ sec=13, msec=812
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 362 @ sec=13, msec=845
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 363 @ sec=13, msec=880
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 364 @ sec=13, msec=913
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 365 @ sec=13, msec=947
+Dec  5 22:09:42 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 366 @ sec=13, msec=980
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 367 @ sec=14, msec=15
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 368 @ sec=14, msec=49
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 369 @ sec=14, msec=82
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 370 @ sec=14, msec=117
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 37 @ sec=14, msec=117
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 371 @ sec=14, msec=150
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 372 @ sec=14, msec=184
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 373 @ sec=14, msec=217
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 374 @ sec=14, msec=251
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 375 @ sec=14, msec=286
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 376 @ sec=14, msec=319
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 377 @ sec=14, msec=353
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 378 @ sec=14, msec=386
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 379 @ sec=14, msec=420
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 380 @ sec=14, msec=453
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 38 @ sec=14, msec=453
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 381 @ sec=14, msec=487
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 382 @ sec=14, msec=520
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 383 @ sec=14, msec=555
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 384 @ sec=14, msec=589
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 385 @ sec=14, msec=622
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 386 @ sec=14, msec=656
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 387 @ sec=14, msec=689
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 388 @ sec=14, msec=724
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 389 @ sec=14, msec=757
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 390 @ sec=14, msec=791
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 39 @ sec=14, msec=791
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 13 @ sec=14, msec=791
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 13 @ sec=14, msec=791
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 13 @ sec=14, msec=791
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 391 @ sec=14, msec=825
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 392 @ sec=14, msec=859
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 393 @ sec=14, msec=892
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 394 @ sec=14, msec=926
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 395 @ sec=14, msec=959
+Dec  5 22:09:43 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 396 @ sec=14, msec=993
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 397 @ sec=15, msec=26
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 398 @ sec=15, msec=61
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 399 @ sec=15, msec=95
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 400 @ sec=15, msec=128
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 40 @ sec=15, msec=128
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 401 @ sec=15, msec=163
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 402 @ sec=15, msec=196
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 403 @ sec=15, msec=230
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 404 @ sec=15, msec=263
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 405 @ sec=15, msec=298
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 406 @ sec=15, msec=331
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 407 @ sec=15, msec=365
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 408 @ sec=15, msec=398
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 409 @ sec=15, msec=433
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 410 @ sec=15, msec=466
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 41 @ sec=15, msec=466
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 411 @ sec=15, msec=499
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 412 @ sec=15, msec=533
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 413 @ sec=15, msec=566
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 414 @ sec=15, msec=600
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 415 @ sec=15, msec=637
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 416 @ sec=15, msec=670
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 417 @ sec=15, msec=704
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 418 @ sec=15, msec=737
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 419 @ sec=15, msec=771
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 420 @ sec=15, msec=804
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 42 @ sec=15, msec=804
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 14 @ sec=15, msec=804
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 14 @ sec=15, msec=804
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Difference Image Proc release 7 @ sec=15, msec=804
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 14 @ sec=15, msec=804
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Processed Image Save to File release 7 @ sec=15, msec=804
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 421 @ sec=15, msec=838
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 422 @ sec=15, msec=872
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 423 @ sec=15, msec=905
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 424 @ sec=15, msec=939
+Dec  5 22:09:44 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 425 @ sec=15, msec=972
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 426 @ sec=16, msec=6
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 427 @ sec=16, msec=40
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 428 @ sec=16, msec=73
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 429 @ sec=16, msec=107
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 430 @ sec=16, msec=140
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 43 @ sec=16, msec=140
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 431 @ sec=16, msec=174
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 432 @ sec=16, msec=207
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 433 @ sec=16, msec=240
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 434 @ sec=16, msec=274
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 435 @ sec=16, msec=307
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 436 @ sec=16, msec=341
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 437 @ sec=16, msec=375
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 438 @ sec=16, msec=409
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 439 @ sec=16, msec=443
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 440 @ sec=16, msec=477
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 44 @ sec=16, msec=477
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 441 @ sec=16, msec=510
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 442 @ sec=16, msec=544
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 443 @ sec=16, msec=578
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 444 @ sec=16, msec=612
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 445 @ sec=16, msec=646
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 446 @ sec=16, msec=679
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 447 @ sec=16, msec=713
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 448 @ sec=16, msec=746
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 449 @ sec=16, msec=780
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 450 @ sec=16, msec=814
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 45 @ sec=16, msec=814
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 15 @ sec=16, msec=814
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 15 @ sec=16, msec=814
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 15 @ sec=16, msec=814
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 451 @ sec=16, msec=848
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 452 @ sec=16, msec=882
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 453 @ sec=16, msec=916
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 454 @ sec=16, msec=949
+Dec  5 22:09:45 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 455 @ sec=16, msec=983
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 456 @ sec=17, msec=16
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 457 @ sec=17, msec=50
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 458 @ sec=17, msec=84
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 459 @ sec=17, msec=118
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 460 @ sec=17, msec=151
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 46 @ sec=17, msec=151
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 461 @ sec=17, msec=185
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 462 @ sec=17, msec=218
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 463 @ sec=17, msec=251
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 464 @ sec=17, msec=285
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 465 @ sec=17, msec=318
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 466 @ sec=17, msec=353
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 467 @ sec=17, msec=387
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 468 @ sec=17, msec=422
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 469 @ sec=17, msec=455
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 470 @ sec=17, msec=489
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 47 @ sec=17, msec=489
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 471 @ sec=17, msec=522
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 472 @ sec=17, msec=556
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 473 @ sec=17, msec=589
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 474 @ sec=17, msec=623
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 475 @ sec=17, msec=658
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 476 @ sec=17, msec=691
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 477 @ sec=17, msec=725
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 478 @ sec=17, msec=758
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 479 @ sec=17, msec=791
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 480 @ sec=17, msec=825
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 48 @ sec=17, msec=825
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 16 @ sec=17, msec=825
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 16 @ sec=17, msec=825
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Difference Image Proc release 8 @ sec=17, msec=825
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 16 @ sec=17, msec=825
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Processed Image Save to File release 8 @ sec=17, msec=825
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 481 @ sec=17, msec=859
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 482 @ sec=17, msec=893
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 483 @ sec=17, msec=926
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 484 @ sec=17, msec=960
+Dec  5 22:09:46 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 485 @ sec=17, msec=993
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 486 @ sec=18, msec=27
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 487 @ sec=18, msec=60
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 488 @ sec=18, msec=94
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 489 @ sec=18, msec=128
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 490 @ sec=18, msec=161
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 49 @ sec=18, msec=161
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 491 @ sec=18, msec=195
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 492 @ sec=18, msec=228
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 493 @ sec=18, msec=262
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 494 @ sec=18, msec=295
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 495 @ sec=18, msec=329
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 496 @ sec=18, msec=363
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 497 @ sec=18, msec=397
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 498 @ sec=18, msec=430
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 499 @ sec=18, msec=464
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 500 @ sec=18, msec=498
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 50 @ sec=18, msec=498
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 501 @ sec=18, msec=531
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 502 @ sec=18, msec=565
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 503 @ sec=18, msec=599
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 504 @ sec=18, msec=634
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 505 @ sec=18, msec=667
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 506 @ sec=18, msec=701
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 507 @ sec=18, msec=734
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 508 @ sec=18, msec=768
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 509 @ sec=18, msec=802
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 510 @ sec=18, msec=835
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 51 @ sec=18, msec=835
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 17 @ sec=18, msec=835
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 17 @ sec=18, msec=835
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 17 @ sec=18, msec=835
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 511 @ sec=18, msec=869
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 512 @ sec=18, msec=902
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 513 @ sec=18, msec=936
+Dec  5 22:09:47 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 514 @ sec=18, msec=969
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 515 @ sec=19, msec=3
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 516 @ sec=19, msec=37
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 517 @ sec=19, msec=71
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 518 @ sec=19, msec=105
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 519 @ sec=19, msec=139
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 520 @ sec=19, msec=173
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 52 @ sec=19, msec=173
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 521 @ sec=19, msec=206
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 522 @ sec=19, msec=240
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 523 @ sec=19, msec=273
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 524 @ sec=19, msec=308
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 525 @ sec=19, msec=342
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 526 @ sec=19, msec=376
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 527 @ sec=19, msec=409
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 528 @ sec=19, msec=442
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 529 @ sec=19, msec=476
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 530 @ sec=19, msec=510
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 53 @ sec=19, msec=510
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 531 @ sec=19, msec=543
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 532 @ sec=19, msec=577
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 533 @ sec=19, msec=611
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 534 @ sec=19, msec=644
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 535 @ sec=19, msec=678
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 536 @ sec=19, msec=711
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 537 @ sec=19, msec=745
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 538 @ sec=19, msec=778
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 539 @ sec=19, msec=812
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 540 @ sec=19, msec=845
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 54 @ sec=19, msec=845
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 18 @ sec=19, msec=845
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 18 @ sec=19, msec=845
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Difference Image Proc release 9 @ sec=19, msec=845
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 18 @ sec=19, msec=845
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Processed Image Save to File release 9 @ sec=19, msec=845
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 541 @ sec=19, msec=879
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 542 @ sec=19, msec=913
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 543 @ sec=19, msec=947
+Dec  5 22:09:48 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 544 @ sec=19, msec=981
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 545 @ sec=20, msec=14
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 546 @ sec=20, msec=47
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 547 @ sec=20, msec=81
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 548 @ sec=20, msec=114
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 549 @ sec=20, msec=149
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 550 @ sec=20, msec=182
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 55 @ sec=20, msec=182
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 551 @ sec=20, msec=215
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 552 @ sec=20, msec=250
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 553 @ sec=20, msec=283
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 554 @ sec=20, msec=317
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 555 @ sec=20, msec=350
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 556 @ sec=20, msec=383
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 557 @ sec=20, msec=417
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 558 @ sec=20, msec=450
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 559 @ sec=20, msec=484
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 560 @ sec=20, msec=517
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 56 @ sec=20, msec=517
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 561 @ sec=20, msec=551
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 562 @ sec=20, msec=584
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 563 @ sec=20, msec=618
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 564 @ sec=20, msec=652
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 565 @ sec=20, msec=686
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 566 @ sec=20, msec=720
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 567 @ sec=20, msec=753
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 568 @ sec=20, msec=787
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 569 @ sec=20, msec=821
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 570 @ sec=20, msec=855
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 57 @ sec=20, msec=855
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 19 @ sec=20, msec=855
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 19 @ sec=20, msec=855
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 19 @ sec=20, msec=855
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 571 @ sec=20, msec=888
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 572 @ sec=20, msec=922
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 573 @ sec=20, msec=955
+Dec  5 22:09:49 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 574 @ sec=20, msec=989
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 575 @ sec=21, msec=22
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 576 @ sec=21, msec=57
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 577 @ sec=21, msec=91
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 578 @ sec=21, msec=125
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 579 @ sec=21, msec=159
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 580 @ sec=21, msec=194
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 58 @ sec=21, msec=194
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 581 @ sec=21, msec=228
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 582 @ sec=21, msec=261
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 583 @ sec=21, msec=296
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 584 @ sec=21, msec=330
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 585 @ sec=21, msec=364
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 586 @ sec=21, msec=398
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 587 @ sec=21, msec=433
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 588 @ sec=21, msec=466
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 589 @ sec=21, msec=500
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 590 @ sec=21, msec=534
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 59 @ sec=21, msec=534
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 591 @ sec=21, msec=568
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 592 @ sec=21, msec=601
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 593 @ sec=21, msec=635
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 594 @ sec=21, msec=668
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 595 @ sec=21, msec=702
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 596 @ sec=21, msec=736
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 597 @ sec=21, msec=769
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 598 @ sec=21, msec=803
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 599 @ sec=21, msec=836
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 600 @ sec=21, msec=870
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 60 @ sec=21, msec=870
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 20 @ sec=21, msec=870
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 20 @ sec=21, msec=870
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Difference Image Proc release 10 @ sec=21, msec=870
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 20 @ sec=21, msec=870
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Processed Image Save to File release 10 @ sec=21, msec=870
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: 10 Sec Tick Debug release 2 @ sec=21, msec=870
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 601 @ sec=21, msec=904
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 602 @ sec=21, msec=938
+Dec  5 22:09:50 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 603 @ sec=21, msec=971
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 604 @ sec=22, msec=5
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 605 @ sec=22, msec=39
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 606 @ sec=22, msec=73
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 607 @ sec=22, msec=106
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 608 @ sec=22, msec=140
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 609 @ sec=22, msec=173
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 610 @ sec=22, msec=207
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 61 @ sec=22, msec=207
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 611 @ sec=22, msec=241
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 612 @ sec=22, msec=274
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 613 @ sec=22, msec=308
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 614 @ sec=22, msec=341
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 615 @ sec=22, msec=375
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 616 @ sec=22, msec=409
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 617 @ sec=22, msec=443
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 618 @ sec=22, msec=477
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 619 @ sec=22, msec=510
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 620 @ sec=22, msec=544
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 62 @ sec=22, msec=544
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 621 @ sec=22, msec=577
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 622 @ sec=22, msec=611
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 623 @ sec=22, msec=644
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 624 @ sec=22, msec=678
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 625 @ sec=22, msec=712
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 626 @ sec=22, msec=745
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 627 @ sec=22, msec=779
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 628 @ sec=22, msec=812
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 629 @ sec=22, msec=846
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 630 @ sec=22, msec=879
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 63 @ sec=22, msec=879
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 21 @ sec=22, msec=879
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 21 @ sec=22, msec=879
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 21 @ sec=22, msec=879
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 631 @ sec=22, msec=913
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 632 @ sec=22, msec=947
+Dec  5 22:09:51 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 633 @ sec=22, msec=980
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 634 @ sec=23, msec=13
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 635 @ sec=23, msec=47
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 636 @ sec=23, msec=80
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 637 @ sec=23, msec=114
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 638 @ sec=23, msec=149
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 639 @ sec=23, msec=183
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 640 @ sec=23, msec=216
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 64 @ sec=23, msec=216
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 641 @ sec=23, msec=250
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 642 @ sec=23, msec=284
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 643 @ sec=23, msec=318
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 644 @ sec=23, msec=351
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 645 @ sec=23, msec=385
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 646 @ sec=23, msec=418
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 647 @ sec=23, msec=452
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 648 @ sec=23, msec=485
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 649 @ sec=23, msec=519
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 650 @ sec=23, msec=552
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 65 @ sec=23, msec=552
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 651 @ sec=23, msec=587
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 652 @ sec=23, msec=621
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 653 @ sec=23, msec=655
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 654 @ sec=23, msec=689
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 655 @ sec=23, msec=722
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 656 @ sec=23, msec=756
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 657 @ sec=23, msec=789
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 658 @ sec=23, msec=824
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 659 @ sec=23, msec=857
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 660 @ sec=23, msec=890
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 66 @ sec=23, msec=890
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 22 @ sec=23, msec=890
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 22 @ sec=23, msec=890
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Difference Image Proc release 11 @ sec=23, msec=890
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 22 @ sec=23, msec=890
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Processed Image Save to File release 11 @ sec=23, msec=890
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 661 @ sec=23, msec=924
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 662 @ sec=23, msec=958
+Dec  5 22:09:52 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 663 @ sec=23, msec=991
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 664 @ sec=24, msec=24
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 665 @ sec=24, msec=58
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 666 @ sec=24, msec=92
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 667 @ sec=24, msec=126
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 668 @ sec=24, msec=160
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 669 @ sec=24, msec=193
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 670 @ sec=24, msec=226
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 67 @ sec=24, msec=226
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 671 @ sec=24, msec=260
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 672 @ sec=24, msec=294
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 673 @ sec=24, msec=328
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 674 @ sec=24, msec=361
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 675 @ sec=24, msec=394
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 676 @ sec=24, msec=429
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 677 @ sec=24, msec=462
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 678 @ sec=24, msec=496
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 679 @ sec=24, msec=529
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 680 @ sec=24, msec=563
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 68 @ sec=24, msec=563
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 681 @ sec=24, msec=596
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 682 @ sec=24, msec=629
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 683 @ sec=24, msec=663
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 684 @ sec=24, msec=696
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 685 @ sec=24, msec=730
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 686 @ sec=24, msec=766
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 687 @ sec=24, msec=800
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 688 @ sec=24, msec=834
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 689 @ sec=24, msec=867
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 690 @ sec=24, msec=901
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 69 @ sec=24, msec=901
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 23 @ sec=24, msec=901
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 23 @ sec=24, msec=901
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 23 @ sec=24, msec=901
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 691 @ sec=24, msec=934
+Dec  5 22:09:53 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 692 @ sec=24, msec=968
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 693 @ sec=25, msec=1
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 694 @ sec=25, msec=35
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 695 @ sec=25, msec=70
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 696 @ sec=25, msec=103
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 697 @ sec=25, msec=137
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 698 @ sec=25, msec=171
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 699 @ sec=25, msec=204
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 700 @ sec=25, msec=238
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 70 @ sec=25, msec=238
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 701 @ sec=25, msec=271
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 702 @ sec=25, msec=306
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 703 @ sec=25, msec=339
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 704 @ sec=25, msec=373
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 705 @ sec=25, msec=407
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 706 @ sec=25, msec=441
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 707 @ sec=25, msec=475
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 708 @ sec=25, msec=508
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 709 @ sec=25, msec=542
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 710 @ sec=25, msec=575
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 71 @ sec=25, msec=575
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 711 @ sec=25, msec=608
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 712 @ sec=25, msec=642
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 713 @ sec=25, msec=675
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 714 @ sec=25, msec=710
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 715 @ sec=25, msec=744
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 716 @ sec=25, msec=778
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 717 @ sec=25, msec=811
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 718 @ sec=25, msec=845
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 719 @ sec=25, msec=879
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 720 @ sec=25, msec=913
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 72 @ sec=25, msec=913
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 24 @ sec=25, msec=913
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 24 @ sec=25, msec=913
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Difference Image Proc release 12 @ sec=25, msec=913
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 24 @ sec=25, msec=913
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Processed Image Save to File release 12 @ sec=25, msec=913
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 721 @ sec=25, msec=947
+Dec  5 22:09:54 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 722 @ sec=25, msec=980
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 723 @ sec=26, msec=14
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 724 @ sec=26, msec=48
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 725 @ sec=26, msec=82
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 726 @ sec=26, msec=117
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 727 @ sec=26, msec=151
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 728 @ sec=26, msec=184
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 729 @ sec=26, msec=218
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 730 @ sec=26, msec=252
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 73 @ sec=26, msec=252
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 731 @ sec=26, msec=285
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 732 @ sec=26, msec=319
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 733 @ sec=26, msec=352
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 734 @ sec=26, msec=386
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 735 @ sec=26, msec=419
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 736 @ sec=26, msec=452
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 737 @ sec=26, msec=486
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 738 @ sec=26, msec=521
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 739 @ sec=26, msec=554
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 740 @ sec=26, msec=588
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 74 @ sec=26, msec=588
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 741 @ sec=26, msec=621
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 742 @ sec=26, msec=655
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 743 @ sec=26, msec=688
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 744 @ sec=26, msec=722
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 745 @ sec=26, msec=756
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 746 @ sec=26, msec=791
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 747 @ sec=26, msec=825
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 748 @ sec=26, msec=858
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 749 @ sec=26, msec=892
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 750 @ sec=26, msec=925
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 75 @ sec=26, msec=925
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 25 @ sec=26, msec=925
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 25 @ sec=26, msec=925
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 25 @ sec=26, msec=925
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 751 @ sec=26, msec=959
+Dec  5 22:09:55 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 752 @ sec=26, msec=992
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 753 @ sec=27, msec=26
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 754 @ sec=27, msec=59
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 755 @ sec=27, msec=92
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 756 @ sec=27, msec=126
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 757 @ sec=27, msec=159
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 758 @ sec=27, msec=194
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 759 @ sec=27, msec=227
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 760 @ sec=27, msec=261
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 76 @ sec=27, msec=261
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 761 @ sec=27, msec=294
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 762 @ sec=27, msec=328
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 763 @ sec=27, msec=362
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 764 @ sec=27, msec=395
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 765 @ sec=27, msec=429
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 766 @ sec=27, msec=463
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 767 @ sec=27, msec=496
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 768 @ sec=27, msec=530
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 769 @ sec=27, msec=563
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 770 @ sec=27, msec=597
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 77 @ sec=27, msec=597
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 771 @ sec=27, msec=630
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 772 @ sec=27, msec=664
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 773 @ sec=27, msec=697
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 774 @ sec=27, msec=732
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 775 @ sec=27, msec=765
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 776 @ sec=27, msec=800
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 777 @ sec=27, msec=833
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 778 @ sec=27, msec=866
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 779 @ sec=27, msec=900
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 780 @ sec=27, msec=933
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 78 @ sec=27, msec=933
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 26 @ sec=27, msec=933
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 26 @ sec=27, msec=933
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Difference Image Proc release 13 @ sec=27, msec=933
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 26 @ sec=27, msec=933
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Processed Image Save to File release 13 @ sec=27, msec=933
+Dec  5 22:09:56 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 781 @ sec=27, msec=967
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 782 @ sec=28, msec=0
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 783 @ sec=28, msec=35
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 784 @ sec=28, msec=68
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 785 @ sec=28, msec=101
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 786 @ sec=28, msec=135
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 787 @ sec=28, msec=169
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 788 @ sec=28, msec=203
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 789 @ sec=28, msec=236
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 790 @ sec=28, msec=269
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 79 @ sec=28, msec=270
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 791 @ sec=28, msec=303
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 792 @ sec=28, msec=337
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 793 @ sec=28, msec=370
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 794 @ sec=28, msec=404
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 795 @ sec=28, msec=437
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 796 @ sec=28, msec=471
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 797 @ sec=28, msec=504
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 798 @ sec=28, msec=538
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 799 @ sec=28, msec=571
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 800 @ sec=28, msec=605
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 80 @ sec=28, msec=605
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 801 @ sec=28, msec=638
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 802 @ sec=28, msec=672
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 803 @ sec=28, msec=706
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 804 @ sec=28, msec=740
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 805 @ sec=28, msec=774
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 806 @ sec=28, msec=808
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 807 @ sec=28, msec=841
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 808 @ sec=28, msec=875
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 809 @ sec=28, msec=908
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 810 @ sec=28, msec=942
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 81 @ sec=28, msec=942
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 27 @ sec=28, msec=942
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 27 @ sec=28, msec=942
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 27 @ sec=28, msec=942
+Dec  5 22:09:57 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 811 @ sec=28, msec=976
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 812 @ sec=29, msec=10
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 813 @ sec=29, msec=43
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 814 @ sec=29, msec=77
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 815 @ sec=29, msec=110
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 816 @ sec=29, msec=143
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 817 @ sec=29, msec=177
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 818 @ sec=29, msec=210
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 819 @ sec=29, msec=244
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 820 @ sec=29, msec=277
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 82 @ sec=29, msec=277
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 821 @ sec=29, msec=311
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 822 @ sec=29, msec=344
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 823 @ sec=29, msec=378
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 824 @ sec=29, msec=413
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 825 @ sec=29, msec=447
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 826 @ sec=29, msec=481
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 827 @ sec=29, msec=514
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 828 @ sec=29, msec=548
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 829 @ sec=29, msec=581
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 830 @ sec=29, msec=615
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 83 @ sec=29, msec=615
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 831 @ sec=29, msec=649
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 832 @ sec=29, msec=683
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 833 @ sec=29, msec=716
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 834 @ sec=29, msec=750
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 835 @ sec=29, msec=783
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 836 @ sec=29, msec=817
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 837 @ sec=29, msec=850
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 838 @ sec=29, msec=884
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 839 @ sec=29, msec=917
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 840 @ sec=29, msec=951
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 84 @ sec=29, msec=951
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 28 @ sec=29, msec=951
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 28 @ sec=29, msec=951
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Difference Image Proc release 14 @ sec=29, msec=951
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 28 @ sec=29, msec=951
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Processed Image Save to File release 14 @ sec=29, msec=951
+Dec  5 22:09:58 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 841 @ sec=29, msec=985
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 842 @ sec=30, msec=18
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 843 @ sec=30, msec=53
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 844 @ sec=30, msec=87
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 845 @ sec=30, msec=121
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 846 @ sec=30, msec=154
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 847 @ sec=30, msec=188
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 848 @ sec=30, msec=222
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 849 @ sec=30, msec=256
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 850 @ sec=30, msec=290
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 85 @ sec=30, msec=290
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 851 @ sec=30, msec=323
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 852 @ sec=30, msec=357
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 853 @ sec=30, msec=390
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 854 @ sec=30, msec=424
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 855 @ sec=30, msec=457
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 856 @ sec=30, msec=491
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 857 @ sec=30, msec=524
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 858 @ sec=30, msec=558
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 859 @ sec=30, msec=593
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 860 @ sec=30, msec=627
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 86 @ sec=30, msec=627
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 861 @ sec=30, msec=661
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 862 @ sec=30, msec=695
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 863 @ sec=30, msec=728
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 864 @ sec=30, msec=762
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 865 @ sec=30, msec=795
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 866 @ sec=30, msec=829
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 867 @ sec=30, msec=862
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 868 @ sec=30, msec=896
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 869 @ sec=30, msec=930
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 870 @ sec=30, msec=963
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 87 @ sec=30, msec=964
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 29 @ sec=30, msec=964
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 29 @ sec=30, msec=964
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 29 @ sec=30, msec=964
+Dec  5 22:09:59 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 871 @ sec=30, msec=997
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 872 @ sec=31, msec=30
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 873 @ sec=31, msec=64
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 874 @ sec=31, msec=97
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 875 @ sec=31, msec=131
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 876 @ sec=31, msec=164
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 877 @ sec=31, msec=198
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 878 @ sec=31, msec=232
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 879 @ sec=31, msec=266
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 880 @ sec=31, msec=299
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 88 @ sec=31, msec=300
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 881 @ sec=31, msec=333
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 882 @ sec=31, msec=366
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 883 @ sec=31, msec=400
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 884 @ sec=31, msec=433
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 885 @ sec=31, msec=467
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 886 @ sec=31, msec=500
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 887 @ sec=31, msec=534
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 888 @ sec=31, msec=568
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 889 @ sec=31, msec=602
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 890 @ sec=31, msec=635
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 89 @ sec=31, msec=635
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 891 @ sec=31, msec=668
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 892 @ sec=31, msec=703
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 893 @ sec=31, msec=736
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 894 @ sec=31, msec=771
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 895 @ sec=31, msec=804
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 896 @ sec=31, msec=838
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 897 @ sec=31, msec=871
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 898 @ sec=31, msec=905
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 899 @ sec=31, msec=938
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Sequencer cycle 900 @ sec=31, msec=972
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Frame Sampler release 90 @ sec=31, msec=973
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Time-stamp with Image Analysis release 30 @ sec=31, msec=973
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Send Time-stamped Image to Remote release 30 @ sec=31, msec=973
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Difference Image Proc release 15 @ sec=31, msec=973
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Time-stamp Image Save to File release 30 @ sec=31, msec=973
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: Processed Image Save to File release 15 @ sec=31, msec=973
+Dec  5 22:10:00 sam-ubuntu-VirtualBox seqgen: 10 Sec Tick Debug release 3 @ sec=31, msec=973

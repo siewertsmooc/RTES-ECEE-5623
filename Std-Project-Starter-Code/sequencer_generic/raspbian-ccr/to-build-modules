@@ -1,0 +1,43 @@
+# The usual update routine
+apt-get update -y
+apt-get upgrade -y
+
+# Update the kernel!
+rpi-update
+
+# Get rpi-source
+sudo wget https://raw.githubusercontent.com/notro/rpi-source/master/rpi-source -O /usr/bin/rpi-source
+
+# Make it executable
+sudo chmod +x /usr/bin/rpi-source
+
+# Tell the update mechanism that this is the latest version of the script
+/usr/bin/rpi-source -q --tag-update
+
+# Get the kernel files thingies.
+rpi-source
+
+rpi-source --skip-gcc
+
+#include <linux/module.h>
+#include <linux/kernel.h>
+
+int hello_init(void)
+{
+    pr_alert("Hello World :)\n");
+    return 0;
+}
+void hello_exit(void)
+{
+    pr_alert("Goodbye World!\n");
+}
+module_init(hello_init);
+module_exit(hello_exit);
+
+obj-m := hello.o
+
+make -C /lib/modules/$(uname -r)/build M=$(pwd) modules
+insmod hello.ko
+
+
+
