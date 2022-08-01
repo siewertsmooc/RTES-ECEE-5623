@@ -38,6 +38,7 @@ static struct timespec last_pit_time = {0, 0};
 static timer_t timer_1;
 static struct itimerspec itime = {{1,0}, {1,0}};
 static struct itimerspec last_itime;
+static long pit_tick_start;
 
 pthread_t main_thread;
 pthread_attr_t main_sched_attr;
@@ -87,6 +88,7 @@ double delta_t(struct timespec *stop, struct timespec *start)
 void delay_test(void)
 {
   long pit_ticks;
+  static long pit_ticks_last;
   double pit_ftime, dt, err;
   struct tms systime;
   struct timespec pit_time = {0, 0};
@@ -102,11 +104,12 @@ void delay_test(void)
   dt = delta_t(&pit_time, &last_pit_time);
   err = (duration_target_time - dt)*1000000.0; // err in usecs
 
-  printf("PIT RT clock = %lf secs, ticks = %ld, dt = %lf, err = %lf usec\n", pit_ftime, pit_ticks, dt, err);
-  syslog(LOG_CRIT, "PIT RT clock = %lf secs, ticks = %ld, dt = %lf, err = %lf usec\n", pit_ftime, pit_ticks, dt, err);
+  printf("PIT RT clock = %lf secs, ticks = %ld, dt = %lf, err = %lf usec\n", pit_ftime, (pit_ticks - pit_ticks_last), dt, err);
+  syslog(LOG_CRIT, "PIT RT clock = %lf secs, ticks = %ld, dt = %lf, err = %lf usec\n", pit_ftime, (pit_ticks - pit_ticks_last), dt, err);
 
   test_iterations = test_iterations - 1;
   last_pit_time = pit_time;
+  pit_ticks_last = pit_ticks;
 
   if(abort_test || (test_iterations == 0))
   {
@@ -132,6 +135,7 @@ int main(int argc, char *argv[])
    struct timespec rtclk_resolution;
    long ticks_per_sec;
    double dt;
+   struct tms systime;
 
 
    if(argc < 3) 
@@ -190,6 +194,8 @@ int main(int argc, char *argv[])
    printf("After adjustments to scheduling policy:\n");
    print_scheduler();
 
+   // Get starting system tick time as a zero reference
+   pit_tick_start=times(&systime);
 
    // REPLACE THREAD for DELAY-based clock thread with an interval timer signal
    //
