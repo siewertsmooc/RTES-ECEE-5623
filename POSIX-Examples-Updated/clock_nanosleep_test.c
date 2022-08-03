@@ -42,6 +42,7 @@ pthread_t main_thread;
 pthread_attr_t main_sched_attr;
 int rt_max_prio, rt_min_prio, min;
 struct sched_param main_param;
+static char syslogtag[80] = "MYTAG";
 
 typedef struct
 {
@@ -164,7 +165,7 @@ void *delay_test(void *threadp)
       sleepdt = (double)sleep_requested.tv_sec + ((double)sleep_requested.tv_nsec/1000000000.0);
 
       printf("RT clock dt = %lf secs for sleep of %lf secs, err = %lf usec, sleepcnt=%d, ticks=%ld\n", dt, sleepdt, (dt-sleepdt)*1000000.0, sleep_count, dt_ticks);
-      syslog(LOG_CRIT, "RT clock dt = %lf secs for sleep of %lf secs, err = %lf usec, sleepcnt=%d, ticks=%ld\n", dt, sleepdt, (dt-sleepdt)*1000000.0, sleep_count, dt_ticks);
+      syslog(LOG_CRIT, "%s: RT clock dt = %lf secs for sleep of %lf secs, err = %lf usec, sleepcnt=%d, ticks=%ld\n", syslogtag, dt, sleepdt, (dt-sleepdt)*1000000.0, sleep_count, dt_ticks);
 
   }
 
@@ -181,13 +182,14 @@ int main(int argc, char *argv[])
    
    if(argc < 3) 
    {
-       printf("usage: clock_test iterations msec\n");
+       printf("usage: clock_test iterations msec [test TAG]\n");
        exit(-1);
    }
    else 
    {
        sscanf(argv[1], "%d", &tp.iterations);
        sscanf(argv[2], "%u", &tp.duration);
+       if(argc == 4) sscanf(argv[3], "%s", syslogtag);
        printf("Requested %d iterations for %u msecs\n", tp.iterations, tp.duration);
    }
 
