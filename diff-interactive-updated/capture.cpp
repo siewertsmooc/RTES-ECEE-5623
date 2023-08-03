@@ -4,6 +4,8 @@
  *
  *  Updated 12/6/18 for OpenCV 3.1
  *
+ *  Updated 8/1/23 for OpenCV 4.x
+ *
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -12,9 +14,11 @@
 #include <syslog.h>
 #include <time.h>
 
-#include <opencv2/core/core.hpp>
-#include <opencv2/highgui/highgui.hpp>
-#include <opencv2/imgproc/imgproc.hpp>
+//#include "opencv2/opencv.hpp"
+
+#include "opencv2/core/core.hpp"
+#include "opencv2/highgui/highgui.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
 
 using namespace cv;
 using namespace std;
@@ -53,7 +57,7 @@ int main( int argc, char** argv )
 	cv::waitKey(33);
     }
 	
-    cv::cvtColor(mat_frame, mat_gray, CV_BGR2GRAY);
+    cv::cvtColor(mat_frame, mat_gray, COLOR_BGR2GRAY);
 
     mat_diff = mat_gray.clone();
     mat_gray_prev = mat_gray.clone();
@@ -73,7 +77,7 @@ int main( int argc, char** argv )
             fcurtime = (double)curtime.tv_sec + ((double)curtime.tv_nsec/1000000000.0) - start_fcurtime;
         }
 	
-	cv::cvtColor(mat_frame, mat_gray, CV_BGR2GRAY);
+	cv::cvtColor(mat_frame, mat_gray, COLOR_BGR2GRAY);
 
 	absdiff(mat_gray_prev, mat_gray, mat_diff);
 
@@ -99,8 +103,8 @@ int main( int argc, char** argv )
         // tested in ERAU Jetson lab
 	if(percent_diff > 0.5)
         {
-            cv::putText(mat_diff, difftext, cvPoint(30,30), FONT_HERSHEY_COMPLEX_SMALL, 0.8, cvScalar(200,200,250), 1, CV_AA);
-            cv::putText(mat_diff, timetext, cvPoint(500,30), FONT_HERSHEY_COMPLEX_SMALL, 0.8, cvScalar(200,200,250), 1, CV_AA);
+            cv::putText(mat_diff, difftext, Point(30,30), FONT_HERSHEY_COMPLEX_SMALL, 0.8, Scalar(200,200,250), 1, LINE_AA);
+            cv::putText(mat_diff, timetext, Point(500,30), FONT_HERSHEY_COMPLEX_SMALL, 0.8, Scalar(200,200,250), 1, LINE_AA);
         }
 
         //if(percent_diff > 0.5) printf("TICK @ %lf\n", fcurtime);
@@ -110,7 +114,7 @@ int main( int argc, char** argv )
 	cv::imshow("Clock Diff", mat_diff);
 
 
-        char c = cvWaitKey(100); // sample rate
+        char c = cv::waitKey(100); // sample rate
         if( c == 'q' ) break;
 
 	mat_gray_prev = mat_gray.clone();
