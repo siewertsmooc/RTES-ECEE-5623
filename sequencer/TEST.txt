@@ -1,0 +1,202 @@
+Tested on Jetson configured as:
+
+Linux tegra-ubuntu 3.10.24-g6a2d13a #1 SMP PREEMPT Fri Apr 18 15:56:45 PDT 2014 armv7l armv7l armv7l GNU/Linux
+
+siewerts@tegra-ubuntu:~$ cat /proc/cpuinfo | grep processor
+processor	: 0
+processor	: 1
+processor	: 2
+processor	: 3
+
+root@tegra-ubuntu:/home/siewerts# cat /sys/devices/system/cpu/cpu0/online
+1
+root@tegra-ubuntu:/home/siewerts# cat /sys/devices/system/cpu/cpu1/online
+1
+root@tegra-ubuntu:/home/siewerts# cat /sys/devices/system/cpu/cpu2/online
+1
+root@tegra-ubuntu:/home/siewerts# cat /sys/devices/system/cpu/cpu3/online
+1
+
+
+Timer List Version: v0.7
+HRTIMER_MAX_CLOCK_BASES: 4
+now at 1743025582848512 nsecs
+
+cpu: 0
+ clock 0:
+  .base:       00000000
+  .index:      0
+  .resolution: 1 nsecs
+  .get_time:   ktime_get
+  .offset:     0 nsecs
+active timers:
+ #0: <00000000>, tick_sched_timer, S:01, hrtimer_start_range_ns, swapper/0/0
+ # expires at 1743025586000000-1743025586000000 nsecs [in 3151488 to 3151488 nsecs]
+ #1: <00000000>, hrtimer_wakeup, S:01, hrtimer_start_range_ns, Xorg/13426
+ # expires at 1743025594922095-1743025594972095 nsecs [in 12073583 to 12123583 nsecs]
+ #2: <00000000>, ehci_hrtimer_func, S:01, hrtimer_start_range_ns, Xorg/13426
+ # expires at 1743025659128929-1743025660128929 nsecs [in 76280417 to 77280417 nsecs]
+ #3: <00000000>, sched_rt_period_timer, S:01, start_bandwidth_timer, watchdog/0/11
+ # expires at 1743026000000000-1743026000000000 nsecs [in 417151488 to 417151488 nsecs]
+
+...
+
+ #31: <00000000>, hrtimer_wakeup, S:01, hrtimer_start_range_ns, unity-webapps-s/19333
+ # expires at 1783665376071872-1783665476071872 nsecs [in 40639793223360 to 40639893223360 nsecs]
+ #32: <00000000>, hrtimer_wakeup, S:01, hrtimer_start_range_ns, evolution-sourc/14072
+ # expires at 1798296375965684-1798296475965684 nsecs [in 55270793117172 to 55270893117172 nsecs]
+ #33: <00000000>, hrtimer_wakeup, S:01, hrtimer_start_range_ns, deja-dup-monito/14376
+ # expires at 2831736735278681-2831736835278681 nsecs [in 1088711152430169 to 1088711252430169 nsecs]
+ clock 1:
+  .base:       00000000
+  .index:      1
+  .resolution: 1 nsecs
+  .get_time:   ktime_get_real
+  .offset:     1472249436194998175 nsecs
+active timers:
+ #0: <00000000>, hrtimer_wakeup, S:01, hrtimer_start_range_ns, Timer/19330
+ # expires at 1473992463535380000-1473992463535430000 nsecs [in 1472249437952531488 to 1472249437952581488 nsecs]
+ clock 2:
+  .base:       00000000
+  .index:      2
+  .resolution: 1 nsecs
+  .get_time:   ktime_get_boottime
+  .offset:     0 nsecs
+active timers:
+ clock 3:
+  .base:       00000000
+  .index:      3
+  .resolution: 1 nsecs
+  .get_time:   ktime_get_clocktai
+  .offset:     1472249436194998175 nsecs
+active timers:
+  .expires_next   : 1743025588000000 nsecs
+  .hres_active    : 1
+  .nr_events      : 353488569
+  .nr_retries     : 792182
+  .nr_hangs       : 0
+  .max_hang_time  : 0 nsecs
+  .nohz_mode      : 2
+  .last_tick      : 1743025521000000 nsecs
+  .tick_stopped   : 0
+  .idle_jiffies   : 1742725520
+  .idle_calls     : 134591512
+  .idle_sleeps    : 127236879
+  .idle_entrytime : 1743025520591012 nsecs
+  .idle_waketime  : 1743025520591012 nsecs
+  .idle_exittime  : 1743025520924762 nsecs
+  .idle_sleeptime : 1476122509737717 nsecs
+  .iowait_sleeptime: 77020894738 nsecs
+  .last_jiffies   : 1742725520
+  .next_jiffies   : 1742725538
+  .idle_expires   : 1743025538000000 nsecs
+jiffies: 1742725587
+
+Tick Device: mode:     1
+Broadcast device
+Clock Event Device: timer0
+ max_delta_ns:   536870948001
+ min_delta_ns:   1001
+ mult:           4294967
+ shift:          32
+ mode:           3
+ next_event:     9223372036854775807 nsecs
+ set_next_event: tegra_timer_set_next_event
+ set_mode:       tegra_timer_set_mode
+ event_handler:  tick_handle_oneshot_broadcast
+ retries:        1175
+
+tick_broadcast_mask: 00000001
+tick_broadcast_oneshot_mask: 00000000
+
+Tick Device: mode:     1
+Per CPU device: 0
+Clock Event Device: arch_sys_timer
+ max_delta_ns:   178956969027
+ min_delta_ns:   1250
+ mult:           51539608
+ shift:          32
+ mode:           3
+ next_event:     1743025588000000 nsecs
+ set_next_event: arch_timer_set_next_event_phys
+ set_mode:       arch_timer_set_mode_phys
+ event_handler:  hrtimer_interrupt
+ retries:        2988
+
+
+System has 4 processors configured and 4 available.
+Using CPUS=1 from total available.
+Pthread Policy is SCHED_FIFO
+PTHREAD SCOPE SYSTEM
+rt_max_prio=99
+rt_min_prio=1
+Service threads will run on 1 CPU cores
+F10 runtime calibration 0.101834 msec per 100 test cycles, so 98 required
+F20 runtime calibration 0.101417 msec per 100 test cycles, so 197 required
+Start sequencer
+Starting Sequencer: [S1, T1=20, C1=10], [S2, T2=50, C2=20], U=0.9, LCM=100
+
+**** CI t=0.004333
+F10 start 1 @ 0.241167 on core 3
+F10 complete 1 @ 10.001917, 98 loops
+F20 start 1 @ 10.184167 on core 3
+t=20.259917
+F10 start 2 @ 20.353500 on core 3
+F10 complete 2 @ 30.146167, 98 loops
+F20 complete 1 @ 39.858917, 197 loops
+t=40.539083
+F10 start 3 @ 40.659917 on core 3
+F10 complete 3 @ 50.289333, 98 loops
+t=50.713667
+F20 start 2 @ 50.799833 on core 3
+t=60.833167
+F10 start 4 @ 60.917250 on core 3
+F10 complete 4 @ 70.678500, 98 loops
+F20 complete 2 @ 80.251417, 197 loops
+t=80.985000
+F10 start 5 @ 81.078167 on core 3
+F10 complete 5 @ 90.812750, 98 loops
+
+**** CI t=101.214667
+F10 start 6 @ 101.381333 on core 3
+F10 complete 6 @ 111.148083, 98 loops
+F20 start 3 @ 111.246167 on core 3
+t=121.431000
+F10 start 7 @ 121.596333 on core 3
+F10 complete 7 @ 131.331333, 98 loops
+F20 complete 3 @ 140.959667, 197 loops
+t=141.837750
+F10 start 8 @ 141.962500 on core 3
+F10 complete 8 @ 151.789750, 98 loops
+t=152.317083
+F20 start 4 @ 153.040250 on core 3
+t=162.987750
+F10 start 9 @ 163.070917 on core 3
+F10 complete 9 @ 172.787667, 98 loops
+F20 complete 4 @ 182.509750, 197 loops
+t=183.154583
+F10 start 10 @ 183.246083 on core 3
+F10 complete 10 @ 193.039500, 98 loops
+
+**** CI t=203.367333
+F10 start 11 @ 203.625000 on core 3
+F10 complete 11 @ 213.327833, 98 loops
+F20 start 5 @ 213.421750 on core 3
+t=223.659667
+F10 start 12 @ 223.754917 on core 3
+F10 complete 12 @ 233.501500, 98 loops
+F20 complete 5 @ 242.936667, 197 loops
+t=243.830250
+F10 start 13 @ 243.915833 on core 3
+F10 complete 13 @ 253.625583, 98 loops
+t=253.996500
+F20 start 6 @ 254.093750 on core 3
+t=264.184083
+F10 start 14 @ 264.308583 on core 3
+F10 complete 14 @ 274.120917, 98 loops
+F20 complete 6 @ 283.939583, 197 loops
+t=284.566583
+F10 start 15 @ 284.666333 on core 3
+F10 complete 15 @ 294.407083, 98 loops
+
+TEST COMPLETE
