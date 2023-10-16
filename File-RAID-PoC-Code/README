@@ -1,6 +1,8 @@
 The stripetest should XOR encode the file into chunks and the read it back, recovering data
 from any lost chunk if necessary, but only 1 in the worst case.
 
-This now needs updates from the second activity section.
+Run the demonstration as:
+
+stripetest inputfile outputfile <sector to restore>
 
 This code is used as a working design and proof-of-concept example.
