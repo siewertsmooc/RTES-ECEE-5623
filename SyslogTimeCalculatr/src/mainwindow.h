@@ -15,8 +15,11 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    QString calc(QList<double> timeStamps);
 private slots:
     void on_BtnCalc_clicked();
+
+    void on_BtnClear_clicked();
 
 private:
     Ui::MainWindow *ui;
