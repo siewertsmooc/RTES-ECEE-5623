@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1006</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Syslog Calculator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="BtnCalc">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>430</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Start Calc</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="TxtInput">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>931</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="plainText">
+     <string>Dec 17 13:19:03 raspberrypi squencer[31510]: S1 50 Hz on core 2 for release 1 @ sec=0.018899844
+Dec 17 13:19:03 raspberrypi squencer[31510]: S1 50 Hz on core 2 for release 2 @ sec=0.038839375
+Dec 17 13:19:03 raspberrypi squencer[31510]: S1 50 Hz on core 2 for release 3 @ sec=0.058835677
+Dec 17 13:19:03 raspberrypi squencer[31510]: S1 50 Hz on core 2 for release 4 @ sec=0.078835156
+Dec 17 13:19:03 raspberrypi squencer[31510]: S1 50 Hz on core 2 for release 5 @ sec=0.098865156
+Dec 17 13:19:03 raspberrypi squencer[31510]: S2 10 Hz on core 2 for release 1 @ sec=0.098996250
+Dec 17 13:19:03 raspberrypi squencer[31510]: S1 50 Hz on core 2 for release 6 @ sec=0.118840468
+Dec 17 13:19:03 raspberrypi squencer[31510]: S1 50 Hz on core 2 for release 7 @ sec=0.138836146
+Dec 17 13:19:03 raspberrypi squencer[31510]: S3 6.66666667 Hz on core 2 forrelease 1 @ sec=0.148862552
+Dec 17 13:19:03 raspberrypi squencer[31510]: S1 50 Hz on core 2 for release 8 @ sec=0.158867812
+Dec 17 13:19:03 raspberrypi squencer[31510]: S1 50 Hz on core 2 for release 9 @ sec=0.178839218
+Dec 17 13:19:03 raspberrypi squencer[31510]: S1 50 Hz on core 2 for release 10 @ sec=0.198860104
+Dec 17 13:19:03 raspberrypi squencer[31510]: S2 10 Hz on core 2 for release 2 @ sec=0.198981718
+Dec 17 13:19:03 raspberrypi squencer[31510]: S1 50 Hz on core 2 for release 11 @ sec=0.218841875
+Dec 17 13:19:03 raspberrypi squencer[31510]: S1 50 Hz on core 2 for release 12 @ sec=0.238839739
+Dec 17 13:19:03 raspberrypi squencer[31510]: S1 50 Hz on core 2 for release 13 @ sec=0.258839062
+Dec 17 13:19:03 raspberrypi squencer[31510]: S1 50 Hz on core 2 for release 14 @ sec=0.278841250
+Dec 17 13:19:03 raspberrypi squencer[31510]: S1 50 Hz on core 2 for release 15 @ sec=0.298861770
+Dec 17 13:19:03 raspberrypi squencer[31510]: S2 10 Hz on core 2 for release 3 @ sec=0.300078020
+Dec 17 13:19:03 raspberrypi squencer[31510]: S3 6.66666667 Hz on core 2 forrelease 2 @ sec=0.300316770
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>400</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Result:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="TxtResults">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>400</y>
+      <width>781</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="TxtServiceName">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>370</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>S1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>370</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Service Name:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1006</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
