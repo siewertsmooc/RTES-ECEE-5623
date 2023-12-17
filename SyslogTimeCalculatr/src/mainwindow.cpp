@@ -30,8 +30,10 @@ QString calc(QList<double> timeStamps)
     for (double timestamp : timeStamps) {
         sumSquares += std::pow(timestamp - average, 2);
     }
+
     double variance = sumSquares / timeStamps.size();
     double standardDeviation = std::sqrt(variance);
+
     return  "AVG="+QString::number(average)+" std="+QString::number(standardDeviation)+
             " min="+QString::number(minimum)+" max="+QString::number(maximum)+" count="+QString::number(timeStamps.length());
 
@@ -39,12 +41,14 @@ QString calc(QList<double> timeStamps)
 }
 void MainWindow::on_BtnCalc_clicked()
 {
-    QString input=ui->TxtInput->toPlainText();
+    QString input=ui->TxtInput->toPlainText().trimmed();
     QList<double> timeStamps;
+
 
     QStringList lines=input.split("\n");
     for(int i=1;i<lines.count();i++)
     {
+
         if(lines[i].contains(ui->TxtServiceName->text()) && lines[i].contains("sec="))
         {
 
