@@ -4,6 +4,23 @@
 
 #define COUNT  100
 
+#define NUM_THREADS (3)
+
+// Note that often the "digit sum" rather than "sum of the digits" or "sum of numbers in a sequence" is defined as the sum of the digit in each 10's place, but
+// that's not what we want to model here.  E.g., Wikipedia - https://en.wikipedia.org/wiki/Digit_sum
+//
+// What we want to model is an arithmetic series sum best referred to as the "sum or an arithmetic progression" - https://en.wikipedia.org/wiki/Arithmetic_progression
+//
+// This si what we mean summing numbers in the range 1...n, where we know based on series facts that sum(1...n) = n(n+1)/2
+//
+// We can now have threads sum sub-ranges of a series as a service and then have them add up  the result after a join so that sum(1...n) = sum(1...n/2-1) + sum(n/2...n-1) for
+// example.
+//
+// This sample code provides a simple example of an arithmetic progression sum (sometimes called sum of the digits for simplicity since we know sum(0...9)=9(10)/2=45.
+//
+// It should techically be called a sum of a series of numbers in an arithmetic progression.
+//
+
 typedef struct
 {
     int threadIdx;
@@ -41,7 +58,7 @@ int main (int argc, char *argv[])
       pthread_create(&threads[i], (void *)0, sumThread, (void *)&(threadParams[i]));
    }
 
-   for(i=0; i<3; i++)
+   for(i=0; i<NUM_THREADS; i++)
      pthread_join(threads[i], NULL);
 
    printf("TEST COMPLETE: gsum[0]=%d, gsum[1]=%d, gsum[2]=%d, gsumall=%d\n", 
