@@ -1,9 +1,9 @@
-INCLUDE_DIRS = 
+INCLUDE_DIRS = /usr/include/opencv4
 LIB_DIRS = 
 CC=g++
 
 CDEFS=
-CFLAGS= -O0 -g $(INCLUDE_DIRS) $(CDEFS)
+CFLAGS= -O0 -g $(CDEFS)
 LIBS= -lrt
 CPPLIBS= -L/usr/lib -lopencv_core -lopencv_flann -lopencv_video
 
@@ -24,12 +24,12 @@ distclean:
 	-rm -f *.o *.d
 
 capture: capture.o
-	$(CC) $(LDFLAGS) $(CFLAGS) -o $@ $@.o `pkg-config --libs opencv` $(CPPLIBS)
+	$(CC) $(LDFLAGS) $(CFLAGS) -o $@ $@.o `pkg-config --libs opencv4` $(CPPLIBS)
 
 depend:
 
 .c.o:
-	$(CC) $(CFLAGS) -c $<
+	$(CC) $(CFLAGS) -I$(INCLUDE_DIRS) -c $<
 
 .cpp.o:
-	$(CC) $(CFLAGS) -c $<
+	$(CC) $(CFLAGS) -I$(INCLUDE_DIRS) -c $<

@@ -43,7 +43,7 @@ int main( int argc, char** argv )
 	cv::waitKey(33);
     }
 	
-    cv::cvtColor(mat_frame, mat_gray, CV_BGR2GRAY);
+    cv::cvtColor(mat_frame, mat_gray, COLOR_BGR2GRAY);
 
     mat_diff = mat_gray.clone();
     mat_gray_prev = mat_gray.clone();
@@ -57,7 +57,7 @@ int main( int argc, char** argv )
 		cv::waitKey();
 	}
 	
-	cv::cvtColor(mat_frame, mat_gray, CV_BGR2GRAY);
+	cv::cvtColor(mat_frame, mat_gray, COLOR_BGR2GRAY);
 
 	absdiff(mat_gray_prev, mat_gray, mat_diff);
 
@@ -70,14 +70,14 @@ int main( int argc, char** argv )
         sprintf(difftext, "%8d",  diffsum);
 
         // tested in ERAU Jetson lab
-	if(percent_diff > 0.5) cv::putText(mat_diff, difftext, cvPoint(30,30), FONT_HERSHEY_COMPLEX_SMALL, 0.8, cvScalar(200,200,250), 1, CV_AA);
+	if(percent_diff > 0.5) cv::putText(mat_diff, difftext, Point(30,30), FONT_HERSHEY_COMPLEX_SMALL, 0.8, Scalar(200,200,250), 1, LINE_AA);
 
 	cv::imshow("Gray Example", mat_gray);
 	cv::imshow("Gray Previous", mat_gray_prev);
 	cv::imshow("Gray Diff", mat_diff);
 
 
-        char c = cvWaitKey(33); // take this out or reduce
+        char c = waitKey(33); // take this out or reduce
         if( c == 'q' ) break;
 
 	mat_gray_prev = mat_gray.clone();
