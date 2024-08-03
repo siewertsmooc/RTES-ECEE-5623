@@ -18,11 +18,38 @@
 #define ERROR (-1)
 #define OK (0)
 
-//#define MY_SCHEDULER SCHED_FIFO
-//#define MY_SCHEDULER SCHED_RR
-#define MY_SCHEDULER SCHED_OTHER
-
-int numberOfProcessors=NUM_CPUS;
+// NVIDIA JETSON SPECIFIC SCHED_FIFO REQUIREMENT
+//
+// Before running any RT scheduling software on a Jetson Orin or any system with JetPack
+// newer than 4.x (5.x or 6.x for example), note that you must adjust the Linux kernel 
+// configuration to allow for RT schedulign and RT priorities with:
+//
+// sudo sysctl -w kernel.sched_rt_runtime_us=-1
+//
+// Red Hat has excellent documentation on RT policies and security, but this seems to be
+// NVIDIA specific.
+//
+// See these excellent references for more discussion:
+//
+// 1) https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_for_real_time/8/html-single/understanding_rhel_for_real_time
+// 2) https://linux.web.cern.ch/mrg/2/Realtime_Reference_Guide/
+// 3) https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_for_real_time/9/html/understanding_rhel_for_real_time
+//
+// However, note specific help for various platforms like NVIDIA:
+//
+// 1) https://forums.developer.nvidia.com/c/agx-autonomous-machines/jetson-embedded-systems
+// 2) https://forums.developer.nvidia.com/t/pthread-setschedparam-sched-fifo-fails/64394/4
+//
+// For Raspberry Pi:
+//
+// 1) https://www.raspberrypi.com/documentation/computers/linux_kernel.html
+// 2) https://forums.raspberrypi.com/viewtopic.php?t=308134 (example of forum discussion on RT Linux extensions on the R-Pi)
+//
+// Finall Linux manual pages:
+//
+// 1) https://man7.org/linux/man-pages/man7/sched.7.html
+// 2) https://man7.org/linux/man-pages/man2/sched_setscheduler.2.html (note other RT manual pages at the bottom)
+//
 
 unsigned int idx = 0, jdx = 1;
 unsigned int seqIterations = 47;
@@ -132,7 +159,7 @@ int delta_t(struct timespec *stop, struct timespec *start, struct timespec *delt
 
 #define SUM_ITERATIONS (1000)
 
-void *workerThread(void *threadp)
+void *counterThread(void *threadp)
 {
     int sum=0, i;
     pthread_t thread;
@@ -141,6 +168,10 @@ void *workerThread(void *threadp)
     struct timespec finish_time = {0, 0};
     struct timespec thread_dt = {0, 0};
     threadParams_t *threadParams = (threadParams_t *)threadp;
+
+    thread=pthread_self();
+    CPU_ZERO(&cpuset);
+
 
 
     clock_gettime(CLOCK_REALTIME, &start_time);
@@ -183,7 +214,7 @@ void print_scheduler(void)
            printf("Pthread Policy is SCHED_OTHER\n");
        break;
      case SCHED_RR:
-           printf("Pthread Policy is SCHED_RR\n");
+           printf("Pthread Policy is SCHED_OTHER\n");
            break;
      default:
        printf("Pthread Policy is UNKNOWN\n");
@@ -205,14 +236,9 @@ void print_scheduler(void)
 int main (int argc, char *argv[])
 {
    int rc, idx;
-   int i;
-   cpu_set_t threadcpu;
-   int coreid;
 
-   numberOfProcessors = get_nprocs_conf();
-
-   printf("This system has %d processors with %d available\n", numberOfProcessors, get_nprocs());
-   printf("The test thread created will be run on a specific core based on thread index\n");
+   printf("This system has %d processors with %d available\n", get_nprocs_conf(), get_nprocs());
+   printf("The test thread created will be SCHED_FIFO is run with sudo and will be run on least busy core\n");
 
    mainpid=getpid();
 
@@ -221,13 +247,11 @@ int main (int argc, char *argv[])
 
    print_scheduler();
    rc=sched_getparam(mainpid, &main_param);
+   //main_param.sched_priority=rt_min_prio;
    main_param.sched_priority=rt_max_prio;
 
-   if(MY_SCHEDULER != SCHED_OTHER)
-   {
-       if(rc=sched_setscheduler(getpid(), MY_SCHEDULER, &main_param) < 0)
-	       perror("******** WARNING: sched_setscheduler");
-   }
+   if(rc=sched_setscheduler(getpid(), SCHED_FIFO, &main_param) < 0)
+	   perror("******** WARNING: sched_setscheduler");
 
    print_scheduler();
 
@@ -236,39 +260,27 @@ int main (int argc, char *argv[])
    printf("rt_min_prio=%d\n", rt_min_prio);
 
 
-
-
-
-   for(i=0; i < NUM_THREADS; i++)
+   for(idx=0; idx < NUM_THREADS; idx++)
    {
-       CPU_ZERO(&threadcpu);
+       rc=pthread_attr_init(&rt_sched_attr[idx]);
+       rc=pthread_attr_setinheritsched(&rt_sched_attr[idx], PTHREAD_EXPLICIT_SCHED);
+       rc=pthread_attr_setschedpolicy(&rt_sched_attr[idx], SCHED_FIFO);
 
-       coreid=i%numberOfProcessors;
-       printf("Setting thread %d to core %d\n", i, coreid);
+       rt_param[idx].sched_priority=rt_max_prio-idx-1;
+       pthread_attr_setschedparam(&rt_sched_attr[idx], &rt_param[idx]);
 
-       CPU_SET(coreid, &threadcpu);
+       threadParams[idx].threadIdx=idx;
 
-       rc=pthread_attr_init(&rt_sched_attr[i]);
-       rc=pthread_attr_setinheritsched(&rt_sched_attr[i], PTHREAD_EXPLICIT_SCHED);
-       rc=pthread_attr_setschedpolicy(&rt_sched_attr[i], MY_SCHEDULER);
-       rc=pthread_attr_setaffinity_np(&rt_sched_attr[i], sizeof(cpu_set_t), &threadcpu);
-
-       rt_param[i].sched_priority=rt_max_prio-i-1;
-       pthread_attr_setschedparam(&rt_sched_attr[i], &rt_param[i]);
-
-       threadParams[i].threadIdx=i;
-
-       pthread_create(&threads[i],               // pointer to thread descriptor
-                      &rt_sched_attr[i],         // use AFFINITY AND SCHEDULER attributes
-                      workerThread,              // thread function entry point
-                      (void *)&(threadParams[i]) // parameters to pass in
+       pthread_create(&threads[idx],               // pointer to thread descriptor
+                      &rt_sched_attr[idx],         // use SPECIFIC SECHED_FIFO attributes
+                      counterThread,               // thread function entry point
+                      (void *)&(threadParams[idx]) // parameters to pass in
                      );
 
    }
 
-
-   for(i=0;i<NUM_THREADS;i++)
-       pthread_join(threads[i], NULL);
+   for(idx=0;idx<NUM_THREADS;idx++)
+       pthread_join(threads[idx], NULL);
 
    printf("\nTEST COMPLETE\n");
 }
