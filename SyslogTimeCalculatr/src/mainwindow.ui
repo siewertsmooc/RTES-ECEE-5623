@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1290</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Syslog Calculator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="BtnCalc">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>470</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Start Calc</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="TxtInput">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>1201</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="plainText">
+     <string>Dec 17 19:53:52 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 1 @ sec=0.021810104
+Dec 17 19:53:52 raspberrypi kernel: [90614.004247] hwmon hwmon1: Undervoltage detected!
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 2 @ sec=0.041803229
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 3 @ sec=0.061757448
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 4 @ sec=0.081743906
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 5 @ sec=0.101758177
+Dec 17 19:53:53 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 1 @ sec=0.101844740
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 6 @ sec=0.121749219
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 7 @ sec=0.141810052
+Dec 17 19:53:53 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 1 @ sec=0.151795938
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 8 @ sec=0.161785156
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 9 @ sec=0.181760625
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 10 @ sec=0.201764375
+Dec 17 19:53:53 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 2 @ sec=0.201901927
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 11 @ sec=0.221760365
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 12 @ sec=0.241760625
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 13 @ sec=0.261759063
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 14 @ sec=0.281766042
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 15 @ sec=0.301767240
+Dec 17 19:53:53 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 3 @ sec=0.301900573
+Dec 17 19:53:53 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 2 @ sec=0.301966511
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 16 @ sec=0.321765469
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 17 @ sec=0.341762656
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 18 @ sec=0.361759636
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 19 @ sec=0.381760156
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 20 @ sec=0.401765104
+Dec 17 19:53:53 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 4 @ sec=0.401898542
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 21 @ sec=0.421765261
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 22 @ sec=0.441758802
+Dec 17 19:53:53 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 3 @ sec=0.451787448
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 23 @ sec=0.461785729
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 24 @ sec=0.481763698
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 25 @ sec=0.501763490
+Dec 17 19:53:53 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 5 @ sec=0.501893281
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 26 @ sec=0.521766510
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 27 @ sec=0.541765885
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 28 @ sec=0.561761250
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 29 @ sec=0.581764792
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 30 @ sec=0.601771979
+Dec 17 19:53:53 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 6 @ sec=0.601915521
+Dec 17 19:53:53 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 4 @ sec=0.601980365
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 31 @ sec=0.621767135
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 32 @ sec=0.641763021
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 33 @ sec=0.661763229
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 34 @ sec=0.681761719
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 35 @ sec=0.701768125
+Dec 17 19:53:53 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 7 @ sec=0.701902448
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 36 @ sec=0.721766875
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 37 @ sec=0.741763125
+Dec 17 19:53:53 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 5 @ sec=0.751791458
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 38 @ sec=0.761788125
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 39 @ sec=0.781764427
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 40 @ sec=0.801768229
+Dec 17 19:53:53 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 8 @ sec=0.801897969
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 41 @ sec=0.821766615
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 42 @ sec=0.841763958
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 43 @ sec=0.861761458
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 44 @ sec=0.881764427
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 45 @ sec=0.901769687
+Dec 17 19:53:53 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 9 @ sec=0.901897812
+Dec 17 19:53:53 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 6 @ sec=0.901961719
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 46 @ sec=0.921766406
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 47 @ sec=0.941765208
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 48 @ sec=0.961767239
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 49 @ sec=0.981833958
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 50 @ sec=1.001854167
+Dec 17 19:53:53 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 10 @ sec=1.002013177
+Dec 17 19:53:53 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 51 @ sec=1.021766979
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 52 @ sec=1.041757500
+Dec 17 19:53:54 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 7 @ sec=1.051790989
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 53 @ sec=1.061788333
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 54 @ sec=1.081756719
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 55 @ sec=1.101781927
+Dec 17 19:53:54 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 11 @ sec=1.101910573
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 56 @ sec=1.121770417
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 57 @ sec=1.141769323
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 58 @ sec=1.161767344
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 59 @ sec=1.181769323
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 60 @ sec=1.201791146
+Dec 17 19:53:54 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 12 @ sec=1.201919948
+Dec 17 19:53:54 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 8 @ sec=1.201984896
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 61 @ sec=1.221772448
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 62 @ sec=1.241768541
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 63 @ sec=1.261769479
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 64 @ sec=1.281766823
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 65 @ sec=1.301790156
+Dec 17 19:53:54 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 13 @ sec=1.301924739
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 66 @ sec=1.321771875
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 67 @ sec=1.341770416
+Dec 17 19:53:54 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 9 @ sec=1.351795104
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 68 @ sec=1.361793021
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 69 @ sec=1.381770416
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 70 @ sec=1.401788646
+Dec 17 19:53:54 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 14 @ sec=1.401914479
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 71 @ sec=1.421770208
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 72 @ sec=1.441772135
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 73 @ sec=1.461768021
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 74 @ sec=1.481769271
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 75 @ sec=1.501791146
+Dec 17 19:53:54 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 15 @ sec=1.501922291
+Dec 17 19:53:54 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 10 @ sec=1.501987135
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 76 @ sec=1.521773125
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 77 @ sec=1.541829635
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 78 @ sec=1.561773385
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 79 @ sec=1.581769271
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 80 @ sec=1.601796145
+Dec 17 19:53:54 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 16 @ sec=1.601936770
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 81 @ sec=1.621774010
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 82 @ sec=1.641772968
+Dec 17 19:53:54 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 11 @ sec=1.651800937
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 83 @ sec=1.661796614
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 84 @ sec=1.681772187
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 85 @ sec=1.701792135
+Dec 17 19:53:54 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 17 @ sec=1.701919687
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 86 @ sec=1.721775468
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 87 @ sec=1.741775156
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 88 @ sec=1.761771250
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 89 @ sec=1.781774948
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 90 @ sec=1.801796250
+Dec 17 19:53:54 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 18 @ sec=1.801925833
+Dec 17 19:53:54 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 12 @ sec=1.801990364
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 91 @ sec=1.821777656
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 92 @ sec=1.841772708
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 93 @ sec=1.861776875
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 94 @ sec=1.881772447
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 95 @ sec=1.901794843
+Dec 17 19:53:54 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 19 @ sec=1.901927760
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 96 @ sec=1.921776458
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 97 @ sec=1.941773906
+Dec 17 19:53:54 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 13 @ sec=1.951803281
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 98 @ sec=1.961799791
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 99 @ sec=1.981774218
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 100 @ sec=2.001794010
+Dec 17 19:53:54 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 20 @ sec=2.001921875
+Dec 17 19:53:54 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 101 @ sec=2.021817187
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 102 @ sec=2.041776302
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 103 @ sec=2.061766822
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 104 @ sec=2.081768697
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 105 @ sec=2.101786822
+Dec 17 19:53:55 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 21 @ sec=2.101918593
+Dec 17 19:53:55 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 14 @ sec=2.101983541
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 106 @ sec=2.121765624
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 107 @ sec=2.141766197
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 108 @ sec=2.161769531
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 109 @ sec=2.181766770
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 110 @ sec=2.201792395
+Dec 17 19:53:55 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 22 @ sec=2.201923593
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 111 @ sec=2.221780104
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 112 @ sec=2.241769583
+Dec 17 19:53:55 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 15 @ sec=2.251794583
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 113 @ sec=2.261789895
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 114 @ sec=2.281762656
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 115 @ sec=2.301783281
+Dec 17 19:53:55 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 23 @ sec=2.301903854
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 116 @ sec=2.321779531
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 117 @ sec=2.341777551
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 118 @ sec=2.361776406
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 119 @ sec=2.381778072
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 120 @ sec=2.401799374
+Dec 17 19:53:55 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 24 @ sec=2.401927499
+Dec 17 19:53:55 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 16 @ sec=2.401991718
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 121 @ sec=2.421782499
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 122 @ sec=2.441777656
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 123 @ sec=2.461778801
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 124 @ sec=2.481776822
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 125 @ sec=2.501799166
+Dec 17 19:53:55 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 25 @ sec=2.501933593
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 126 @ sec=2.521767812
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 127 @ sec=2.541767656
+Dec 17 19:53:55 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 17 @ sec=2.551821093
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 128 @ sec=2.561843958
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 129 @ sec=2.581848176
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 130 @ sec=2.601781978
+Dec 17 19:53:55 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 26 @ sec=2.601895520
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 131 @ sec=2.621758958
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 132 @ sec=2.641759687
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 133 @ sec=2.661766874
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 134 @ sec=2.681765624
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 135 @ sec=2.701789999
+Dec 17 19:53:55 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 27 @ sec=2.701887760
+Dec 17 19:53:55 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 18 @ sec=2.701941770
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 136 @ sec=2.721766301
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 137 @ sec=2.741763280
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 138 @ sec=2.761762083
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 139 @ sec=2.781766718
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 140 @ sec=2.801780260
+Dec 17 19:53:55 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 28 @ sec=2.801880208
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 141 @ sec=2.821772499
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 142 @ sec=2.841776197
+Dec 17 19:53:55 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 19 @ sec=2.851804947
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 143 @ sec=2.861800520
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 144 @ sec=2.881775312
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 145 @ sec=2.901792760
+Dec 17 19:53:55 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 29 @ sec=2.901906718
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 146 @ sec=2.921780780
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 147 @ sec=2.941774270
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 148 @ sec=2.961775468
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 149 @ sec=2.981769843
+Dec 17 19:53:55 raspberrypi squencer[9104]: S1 50 Hz on core 2 for release 150 @ sec=3.001795051
+Dec 17 19:53:55 raspberrypi squencer[9104]: S2 10 Hz on core 2 for release 30 @ sec=3.003037655
+Dec 17 19:53:55 raspberrypi squencer[9104]: S3 6.66666667 Hz on core 2 forrelease 20 @ sec=3.003268072
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>420</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Result:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="TxtResults">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>420</y>
+      <width>1141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="TxtServiceName">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>370</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>S1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>370</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Service Name:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="CmbDimension">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>360</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ms</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>us</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ns</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>370</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Time dimension:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BtnClear">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>470</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Clear</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1290</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
