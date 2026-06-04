@@ -1,0 +1,309 @@
+Before adjustments to scheduling policy:
+Pthread Policy is SCHED_OTHER
+After adjustments to scheduling policy:
+Pthread Policy is SCHED_FIFO
+
+
+POSIX Clock demo using system RT clock, 1, with resolution:
+	0 secs, 0 microsecs, 1 nanosecs
+test 0
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10019, nsec=10019782, sec=0.010019782
+MY_CLOCK delay error = 0, nanoseconds = 19782
+test 1
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10009, nsec=10009446, sec=0.010009446
+MY_CLOCK delay error = 0, nanoseconds = 9446
+test 2
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10017, nsec=10017669, sec=0.010017669
+MY_CLOCK delay error = 0, nanoseconds = 17669
+test 3
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10006, nsec=10006758, sec=0.010006758
+MY_CLOCK delay error = 0, nanoseconds = 6758
+test 4
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10013, nsec=10013893, sec=0.010013893
+MY_CLOCK delay error = 0, nanoseconds = 13893
+test 5
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10007, nsec=10007462, sec=0.010007462
+MY_CLOCK delay error = 0, nanoseconds = 7462
+test 6
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10014, nsec=10014182, sec=0.010014182
+MY_CLOCK delay error = 0, nanoseconds = 14182
+test 7
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10012, nsec=10012101, sec=0.010012101
+MY_CLOCK delay error = 0, nanoseconds = 12101
+test 8
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10012, nsec=10012646, sec=0.010012646
+MY_CLOCK delay error = 0, nanoseconds = 12646
+test 9
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10018, nsec=10018245, sec=0.010018245
+MY_CLOCK delay error = 0, nanoseconds = 18245
+test 10
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10032, nsec=10032229, sec=0.010032229
+MY_CLOCK delay error = 0, nanoseconds = 32229
+test 11
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10014, nsec=10014054, sec=0.010014054
+MY_CLOCK delay error = 0, nanoseconds = 14054
+test 12
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10024, nsec=10024422, sec=0.010024422
+MY_CLOCK delay error = 0, nanoseconds = 24422
+test 13
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10014, nsec=10014117, sec=0.010014117
+MY_CLOCK delay error = 0, nanoseconds = 14117
+test 14
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10019, nsec=10019398, sec=0.010019398
+MY_CLOCK delay error = 0, nanoseconds = 19398
+test 15
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10008, nsec=10008133, sec=0.010008133
+MY_CLOCK delay error = 0, nanoseconds = 8133
+test 16
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10013, nsec=10013158, sec=0.010013158
+MY_CLOCK delay error = 0, nanoseconds = 13158
+test 17
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10006, nsec=10006534, sec=0.010006534
+MY_CLOCK delay error = 0, nanoseconds = 6534
+test 18
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10011, nsec=10011845, sec=0.010011845
+MY_CLOCK delay error = 0, nanoseconds = 11845
+test 19
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10007, nsec=10007622, sec=0.010007622
+MY_CLOCK delay error = 0, nanoseconds = 7622
+test 20
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10013, nsec=10013670, sec=0.010013670
+MY_CLOCK delay error = 0, nanoseconds = 13670
+test 21
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10013, nsec=10013574, sec=0.010013574
+MY_CLOCK delay error = 0, nanoseconds = 13574
+test 22
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10015, nsec=10015910, sec=0.010015910
+MY_CLOCK delay error = 0, nanoseconds = 15910
+test 23
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10007, nsec=10007110, sec=0.010007110
+MY_CLOCK delay error = 0, nanoseconds = 7110
+test 24
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10011, nsec=10011238, sec=0.010011238
+MY_CLOCK delay error = 0, nanoseconds = 11238
+test 25
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10007, nsec=10007782, sec=0.010007782
+MY_CLOCK delay error = 0, nanoseconds = 7782
+test 26
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10011, nsec=10011429, sec=0.010011429
+MY_CLOCK delay error = 0, nanoseconds = 11429
+test 27
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10007, nsec=10007078, sec=0.010007078
+MY_CLOCK delay error = 0, nanoseconds = 7078
+test 28
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10018, nsec=10018213, sec=0.010018213
+MY_CLOCK delay error = 0, nanoseconds = 18213
+test 29
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10023, nsec=10023782, sec=0.010023782
+MY_CLOCK delay error = 0, nanoseconds = 23782
+test 30
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10029, nsec=10029861, sec=0.010029861
+MY_CLOCK delay error = 0, nanoseconds = 29861
+test 31
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10012, nsec=10012293, sec=0.010012293
+MY_CLOCK delay error = 0, nanoseconds = 12293
+test 32
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10022, nsec=10022470, sec=0.010022470
+MY_CLOCK delay error = 0, nanoseconds = 22470
+test 33
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10009, nsec=10009574, sec=0.010009574
+MY_CLOCK delay error = 0, nanoseconds = 9574
+test 34
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10015, nsec=10015590, sec=0.010015590
+MY_CLOCK delay error = 0, nanoseconds = 15590
+test 35
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10007, nsec=10007845, sec=0.010007845
+MY_CLOCK delay error = 0, nanoseconds = 7845
+test 36
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10014, nsec=10014726, sec=0.010014726
+MY_CLOCK delay error = 0, nanoseconds = 14726
+test 37
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10015, nsec=10015333, sec=0.010015333
+MY_CLOCK delay error = 0, nanoseconds = 15333
+test 38
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10006, nsec=10006854, sec=0.010006854
+MY_CLOCK delay error = 0, nanoseconds = 6854
+test 39
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10011, nsec=10011366, sec=0.010011366
+MY_CLOCK delay error = 0, nanoseconds = 11366
+test 40
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10015, nsec=10015269, sec=0.010015269
+MY_CLOCK delay error = 0, nanoseconds = 15269
+test 41
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10013, nsec=10013766, sec=0.010013766
+MY_CLOCK delay error = 0, nanoseconds = 13766
+test 42
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10014, nsec=10014821, sec=0.010014821
+MY_CLOCK delay error = 0, nanoseconds = 14821
+test 43
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10007, nsec=10007654, sec=0.010007654
+MY_CLOCK delay error = 0, nanoseconds = 7654
+test 44
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10012, nsec=10012806, sec=0.010012806
+MY_CLOCK delay error = 0, nanoseconds = 12806
+test 45
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10011, nsec=10011973, sec=0.010011973
+MY_CLOCK delay error = 0, nanoseconds = 11973
+test 46
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10013, nsec=10013766, sec=0.010013766
+MY_CLOCK delay error = 0, nanoseconds = 13766
+test 47
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10012, nsec=10012741, sec=0.010012741
+MY_CLOCK delay error = 0, nanoseconds = 12741
+test 48
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10012, nsec=10012934, sec=0.010012934
+MY_CLOCK delay error = 0, nanoseconds = 12934
+test 49
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10011, nsec=10011366, sec=0.010011366
+MY_CLOCK delay error = 0, nanoseconds = 11366
+test 50
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10012, nsec=10012486, sec=0.010012486
+MY_CLOCK delay error = 0, nanoseconds = 12486
+test 51
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10012, nsec=10012006, sec=0.010012006
+MY_CLOCK delay error = 0, nanoseconds = 12006
+test 52
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10014, nsec=10014789, sec=0.010014789
+MY_CLOCK delay error = 0, nanoseconds = 14789
+test 53
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10005, nsec=10005990, sec=0.010005990
+MY_CLOCK delay error = 0, nanoseconds = 5990
+test 54
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10012, nsec=10012070, sec=0.010012070
+MY_CLOCK delay error = 0, nanoseconds = 12070
+test 55
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10007, nsec=10007206, sec=0.010007206
+MY_CLOCK delay error = 0, nanoseconds = 7206
+test 56
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10012, nsec=10012198, sec=0.010012198
+MY_CLOCK delay error = 0, nanoseconds = 12198
+test 57
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10012, nsec=10012773, sec=0.010012773
+MY_CLOCK delay error = 0, nanoseconds = 12773
+test 58
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10013, nsec=10013062, sec=0.010013062
+MY_CLOCK delay error = 0, nanoseconds = 13062
+test 59
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10013, nsec=10013638, sec=0.010013638
+MY_CLOCK delay error = 0, nanoseconds = 13638
+test 60
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10014, nsec=10014534, sec=0.010014534
+MY_CLOCK delay error = 0, nanoseconds = 14534
+test 61
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10012, nsec=10012806, sec=0.010012806
+MY_CLOCK delay error = 0, nanoseconds = 12806
+test 62
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10013, nsec=10013478, sec=0.010013478
+MY_CLOCK delay error = 0, nanoseconds = 13478
+test 63
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10006, nsec=10006789, sec=0.010006789
+MY_CLOCK delay error = 0, nanoseconds = 6789
+test 64
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10011, nsec=10011590, sec=0.010011590
+MY_CLOCK delay error = 0, nanoseconds = 11590
+test 65
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10011, nsec=10011622, sec=0.010011622
+MY_CLOCK delay error = 0, nanoseconds = 11622
+test 66
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10013, nsec=10013189, sec=0.010013189
+MY_CLOCK delay error = 0, nanoseconds = 13189
+test 67
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10009, nsec=10009670, sec=0.010009670
+MY_CLOCK delay error = 0, nanoseconds = 9670
+test 68
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10013, nsec=10013542, sec=0.010013542
+MY_CLOCK delay error = 0, nanoseconds = 13542
+test 69
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10010, nsec=10010918, sec=0.010010918
+MY_CLOCK delay error = 0, nanoseconds = 10918
+test 70
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10023, nsec=10023943, sec=0.010023943
+MY_CLOCK delay error = 0, nanoseconds = 23943
+test 71
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10006, nsec=10006503, sec=0.010006503
+MY_CLOCK delay error = 0, nanoseconds = 6503
+test 72
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10011, nsec=10011462, sec=0.010011462
+MY_CLOCK delay error = 0, nanoseconds = 11462
+test 73
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10014, nsec=10014727, sec=0.010014727
+MY_CLOCK delay error = 0, nanoseconds = 14727
+test 74
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10035, nsec=10035974, sec=0.010035974
+MY_CLOCK delay error = 0, nanoseconds = 35974
+test 75
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10025, nsec=10025542, sec=0.010025542
+MY_CLOCK delay error = 0, nanoseconds = 25542
+test 76
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10021, nsec=10021094, sec=0.010021094
+MY_CLOCK delay error = 0, nanoseconds = 21094
+test 77
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10014, nsec=10014087, sec=0.010014087
+MY_CLOCK delay error = 0, nanoseconds = 14087
+test 78
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10014, nsec=10014087, sec=0.010014087
+MY_CLOCK delay error = 0, nanoseconds = 14087
+test 79
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10011, nsec=10011942, sec=0.010011942
+MY_CLOCK delay error = 0, nanoseconds = 11942
+test 80
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10016, nsec=10016871, sec=0.010016871
+MY_CLOCK delay error = 0, nanoseconds = 16871
+test 81
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10010, nsec=10010343, sec=0.010010343
+MY_CLOCK delay error = 0, nanoseconds = 10343
+test 82
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10014, nsec=10014118, sec=0.010014118
+MY_CLOCK delay error = 0, nanoseconds = 14118
+test 83
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10007, nsec=10007047, sec=0.010007047
+MY_CLOCK delay error = 0, nanoseconds = 7047
+test 84
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10011, nsec=10011846, sec=0.010011846
+MY_CLOCK delay error = 0, nanoseconds = 11846
+test 85
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10009, nsec=10009639, sec=0.010009639
+MY_CLOCK delay error = 0, nanoseconds = 9639
+test 86
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10015, nsec=10015110, sec=0.010015110
+MY_CLOCK delay error = 0, nanoseconds = 15110
+test 87
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10012, nsec=10012486, sec=0.010012486
+MY_CLOCK delay error = 0, nanoseconds = 12486
+test 88
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10008, nsec=10008327, sec=0.010008327
+MY_CLOCK delay error = 0, nanoseconds = 8327
+test 89
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10033, nsec=10033990, sec=0.010033990
+MY_CLOCK delay error = 0, nanoseconds = 33990
+test 90
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10031, nsec=10031430, sec=0.010031430
+MY_CLOCK delay error = 0, nanoseconds = 31430
+test 91
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10024, nsec=10024070, sec=0.010024070
+MY_CLOCK delay error = 0, nanoseconds = 24070
+test 92
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10020, nsec=10020998, sec=0.010020998
+MY_CLOCK delay error = 0, nanoseconds = 20998
+test 93
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10008, nsec=10008295, sec=0.010008295
+MY_CLOCK delay error = 0, nanoseconds = 8295
+test 94
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10014, nsec=10014054, sec=0.010014054
+MY_CLOCK delay error = 0, nanoseconds = 14054
+test 95
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10016, nsec=10016582, sec=0.010016582
+MY_CLOCK delay error = 0, nanoseconds = 16582
+test 96
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10012, nsec=10012807, sec=0.010012807
+MY_CLOCK delay error = 0, nanoseconds = 12807
+test 97
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10016, nsec=10016038, sec=0.010016038
+MY_CLOCK delay error = 0, nanoseconds = 16038
+test 98
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10006, nsec=10006790, sec=0.010006790
+MY_CLOCK delay error = 0, nanoseconds = 6790
+test 99
+MY_CLOCK clock DT seconds = 0, msec=10, usec=10011, nsec=10011975, sec=0.010011975
+MY_CLOCK delay error = 0, nanoseconds = 11975
+TEST COMPLETE

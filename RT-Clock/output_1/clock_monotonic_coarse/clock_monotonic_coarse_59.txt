@@ -1,0 +1,358 @@
+Before adjustments to scheduling policy:
+Pthread Policy is SCHED_OTHER
+After adjustments to scheduling policy:
+Pthread Policy is SCHED_FIFO
+
+
+POSIX Clock demo using system RT clock, 5, with resolution:
+	0 secs, 4000 microsecs, 4000000 nanosecs
+test 0
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000416, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000416
+test 1
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 2
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000278, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 3
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 4
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 5
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000414, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000414
+test 6
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000414
+test 7
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 8
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 9
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 10
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000276, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 11
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 12
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 13
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 14
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000276, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 15
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 16
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 17
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 18
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 19
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 20
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000276, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 21
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 22
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000561
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 23
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000135
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 24
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 25
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000276, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 26
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 27
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 28
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 29
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 30
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 31
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000276, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 32
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 33
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 34
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 35
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000276, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 36
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 37
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 38
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 39
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 40
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 41
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000276, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 42
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 43
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 44
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 45
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000276, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 46
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 47
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 48
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 49
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 50
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 51
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000276, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 52
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 53
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 54
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 55
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000276, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 56
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 57
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 58
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 59
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 60
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000414, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000414
+test 61
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000414
+test 62
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 63
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 64
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 65
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000276, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 66
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 67
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 68
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 69
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000276, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 70
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 71
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 72
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 73
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 74
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 75
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000276, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 76
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 77
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 78
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 79
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000276, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 80
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 81
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 82
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 83
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 84
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 85
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000276, sec=0.008000374
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 86
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000322
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 87
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000135
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 88
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000561
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 89
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000276, sec=0.008000135
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 90
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000561
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 91
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000135
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 92
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000561
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 93
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000135
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 94
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000561
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 95
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000276, sec=0.008000135
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 96
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000561
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 97
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000277, sec=0.008000135
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 98
+MY_CLOCK clock DT seconds = 0, msec=12, usec=12000, nsec=12000415, sec=0.012000561
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+test 99
+stop is earlier than start
+MY_CLOCK clock DT seconds = 0, msec=8, usec=8000, nsec=8000276, sec=0.008000135
+MY_CLOCK delay error = 0, nanoseconds = 2000415
+TEST COMPLETE

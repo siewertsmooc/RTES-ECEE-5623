@@ -1,0 +1,23 @@
+Loading 'clock_monotonic' ...
+  → 100 trial(s), 100 tests each
+Loading 'clock_monotonic_coarse' ...
+  → 100 trial(s), 100 tests each
+Loading 'clock_monotonic_raw' ...
+  → 100 trial(s), 100 tests each
+Loading 'clock_realtime' ...
+  → 100 trial(s), 100 tests each
+Loading 'clock_realtime_coarse' ...
+  → 100 trial(s), 100 tests each
+
+------------------------------------------------------------------------------------
+Rank  Clock                     Trials     Mean(ns)    Min(ns)    Max(ns)    Std(ns)
+------------------------------------------------------------------------------------
+1     clock_monotonic              100      18576.1    12363.6    29698.1     3568.6
+2     clock_monotonic_raw          100      20546.2    12064.3    35883.2     4843.6
+3     clock_realtime               100      21763.1    13479.0    36578.5     4868.0
+4     clock_monotonic_coarse       100    1991220.7  1080226.9  2000423.1    91558.3
+5     clock_realtime_coarse        100    1992830.8  1140361.2  2040635.5    85859.2
+------------------------------------------------------------------------------------
+
+Plot saved → /home/mason/RTES_5623/RTES-ECEE-5623-mcgaffin/RT-Clock/delay_errors.png
+

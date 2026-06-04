@@ -20,6 +20,15 @@
 #define TEST_SECONDS (0)
 #define TEST_NANOSECONDS (NSEC_PER_MSEC * 10)
 
+//#define MY_CLOCK CLOCK_REALTIME
+#define MY_CLOCK CLOCK_MONOTONIC
+//#define MY_CLOCK CLOCK_MONOTONIC_RAW
+//#define MY_CLOCK CLOCK_REALTIME_COARSE
+//#define MY_CLOCK CLOCK_MONOTONIC_COARSE
+
+#define RUN_RT_THREAD
+#define TEST_ITERATIONS (100)
+
 void end_delay_test(void);
 
 static struct timespec sleep_time = {0, 0};
@@ -134,13 +143,6 @@ static struct timespec rtclk_start_time = {0, 0};
 static struct timespec rtclk_stop_time = {0, 0};
 static struct timespec delay_error = {0, 0};
 
-//#define MY_CLOCK CLOCK_REALTIME
-//#define MY_CLOCK CLOCK_MONOTONIC
-#define MY_CLOCK CLOCK_MONOTONIC_RAW
-//#define MY_CLOCK CLOCK_REALTIME_COARSE
-//#define MY_CLOCK CLOCK_MONOTONIC_COARSE
-
-#define TEST_ITERATIONS (100)
 
 void *delay_test(void *threadID)
 {
@@ -177,7 +179,7 @@ void *delay_test(void *threadID)
       /* request sleep time and repeat if time remains */
       do 
       {
-          if(rc=nanosleep(&sleep_time, &remaining_time) == 0) break;
+          if((rc=nanosleep(&sleep_time, &remaining_time)) == 0) break;
          
           sleep_time.tv_sec = remaining_time.tv_sec;
           sleep_time.tv_nsec = remaining_time.tv_nsec;
@@ -222,7 +224,6 @@ void end_delay_test(void)
          delay_error.tv_sec, delay_error.tv_nsec);
 }
 
-#define RUN_RT_THREAD
 
 void main(void)
 {

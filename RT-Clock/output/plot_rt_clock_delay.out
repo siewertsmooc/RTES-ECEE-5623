@@ -1,0 +1,18 @@
+Loaded 'clock_monotonic_coarse.txt': 100 samples
+Loaded 'clock_monotonic_raw.txt': 100 samples
+Loaded 'clock_monotonic.txt': 100 samples
+Loaded 'clock_realtime_coarse.txt': 100 samples
+Loaded 'clock_realtime.txt': 100 samples
+
+--------------------------------------------------------------------------------------
+Rank  File                             N     Mean(ns)    Min(ns)    Max(ns)    Std(ns)
+--------------------------------------------------------------------------------------
+1     clock_monotonic_raw.txt        100      11816.3       5024      34720     6227.6
+2     clock_realtime.txt             100      12855.5       6161      42929     5550.7
+3     clock_monotonic.txt            100      13310.9       5264      38033     6778.9
+4     clock_monotonic_coarse.txt     100    1980513.1          0    2000519   199049.1
+5     clock_realtime_coarse.txt      100    1980513.1          0    2000519   199049.1
+--------------------------------------------------------------------------------------
+
+
+Plot saved → delay_errors.png
