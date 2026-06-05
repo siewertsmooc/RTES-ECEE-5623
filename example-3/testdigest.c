@@ -6,9 +6,12 @@
 #include <stdlib.h>
 #include <signal.h>
 #include <semaphore.h>
+#include <unistd.h>
+#include <string.h>
 
 #include "md5.h"
 
+#define SET_SCHED_POLICY
 #define SCHED_POLICY SCHED_FIFO
 #define THREAD_ITERATIONS 100000
 #define ITERATIONS 100000
@@ -16,7 +19,7 @@
 #define TRUE 1
 #define FALSE 0
 
-static const char test[512]="#0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ##0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ##0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ##0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ##0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ##0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ##0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ##0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ#";
+static const char test[512]="#0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ##0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ##0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ##0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ##0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ##0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ##0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ##0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 typedef struct _threadParamsType
 {
@@ -347,7 +350,7 @@ int main(int argc, char *argv[])
 	    {
                 threadActiveCnt++;
                 threadActive=TRUE;
-	        //printf("Thread %d created\n", threadActiveCnt);
+	        printf("Thread %d created\n", threadActiveCnt);
 	    }
 
         }

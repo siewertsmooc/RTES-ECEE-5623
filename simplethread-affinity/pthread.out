@@ -1,0 +1,70 @@
+INITIAL Pthread policy is SCHED_OTHER
+ADJUSTED Pthread policy is SCHED_FIFO
+main thread running on CPU=2, CPUs = 0 1 2 3 4 5
+starter thread running on CPU=3
+
+Thread idx=0, sum[0...0]=0, running on CPU=3, start=1780587929.986866, stop=1780587929.990918
+Thread idx=1, sum[0...1]=1, running on CPU=3, start=1780587929.991112, stop=1780587929.995549
+Thread idx=2, sum[0...2]=3, running on CPU=3, start=1780587929.995594, stop=1780587930.002403
+Thread idx=3, sum[0...3]=6, running on CPU=3, start=1780587930.002444, stop=1780587930.011823
+Thread idx=4, sum[0...4]=10, running on CPU=3, start=1780587930.011866, stop=1780587930.024379
+Thread idx=5, sum[0...5]=15, running on CPU=3, start=1780587930.024421, stop=1780587930.040053
+Thread idx=6, sum[0...6]=21, running on CPU=3, start=1780587930.040097, stop=1780587930.059147
+Thread idx=7, sum[0...7]=28, running on CPU=3, start=1780587930.059190, stop=1780587930.081887
+Thread idx=8, sum[0...8]=36, running on CPU=3, start=1780587930.081921, stop=1780587930.108493
+Thread idx=9, sum[0...9]=45, running on CPU=3, start=1780587930.108644, stop=1780587930.138717
+Thread idx=10, sum[0...10]=55, running on CPU=3, start=1780587930.138758, stop=1780587930.174045
+Thread idx=11, sum[0...11]=66, running on CPU=3, start=1780587930.174090, stop=1780587930.213624
+Thread idx=12, sum[0...12]=78, running on CPU=3, start=1780587930.213669, stop=1780587930.259922
+Thread idx=13, sum[0...13]=91, running on CPU=3, start=1780587930.259965, stop=1780587930.310521
+Thread idx=14, sum[0...14]=105, running on CPU=3, start=1780587930.310561, stop=1780587930.362756
+Thread idx=15, sum[0...15]=120, running on CPU=3, start=1780587930.362799, stop=1780587930.419296
+Thread idx=16, sum[0...16]=136, running on CPU=3, start=1780587930.419337, stop=1780587930.480359
+Thread idx=17, sum[0...17]=153, running on CPU=3, start=1780587930.480398, stop=1780587930.545856
+Thread idx=18, sum[0...18]=171, running on CPU=3, start=1780587930.545897, stop=1780587930.615919
+Thread idx=19, sum[0...19]=190, running on CPU=3, start=1780587930.615958, stop=1780587930.690412
+Thread idx=20, sum[0...20]=210, running on CPU=3, start=1780587930.690450, stop=1780587930.769401
+Thread idx=21, sum[0...21]=231, running on CPU=3, start=1780587930.769441, stop=1780587930.852613
+Thread idx=22, sum[0...22]=253, running on CPU=3, start=1780587930.852652, stop=1780587930.985711
+Thread idx=23, sum[0...23]=276, running on CPU=3, start=1780587930.985907, stop=1780587931.078471
+Thread idx=24, sum[0...24]=300, running on CPU=3, start=1780587931.078524, stop=1780587931.175404
+Thread idx=25, sum[0...25]=325, running on CPU=3, start=1780587931.175454, stop=1780587931.276777
+Thread idx=26, sum[0...26]=351, running on CPU=3, start=1780587931.276820, stop=1780587931.383207
+Thread idx=27, sum[0...27]=378, running on CPU=3, start=1780587931.383248, stop=1780587931.494180
+Thread idx=28, sum[0...28]=406, running on CPU=3, start=1780587931.494222, stop=1780587931.611892
+Thread idx=29, sum[0...29]=435, running on CPU=3, start=1780587931.611938, stop=1780587931.734078
+Thread idx=30, sum[0...30]=465, running on CPU=3, start=1780587931.734124, stop=1780587931.857958
+Thread idx=31, sum[0...31]=496, running on CPU=3, start=1780587931.857998, stop=1780587932.040471
+Thread idx=32, sum[0...32]=528, running on CPU=3, start=1780587932.040556, stop=1780587932.173304
+Thread idx=33, sum[0...33]=561, running on CPU=3, start=1780587932.173349, stop=1780587932.310541
+Thread idx=34, sum[0...34]=595, running on CPU=3, start=1780587932.310589, stop=1780587932.452292
+Thread idx=35, sum[0...35]=630, running on CPU=3, start=1780587932.452333, stop=1780587932.598495
+Thread idx=36, sum[0...36]=666, running on CPU=3, start=1780587932.598541, stop=1780587932.749224
+Thread idx=37, sum[0...37]=703, running on CPU=3, start=1780587932.749265, stop=1780587932.904413
+Thread idx=38, sum[0...38]=741, running on CPU=3, start=1780587932.904453, stop=1780587933.112641
+Thread idx=39, sum[0...39]=780, running on CPU=3, start=1780587933.112745, stop=1780587933.276808
+Thread idx=40, sum[0...40]=820, running on CPU=3, start=1780587933.276851, stop=1780587933.445448
+Thread idx=41, sum[0...41]=861, running on CPU=3, start=1780587933.445629, stop=1780587933.618748
+Thread idx=42, sum[0...42]=903, running on CPU=3, start=1780587933.618803, stop=1780587933.797134
+Thread idx=43, sum[0...43]=946, running on CPU=3, start=1780587933.797183, stop=1780587934.028457
+Thread idx=44, sum[0...44]=990, running on CPU=3, start=1780587934.028547, stop=1780587934.218228
+Thread idx=45, sum[0...45]=1035, running on CPU=3, start=1780587934.218277, stop=1780587934.412519
+Thread idx=46, sum[0...46]=1081, running on CPU=3, start=1780587934.412565, stop=1780587934.608188
+Thread idx=47, sum[0...47]=1128, running on CPU=3, start=1780587934.608233, stop=1780587934.808320
+Thread idx=48, sum[0...48]=1176, running on CPU=3, start=1780587934.808363, stop=1780587935.061185
+Thread idx=49, sum[0...49]=1225, running on CPU=3, start=1780587935.061286, stop=1780587935.270277
+Thread idx=50, sum[0...50]=1275, running on CPU=3, start=1780587935.270326, stop=1780587935.483781
+Thread idx=51, sum[0...51]=1326, running on CPU=3, start=1780587935.483828, stop=1780587935.701857
+Thread idx=52, sum[0...52]=1378, running on CPU=3, start=1780587935.701910, stop=1780587935.924324
+Thread idx=53, sum[0...53]=1431, running on CPU=3, start=1780587935.924372, stop=1780587936.199842
+Thread idx=54, sum[0...54]=1485, running on CPU=3, start=1780587936.199957, stop=1780587936.431370
+Thread idx=55, sum[0...55]=1540, running on CPU=3, start=1780587936.431422, stop=1780587936.667317
+Thread idx=56, sum[0...56]=1596, running on CPU=3, start=1780587936.667361, stop=1780587936.907700
+Thread idx=57, sum[0...57]=1653, running on CPU=3, start=1780587936.907745, stop=1780587937.202461
+Thread idx=58, sum[0...58]=1711, running on CPU=3, start=1780587937.202583, stop=1780587937.452777
+Thread idx=59, sum[0...59]=1770, running on CPU=3, start=1780587937.452828, stop=1780587937.707490
+Thread idx=60, sum[0...60]=1830, running on CPU=3, start=1780587937.707540, stop=1780587938.018866
+Thread idx=61, sum[0...61]=1891, running on CPU=3, start=1780587938.018971, stop=1780587938.285161
+Thread idx=62, sum[0...62]=1953, running on CPU=3, start=1780587938.285216, stop=1780587938.552564
+Thread idx=63, sum[0...63]=2016, running on CPU=3, start=1780587938.552611, stop=1780587938.824396
+TEST COMPLETE

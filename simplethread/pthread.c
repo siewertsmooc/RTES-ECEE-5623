@@ -1,3 +1,4 @@
+#define _GNU_SOURCE
 #include <pthread.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -25,9 +26,9 @@ void *counterThread(void *threadp)
     for(i=1; i < (threadParams->threadIdx)+1; i++)
         sum=sum+i;
  
-    printf("Thread idx=%d, sum[0...%d]=%d\n", 
+    printf("Thread idx=%d, sum[0...%d]=%d, running on CPU=%d\n", 
            threadParams->threadIdx,
-           threadParams->threadIdx, sum);
+           threadParams->threadIdx, sum, sched_getcpu());
 }
 
 
@@ -35,7 +36,9 @@ int main (int argc, char *argv[])
 {
    int rc;
    int i;
-
+   
+   printf("main thread running on CPU=%d\n", sched_getcpu());
+   
    for(i=0; i < NUM_THREADS; i++)
    {
        threadParams[i].threadIdx=i;

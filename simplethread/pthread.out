@@ -1,0 +1,14 @@
+main thread running on CPU=3
+Thread idx=0, sum[0...0]=0, running on CPU=2
+Thread idx=1, sum[0...1]=1, running on CPU=1
+Thread idx=2, sum[0...2]=3, running on CPU=4
+Thread idx=3, sum[0...3]=6, running on CPU=0
+Thread idx=4, sum[0...4]=10, running on CPU=2
+Thread idx=5, sum[0...5]=15, running on CPU=4
+Thread idx=6, sum[0...6]=21, running on CPU=2
+Thread idx=7, sum[0...7]=28, running on CPU=4
+Thread idx=8, sum[0...8]=36, running on CPU=0
+Thread idx=9, sum[0...9]=45, running on CPU=2
+Thread idx=10, sum[0...10]=55, running on CPU=2
+Thread idx=11, sum[0...11]=66, running on CPU=2
+TEST COMPLETE

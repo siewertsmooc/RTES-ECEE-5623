@@ -6,6 +6,7 @@
 #include <sys/time.h>
 #include <sys/types.h>
 #include <sched.h>
+#include <unistd.h>
 
 #define NUM_THREADS 64
 #define NUM_CPUS 8
@@ -60,7 +61,7 @@ void set_scheduler(void)
     printf("INITIAL "); print_scheduler();
 
     pthread_attr_init(&fifo_sched_attr);
-    pthread_attr_setinheritsched(&fifo_sched_attr, PTHREAD_EXPLICIT_SCHED);
+    // pthread_attr_setinheritsched(&fifo_sched_attr, PTHREAD_EXPLICIT_SCHED);
     pthread_attr_setschedpolicy(&fifo_sched_attr, SCHED_POLICY);
     CPU_ZERO(&cpuset);
     cpuidx=(3);
@@ -141,7 +142,7 @@ int main (int argc, char *argv[])
    int i, j;
    cpu_set_t cpuset;
 
-   set_scheduler();
+  set_scheduler();
 
    CPU_ZERO(&cpuset);
 

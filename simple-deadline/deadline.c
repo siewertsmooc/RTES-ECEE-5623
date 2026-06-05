@@ -11,6 +11,10 @@
 
 #include <unistd.h>
 #include <sys/syscall.h>
+#include <time.h>
+
+// #define SCHED_POLICY SCHED_DEADLINE
+#define SCHED_POLICY SCHED_FIFO
 
 struct sched_attr 
 {
@@ -31,10 +35,20 @@ int sched_setattr(pid_t pid, const struct sched_attr *attr, unsigned int flags)
 
 void * threadA(void *p) 
 {
+    struct timespec ts, tm;
+    struct timespec startTime;
+
+    if (clock_gettime(CLOCK_MONOTONIC, &startTime) != 0) perror("clock_gettime");
+
+    if (clock_gettime(CLOCK_REALTIME, &ts) == 0) {
+        printf("[%ld.%09ld] - Thread A running on CPU %d\n", (long)ts.tv_sec, ts.tv_nsec, sched_getcpu());
+    }
+    else perror("clock_gettime");
+
     struct sched_attr attr = 
     {
         .size = sizeof (attr),
-        .sched_policy = SCHED_DEADLINE,
+        .sched_policy = SCHED_POLICY,
         .sched_runtime = 10 * 1000 * 1000,
         .sched_period = 2 * 1000 * 1000 * 1000,
         .sched_deadline = 11 * 1000 * 1000
@@ -42,11 +56,31 @@ void * threadA(void *p)
 
     sched_setattr(0, &attr, 0);
 
+    long long elapsed_ns;
+
     for (;;) 
     {
-        printf("Time is - please fill this in using POSIX clock_gettime\n");
+        if ((clock_gettime(CLOCK_REALTIME, &ts) == 0) && (clock_gettime(CLOCK_MONOTONIC, &tm) == 0)) {
+            elapsed_ns = (long long)(tm.tv_sec - startTime.tv_sec) * 1000000000LL + (tm.tv_nsec - startTime.tv_nsec);
+            printf("[%ld.%09ld] - Thread A running for %lld ns\n", (long)ts.tv_sec, ts.tv_nsec, elapsed_ns);
+        } else {
+            perror("clock_gettime");
+        }
+
         fflush(0);
-        sched_yield();
+
+        if(elapsed_ns >= (long long)(6LL * 1000* 1000 * 1000)) // Run for 6s
+        {
+            fflush(0); 
+            break;
+        }
+
+        // sched_yield();
+        if(sched_yield() != 0) {
+            perror("sched_yield"); 
+            fflush(0); 
+            break;
+        }
     };
 }
 

@@ -1,0 +1,18 @@
+Will default to 4 synthetic IO workers
+
+
+**************** MULTI THREAD TESTS
+Pthread Policy is SCHED_OTHER
+SCHED_POLICY SET: sched_setscheduler rc is 0
+Pthread Policy is SCHED_FIFO
+min prio = 1, max prio = 99
+PTHREAD SCOPE SYSTEM
+Thread 1 created
+Thread 2 created
+Thread 3 created
+Thread 4 created
+
+
+***************** TOTAL PERFORMANCE SUMMARY
+
+For 4 threads, Total rate=1509646.226911
