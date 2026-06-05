@@ -1,0 +1,16 @@
+Loading 'clock_monotonic' ...
+  → 100 trial(s), 100 tests each
+Loading 'clock_monotonic_raw' ...
+  → 100 trial(s), 100 tests each
+Loading 'clock_realtime' ...
+  → 100 trial(s), 100 tests each
+
+---------------------------------------------------------------------------------
+Rank  Clock                  Trials     Mean(ns)    Min(ns)    Max(ns)    Std(ns)
+---------------------------------------------------------------------------------
+1     clock_monotonic_raw       100      63936.2    60349.8    84293.4     4712.3
+2     clock_monotonic           100      64231.9    60984.1    97205.5     5796.3
+3     clock_realtime            100      64294.0    60989.2    96410.5     5702.7
+---------------------------------------------------------------------------------
+
+Plot saved → /home/mason/RTES_5623/RTES-ECEE-5623-mcgaffin/RT-Clock/output_2_no_thread/plot_errors.png

@@ -1,7 +1,7 @@
 #!/bin/bash
  
 EXECUTABLE="./posix_clock"
-NAME="output/clock_monotonic_coarse/clock_monotonic_coarse"
+NAME="output_2_no_thread/clock_monotonic_raw/clock_monotonic_raw"
 
 if [ "$EUID" -ne 0 ]; then
   echo "Please run as root"

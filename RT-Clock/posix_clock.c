@@ -26,6 +26,7 @@
 //#define MY_CLOCK CLOCK_REALTIME_COARSE
 //#define MY_CLOCK CLOCK_MONOTONIC_COARSE
 
+//run with SCHED_FIFO policy for RT thread
 #define RUN_RT_THREAD
 #define TEST_ITERATIONS (100)
 
@@ -39,10 +40,10 @@ static unsigned int sleep_count = 0;
 
 pthread_t main_thread;
 pthread_attr_t main_sched_attr;
-int rt_max_prio, rt_min_prio, min;
+int rt_max_prio, /*rt_min_prio,*/ min;
 struct sched_param main_param;
 
-
+// display current scheduling policy 
 void print_scheduler(void)
 {
    int schedType;
@@ -65,7 +66,7 @@ void print_scheduler(void)
    }
 }
 
-
+// calculate delta time in seconds as a double
 double d_ftime(struct timespec *fstart, struct timespec *fstop)
 {
   double dfstart = ((double)(fstart->tv_sec) + ((double)(fstart->tv_nsec) / 1000000000.0));
@@ -74,7 +75,7 @@ double d_ftime(struct timespec *fstart, struct timespec *fstop)
   return(dfstop - dfstart); 
 }
 
-
+// calculate delta time in timespec format
 int delta_t(struct timespec *stop, struct timespec *start, struct timespec *delta_t)
 {
   int dt_sec=stop->tv_sec - start->tv_sec;
@@ -143,7 +144,7 @@ static struct timespec rtclk_start_time = {0, 0};
 static struct timespec rtclk_stop_time = {0, 0};
 static struct timespec delay_error = {0, 0};
 
-
+// run 100 samples of requested sleep time and report delay error
 void *delay_test(void *threadID)
 {
   int idx, rc;
@@ -188,16 +189,20 @@ void *delay_test(void *threadID)
       while (((remaining_time.tv_sec > 0) || (remaining_time.tv_nsec > 0))
 		      && (sleep_count < max_sleep_calls));
 
+      // stop time stamp
       clock_gettime(MY_CLOCK, &rtclk_stop_time);
 
+      // calculate delay error
       delta_t(&rtclk_stop_time, &rtclk_start_time, &rtclk_dt);
       delta_t(&rtclk_dt, &sleep_requested, &delay_error);
 
+      // log
       end_delay_test();
   }
 
 }
 
+// log results of delay test
 void end_delay_test(void)
 {
     double real_dt;
@@ -233,12 +238,14 @@ void main(void)
    print_scheduler();
 
 #ifdef RUN_RT_THREAD
+   // set up with RT thread and SCHED_FIFO policy
    pthread_attr_init(&main_sched_attr);
    pthread_attr_setinheritsched(&main_sched_attr, PTHREAD_EXPLICIT_SCHED);
    pthread_attr_setschedpolicy(&main_sched_attr, SCHED_FIFO);
 
+   // set RT priority to max for SCHED_FIFO
    rt_max_prio = sched_get_priority_max(SCHED_FIFO);
-   rt_min_prio = sched_get_priority_min(SCHED_FIFO);
+  //  rt_min_prio = sched_get_priority_min(SCHED_FIFO); // unused
 
    main_param.sched_priority = rt_max_prio;
    rc=sched_setscheduler(getpid(), SCHED_FIFO, &main_param);
@@ -256,6 +263,7 @@ void main(void)
    main_param.sched_priority = rt_max_prio;
    pthread_attr_setschedparam(&main_sched_attr, &main_param);
 
+   //create delay test thread 
    rc = pthread_create(&main_thread, &main_sched_attr, delay_test, (void *)0);
 
    if (rc)
@@ -265,11 +273,13 @@ void main(void)
        exit(-1);
    }
 
+   //test done
    pthread_join(main_thread, NULL);
 
    if(pthread_attr_destroy(&main_sched_attr) != 0)
      perror("attr destroy");
 #else
+// run test without RT thread
    delay_test((void *)0);
 #endif
 

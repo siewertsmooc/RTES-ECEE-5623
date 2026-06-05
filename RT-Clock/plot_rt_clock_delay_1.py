@@ -33,8 +33,8 @@ import numpy as np
 # ── Hardcoded paths ───────────────────────────────────────────────────────────
 
 SCRIPT_DIR   = os.path.dirname(os.path.abspath(__file__))
-OUTPUT_ROOT  = os.path.join(SCRIPT_DIR, "output")
-PLOT_PATH    = os.path.join(SCRIPT_DIR, "delay_errors.png")
+OUTPUT_ROOT  = os.path.join(SCRIPT_DIR, "output_2_no_thread")
+PLOT_PATH    = os.path.join(SCRIPT_DIR, "output_2_no_thread/plot_errors.png")
 NUM_TESTS    = 100   # expected samples per trial file
 
 # ── Parser ────────────────────────────────────────────────────────────────────
