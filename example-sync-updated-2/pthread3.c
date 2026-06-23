@@ -192,10 +192,10 @@ void *startService(void *threadid)
    threadParams[LOW_PRIO_SERVICE].threadIdx=LOW_PRIO_SERVICE;
 
    // Real-time option
-   //rc = pthread_create(&threads[LOW_PRIO_SERVICE], &rt_sched_attr, criticalSectionTask, (void *)&threadParams[LOW_PRIO_SERVICE]);
+   rc = pthread_create(&threads[LOW_PRIO_SERVICE], &rt_sched_attr, criticalSectionTask, (void *)&threadParams[LOW_PRIO_SERVICE]);
 
    // Non-real-time option
-   rc = pthread_create(&threads[LOW_PRIO_SERVICE], &nrt_sched_attr, criticalSectionTask, (void *)&threadParams[LOW_PRIO_SERVICE]);
+  //  rc = pthread_create(&threads[LOW_PRIO_SERVICE], &nrt_sched_attr, criticalSectionTask, (void *)&threadParams[LOW_PRIO_SERVICE]);
 
    if (rc)
    {
@@ -212,8 +212,8 @@ void *startService(void *threadid)
    while(CScnt < 1)
    {
        busyWaitCnt++; 
-       if((busyWaitCnt % 10000) == 0) {printf(".");};
-       //if((busyWaitCnt % 10) == 0) {sleep(1); printf(".");};
+      //  if((busyWaitCnt % 10000) == 0) {printf(".");};
+       if((busyWaitCnt % 10) == 0) {usleep(10); printf(".");};
    }
    printf("CScnt=%d\n", CScnt);
 
