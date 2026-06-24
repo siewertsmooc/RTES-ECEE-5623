@@ -35,30 +35,33 @@ void *receiver(void *arg)
   char buffer[MAX_MSG_SIZE];
   int prio;
   int rc;
- 
-   printf("receiver - thread entry\n");
+  int nbytes;
+
+  printf("receiver - thread entry\n");
 
   mymq = mq_open(SNDRCV_MQ, O_CREAT|O_RDWR, S_IRWXU, &mq_attr);  
-  
 
-    /* read oldest, highest priority msg from the message queue until empty */
-    do
+
+  /* read oldest, highest priority msg from the message queue until empty */
+  do
+  {
+    printf("receiver - awaiting message\n");
+  #if 1
+    if((nbytes = mq_receive(mymq, buffer, MAX_MSG_SIZE, &prio)) == ERROR)
     {
-        printf("receiver - awaiting message\n");
-#if 1
-        if((rc = mq_receive(mymq, buffer, MAX_MSG_SIZE, &prio)) == ERROR)
-        {
-          perror("mq_receive");
-        }
-        else
-        {
-          buffer[MAX_MSG_SIZE] = '\0';
-          printf("receive: msg %s received with priority = %d, rc = %d\n", buffer, prio, rc);
-        }
-#endif
+      perror("mq_receive");
+    }
+    else
+    {
+      buffer[nbytes] = '\0';
+      printf("receive: msg %s received with priority = %d, length = %d\n",
+            buffer, prio, nbytes);
+    }
+  #endif
 
-    } while(rc != ERROR);
-    
+  } while(rc != ERROR);
+
+  return NULL;
 }
 
 
@@ -76,7 +79,7 @@ void *sender(void *arg)
     /* send messages with priority=30 */
     do
     {
-        printf("sender - sending message of size=%d\n", sizeof(canned_msg));
+        printf("sender - sending message of size=%ld\n", sizeof(canned_msg));
 #if 1
         if((rc = mq_send(mymq, canned_msg, sizeof(canned_msg), 30)) == ERROR)
         {
@@ -90,12 +93,16 @@ void *sender(void *arg)
 
     } while(rc != ERROR);
   
+  return NULL;
 }
 
 
 void main(void)
 {
   int i=0, rc=0;
+
+  mq_unlink(SNDRCV_MQ);
+
   /* setup common message q attributes */
   mq_attr.mq_maxmsg = 10;
   mq_attr.mq_msgsize = MAX_MSG_SIZE;
