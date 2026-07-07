@@ -92,15 +92,12 @@ char ppm_dumpname[]="test00000000.ppm";
 static void dump_ppm(const void *p, int size, unsigned int tag, struct timespec *time)
 {
     int written, i, total, dumpfd;
-   
-    snprintf(&ppm_dumpname[4], 9, "%08d", tag);
-    strncat(&ppm_dumpname[12], ".ppm", 5);
+  
+    snprintf(ppm_dumpname, sizeof(ppm_dumpname), "test%08d.ppm", tag); 
     dumpfd = open(ppm_dumpname, O_WRONLY | O_NONBLOCK | O_CREAT, 00666);
 
-    snprintf(&ppm_header[4], 11, "%010d", (int)time->tv_sec);
-    strncat(&ppm_header[14], " sec ", 5);
-    snprintf(&ppm_header[19], 11, "%010d", (int)((time->tv_nsec)/1000000));
-    strncat(&ppm_header[29], " msec \n"HRES_STR" "VRES_STR"\n255\n", 19);
+    snprintf(ppm_header, sizeof(ppm_header), "P6\n#%010d sec %010d msec \n%s %s\n255\n",
+                (int)time->tv_sec, (int)((time->tv_nsec)/1000000), HRES_STR, VRES_STR);
 
     // subtract 1 because sizeof for string includes null terminator
     written=write(dumpfd, ppm_header, sizeof(ppm_header)-1);
@@ -127,14 +124,11 @@ static void dump_pgm(const void *p, int size, unsigned int tag, struct timespec 
 {
     int written, i, total, dumpfd;
    
-    snprintf(&pgm_dumpname[4], 9, "%08d", tag);
-    strncat(&pgm_dumpname[12], ".pgm", 5);
+    snprintf(pgm_dumpname, sizeof(pgm_dumpname), "test%08d.pgm", tag); 
     dumpfd = open(pgm_dumpname, O_WRONLY | O_NONBLOCK | O_CREAT, 00666);
 
-    snprintf(&pgm_header[4], 11, "%010d", (int)time->tv_sec);
-    strncat(&pgm_header[14], " sec ", 5);
-    snprintf(&pgm_header[19], 11, "%010d", (int)((time->tv_nsec)/1000000));
-    strncat(&pgm_header[29], " msec \n"HRES_STR" "VRES_STR"\n255\n", 19);
+    snprintf(pgm_header, sizeof(pgm_header), "P5\n#%010d sec %010d msec \n%s %s\n255\n", 
+                (int)time->tv_sec, (int)((time->tv_nsec)/1000000), HRES_STR, VRES_STR);
 
     // subtract 1 because sizeof for string includes null terminator
     written=write(dumpfd, pgm_header, sizeof(pgm_header)-1);
