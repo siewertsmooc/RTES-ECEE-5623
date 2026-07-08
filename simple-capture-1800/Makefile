@@ -17,6 +17,8 @@ all:	capture
 clean:
 	-rm -f *.o *.d
 	-rm -f capture
+	-rm -f frames/*.pgm
+	-rm -f frames/*.ppm
 
 distclean:
 	-rm -f *.o *.d
