@@ -35,7 +35,7 @@
 #include <syslog.h>
 
 #define CLEAR(x) memset(&(x), 0, sizeof(x))
-//#define COLOR_CONVERT_RGB
+#define COLOR_CONVERT_RGB
 #define HRES 640
 #define VRES 480
 #define HRES_STR "640"
@@ -70,7 +70,7 @@ struct buffer          *buffers;
 static unsigned int     n_buffers;
 static int              out_buf;
 static int              force_format=1;
-static int              frame_count = (189);
+static int              frame_count = (1809);
 
 static double d_start;
 
