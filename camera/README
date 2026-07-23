@@ -1,0 +1,38 @@
+V4L2 with MMAP - Based on ChatGPT prompt for "what is the simplest mmap use of V4L2 for raw data only"
+
+Code outline:
+1)  open
+2)  set raw format
+3)  request buffers
+4)  map buffers
+5)  queue all buffers
+6)  start streaming
+7)  dequeue one completed frame
+8)  process it
+9)  requeue it
+10) repeat
+
+
+6 Essential V4L2 operations:
+---------------------------
+VIDIOC_REQBUFS
+VIDIOC_QUERYBUF
+VIDIOC_QBUF
+VIDIOC_STREAMON
+VIDIOC_DQBUF
+VIDIOC_STREAMOFF
+
+
+Critical Rule:
+After DQBUF:
+    application owns the buffer
+
+After QBUF:
+    driver owns the buffer
+
+https://docs.kernel.org/5.10/userspace-api/media/v4l/vidioc-qbuf.html
+
+Once you call VIDIOC_QBUF, your program must not continue reading or modifying that mapped buffer until it is dequeued again. Queued buffers remain under driver control until dequeued, streaming is stopped, buffers are released, or the device is closed.
+
+For the absolute minimum implementation, two buffers and blocking VIDIOC_DQBUF are sufficient. One buffer may work on some drivers, but two is a safer practical minimum because the device can fill one buffer while the application processes the other.
+
